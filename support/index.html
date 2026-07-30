@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistance — Gomuscu</title>
+<meta name="description" content="Aide et contact pour l'application Gomuscu : sauvegarder tes données, gérer ton abonnement, signaler un problème.">
+<style>
+  :root {
+    --bg: #0A0A0A; --surface: #1A1A1A; --line: #2A2A2A;
+    --text: #FFFFFF; --muted: #8E8E93; --lime: #C6F84E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 5rem;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px; line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.15rem; margin: 2.5rem 0 .5rem;
+    color: var(--lime); letter-spacing: -.01em;
+  }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .25rem; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .lede {
+    background: var(--surface); border-left: 3px solid var(--lime);
+    padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin: 0 0 2rem;
+  }
+  .lede p { margin: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--lime); }
+  code {
+    background: var(--surface); padding: .1em .4em;
+    border-radius: 4px; font-size: .9em;
+  }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 4rem 0 2.5rem; }
+  .lang { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Assistance</h1>
+<p class="date">Gomuscu · dernière mise à jour : 30 juillet 2026</p>
+<p class="lang"><a href="#english">Read this page in English</a></p>
+
+<div class="lede">
+<p>Une question, un problème, une idée ? Écris à
+<a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a>.
+Gomuscu est développé par une seule personne : tu auras une vraie réponse, pas un ticket
+automatique — laisse-moi juste quelques jours.</p>
+</div>
+
+<h2>Nous écrire</h2>
+<p><a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a></p>
+<p>Pour un problème technique, ces trois informations font gagner un aller-retour :</p>
+<ul>
+  <li>ton modèle d'iPhone et ta version d'iOS (Réglages → Général → Informations) ;</li>
+  <li>ce que tu faisais juste avant ;</li>
+  <li>ce que tu attendais, et ce qui s'est passé à la place.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Où sont mes données ?</h3>
+<p>Sur ton iPhone, et nulle part ailleurs. Gomuscu n'a aucun accès au réseau : pas de compte, pas de
+serveur, rien qui parte vers nous. C'est expliqué en détail dans la
+<a href="/confidentialite">politique de confidentialité</a>.</p>
+
+<h3>Comment sauvegarder mes séances ?</h3>
+<p>Réglages → section <strong>DONNÉES</strong> → <strong>↑ Export JSON</strong>. Tu obtiens un fichier
+<code>gomuscu-sauvegarde.json</code> que tu ranges où tu veux : Fichiers, iCloud Drive, un mail à
+toi-même. Cet export est <strong>gratuit et le restera</strong> : tes données ne sont jamais retenues
+derrière un abonnement.</p>
+
+<h3>Je change de téléphone</h3>
+<p>Sur l'ancien : <strong>↑ Export JSON</strong>. Sur le nouveau, après avoir installé Gomuscu :
+<strong>↓ Import JSON</strong>, puis désigne le fichier.</p>
+<p>⚠️ L'import <strong>remplace</strong> le contenu de l'app par celui du fichier ; une confirmation
+te le demande avant. Fais donc l'import sur une installation neuve, ou exporte d'abord ce qui est
+déjà là.</p>
+
+<h3>Je n'entends pas l'alerte de fin de repos</h3>
+<p>Deux réglages à vérifier, dans cet ordre :</p>
+<ul>
+  <li>dans Gomuscu, Réglages → <strong>Alerte de fin de repos</strong> doit être activée ;</li>
+  <li>dans Réglages iOS → Notifications → Gomuscu, les notifications doivent être autorisées. Si tu
+      les as refusées au premier lancement, l'app ne peut plus te prévenir — c'est iOS qui décide, et
+      seul ce réglage le rouvre.</li>
+</ul>
+<p>Le décompte sonore des dernières secondes, lui, est un bonus : il s'arrête si iOS met l'app en
+veille. C'est la notification qui fait foi.</p>
+
+<h3>Qu'est-ce qui est gratuit, et qu'est-ce qui est dans Pro ?</h3>
+<p><strong>Gratuit, sans limite de durée</strong> : le carnet de séance et le chrono de repos, sans
+aucune restriction ; le récap de fin de séance ; les 90 derniers jours d'historique ; trois programmes
+personnalisés — ceux livrés d'origine ne comptent pas ; et l'export JSON de toutes tes données.</p>
+<p><strong>Gomuscu Pro</strong> ajoute : les stats de progression, l'historique complet, les
+programmes illimités et l'export CSV.</p>
+<p>Les tarifs s'affichent dans l'app, dans ta devise et pour ton pays — c'est l'App Store qui les
+fixe. Si un essai gratuit s'applique à ton compte, l'écran d'abonnement te l'indique avant tout
+paiement.</p>
+
+<h3>J'ai payé mais Pro n'est pas actif</h3>
+<p>Réglages → section <strong>GOMUSCU PRO</strong> → <strong>Restaurer les achats</strong>. iOS te
+demandera peut-être de te connecter à ton compte Apple. Si ça ne suffit pas, écris-moi en précisant
+la date approximative de l'achat.</p>
+
+<h3>Comment gérer ou résilier mon abonnement ?</h3>
+<p>Un abonnement App Store se gère chez Apple, jamais dans l'app :
+<a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>, ou
+Réglages iOS → ton nom → Abonnements.</p>
+<p>La résiliation prend effet à la fin de la période déjà payée, et tu gardes Pro jusque-là. Si tu
+utilises un essai gratuit, résilie <strong>au moins 24 h avant sa fin</strong> pour ne pas être
+débité.</p>
+
+<h3>Je veux un remboursement</h3>
+<p>Les paiements passent par Apple, qui traite seul les remboursements :
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Je n'ai accès ni à ton moyen
+de paiement ni à tes achats, donc je ne peux pas rembourser à ta place — mais dis-moi ce qui n'allait
+pas, ça m'aide à corriger.</p>
+
+<h3>Comment supprimer toutes mes données ?</h3>
+<p>Désinstalle l'application : iOS supprime alors son espace privé, et tes données avec. Il n'existe
+pas de bouton « tout effacer » dans l'app. <strong>Pense à exporter avant</strong> si tu veux garder
+une trace.</p>
+<p>Si tu as sauvegardé ton iPhone, une copie peut subsister dans cette sauvegarde ; elle se gère
+depuis les Réglages iOS.</p>
+
+<h2>Signaler un bug, proposer une idée</h2>
+<p>La même adresse : <a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a>.
+Les retours d'utilisateurs ont déjà changé plusieurs choses dans l'app — les tiens sont lus.</p>
+
+<hr>
+
+<h1 id="english">Support</h1>
+<p class="date">Gomuscu · last updated: 30 July 2026</p>
+
+<div class="lede">
+<p>A question, a problem, an idea? Write to
+<a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a>.
+Gomuscu is built by one person: you will get a real reply rather than an automated ticket — just
+allow a few days.</p>
+</div>
+
+<h2>Contact us</h2>
+<p><a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a></p>
+<p>For a technical problem, these three details save a round trip:</p>
+<ul>
+  <li>your iPhone model and iOS version (Settings → General → About);</li>
+  <li>what you were doing just before;</li>
+  <li>what you expected, and what happened instead.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Where is my data?</h3>
+<p>On your iPhone, and nowhere else. Gomuscu has no network access: no account, no server, nothing
+sent to us. The <a href="/confidentialite">privacy policy</a> explains this in full.</p>
+
+<h3>How do I back up my workouts?</h3>
+<p>Settings → <strong>DONNÉES</strong> section → <strong>↑ Export JSON</strong>. You get a
+<code>gomuscu-sauvegarde.json</code> file you can keep wherever you like: Files, iCloud Drive, an
+email to yourself. This export is <strong>free and will stay free</strong>: your data is never held
+behind a subscription.</p>
+
+<h3>I'm switching phones</h3>
+<p>On the old one: <strong>↑ Export JSON</strong>. On the new one, after installing Gomuscu:
+<strong>↓ Import JSON</strong>, then pick the file.</p>
+<p>⚠️ Importing <strong>replaces</strong> the app's contents with the file's; a confirmation asks you
+first. So import onto a fresh install, or export what is already there beforehand.</p>
+
+<h3>I don't get the rest-timer alert</h3>
+<p>Two settings to check, in this order:</p>
+<ul>
+  <li>in Gomuscu, Settings → <strong>Alerte de fin de repos</strong> must be on;</li>
+  <li>in iOS Settings → Notifications → Gomuscu, notifications must be allowed. If you declined them
+      at first launch, the app can no longer alert you — that is iOS's decision, and only this
+      setting reopens it.</li>
+</ul>
+<p>The audible countdown of the last few seconds is a bonus: it stops if iOS suspends the app. The
+notification is the reliable one.</p>
+
+<h3>What is free, and what is in Pro?</h3>
+<p><strong>Free, with no time limit</strong>: the workout log and the rest timer, entirely
+unrestricted; the end-of-workout summary; the last 90 days of history; three custom programmes — the
+ones shipped with the app don't count; and the JSON export of all your data.</p>
+<p><strong>Gomuscu Pro</strong> adds: progression stats, full history, unlimited programmes and CSV
+export.</p>
+<p>Prices are shown in the app, in your currency and for your country — the App Store sets them. If a
+free trial applies to your account, the subscription screen tells you before any payment.</p>
+
+<h3>I paid but Pro isn't active</h3>
+<p>Settings → <strong>GOMUSCU PRO</strong> section → <strong>Restaurer les achats</strong> (Restore
+purchases). iOS may ask you to sign in to your Apple Account. If that isn't enough, write to me with
+the approximate purchase date.</p>
+
+<h3>How do I manage or cancel my subscription?</h3>
+<p>App Store subscriptions are managed at Apple's end, never inside the app:
+<a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>, or
+iOS Settings → your name → Subscriptions.</p>
+<p>Cancelling takes effect at the end of the period you have already paid for, and you keep Pro until
+then. If you are on a free trial, cancel <strong>at least 24 hours before it ends</strong> to avoid
+being charged.</p>
+
+<h3>I want a refund</h3>
+<p>Payments go through Apple, which handles refunds alone:
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. I have access to neither your
+payment method nor your purchases, so I cannot refund on your behalf — but do tell me what went
+wrong, it helps me fix it.</p>
+
+<h3>How do I delete all my data?</h3>
+<p>Uninstall the app: iOS then deletes its private storage, and your data with it. There is no
+"erase everything" button in the app. <strong>Export first</strong> if you want to keep a record.</p>
+<p>If you have backed up your iPhone, a copy may remain in that backup; it is managed from iOS
+Settings.</p>
+
+<h2>Report a bug, suggest an idea</h2>
+<p>Same address: <a href="mailto:contact@creativzagency.com">contact@creativzagency.com</a>.
+User feedback has already changed several things in the app — yours gets read.</p>
+
+<footer>Gomuscu — Joris Jovancevic</footer>
+
+</main>
+</body>
+</html>
