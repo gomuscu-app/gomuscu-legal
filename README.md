@@ -1,7 +1,7 @@
 # gomuscu-legal
 
 Pages légales de l'application iOS **Gomuscu**, servies par GitHub Pages sur
-<https://gomuscu.creativzagency.com>.
+<https://gomuscuapp.com>.
 
 - `confidentialite/` — politique de confidentialité (FR + EN)
 - `check-autonomie.sh` — garde-fou : échoue si la page acquiert une ressource externe
@@ -13,4 +13,4 @@ Il ne contient **que** ces pages : le code source de l'application reste privé.
 distante. Une politique de confidentialité qui pisterait son lecteur se contredirait elle-même.
 Jouer `./check-autonomie.sh` après toute modification.
 
-Éditeur : Joris Jovancevic · contact@creativzagency.com
+Éditeur : Joris Jovancevic · contact@gomuscuapp.com
