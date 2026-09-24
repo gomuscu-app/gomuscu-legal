@@ -3,6 +3,12 @@
 # Un LIEN hypertexte (<a href>) est autorisé : il n'émet aucune requête au chargement.
 # Sont interdits : script, feuille de style externe, police distante, image distante, @import.
 #
+# Une seule exception, et elle est exacte : l'ouverture `<script type="application/ld+json">`
+# (données structurées pour les moteurs de recherche, sur la vitrine). Ce type n'est jamais
+# exécuté par un navigateur, il ne peut donc émettre aucune requête. On l'efface du texte AVANT
+# le balayage : tout autre `<script` — module, src, casse différente, attribut en plus — reste
+# refusé, y compris un second `<script>` caché derrière un bloc JSON-LD.
+#
 # ⚠️ Ce script balaie TOUTES les pages et ne cite plus aucun chemin en dur : la version
 # précédente ne regardait que confidentialite/index.html et aurait rendu « OK : page autonome »
 # sans avoir jamais ouvert support/. Un garde-fou qui ignore une page neuve est pire que pas de
@@ -20,7 +26,8 @@ fi
 
 FAIL=0
 for F in $PAGES; do
-  if grep -nEi '<script|<link[^>]+stylesheet|@import|src=["'"'"']https?:|url\(https?:' "$F"; then
+  if sed 's#<script type="application/ld+json">##g' "$F" \
+     | grep -nEi '<script|<link[^>]+stylesheet|@import|src=["'"'"']https?:|url\(https?:'; then
     echo "ÉCHEC : ressource externe ci-dessus, dans $F"
     FAIL=1
   fi

@@ -1,0 +1,18 @@
+# Gomuscu
+
+> Gomuscu est un carnet de musculation pour iPhone, en français. Pendant la séance, il affiche les séries de la dernière fois (répétitions et charge) en face de celles du jour, avec un chrono de repos intégré. Aucun compte : les données restent sur l’iPhone.
+
+- Plateforme : iPhone, iOS 18 ou plus récent. Pas de version Android.
+- Langue : français.
+- Prix : téléchargement gratuit. Gomuscu Pro, en option : 3,99 € par mois ou 29,99 € par an (prix TTC en France), avec 7 jours d’essai gratuit sur l’abonnement annuel.
+- Gratuit : séances illimitées, rappel de la dernière fois série par série, chrono de repos, récap de fin de séance, calendrier, profil et badges, export JSON des données.
+- Pro : la progression sur tous les exercices (courbe, record, volume) et les programmes illimités.
+- Catalogue : 75 exercices sur 14 groupes musculaires ; programmes Push, Pull et Legs inclus.
+- Confidentialité : ni compte, ni serveur, ni traceur ; les données ne quittent pas l’iPhone.
+
+## Liens
+
+- [Gomuscu sur l’App Store](https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201)
+- [Site officiel](https://gomuscuapp.com/)
+- [Assistance](https://gomuscuapp.com/support/)
+- [Politique de confidentialité](https://gomuscuapp.com/confidentialite/)

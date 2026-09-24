@@ -2,22 +2,1114 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gomuscu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gomuscu — Application carnet de musculation pour iPhone</title>
+<meta name="description" content="Gomuscu affiche tes séries de la dernière fois pendant que tu saisis celles d’aujourd’hui. Chrono de repos intégré, sans compte. Gratuit sur iPhone.">
+<link rel="canonical" href="https://gomuscuapp.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="alternate" hreflang="fr" href="https://gomuscuapp.com/">
+<link rel="alternate" hreflang="x-default" href="https://gomuscuapp.com/">
+<meta name="apple-itunes-app" content="app-id=6789966201">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gomuscu">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://gomuscuapp.com/">
+<meta property="og:title" content="Gomuscu — Bats ta dernière fois">
+<meta property="og:description" content="Le carnet de musculation pour iPhone qui t’affiche tes séries de la dernière fois pendant que tu saisis celles d’aujourd’hui.">
+<meta property="og:image" content="https://gomuscuapp.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gomuscu : les séries du 5 août à côté de celles d’aujourd’hui, avec le titre « Bats ta dernière fois ».">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Données structurées : du JSON, jamais exécuté — la seule forme de balise script que
+     check-autonomie.sh admet. Chaque réponse de la FAQ est recopiée MOT POUR MOT depuis la
+     page : Google exige que les données reflètent le contenu visible. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gomuscuapp.com/#org",
+      "name": "Gomuscu",
+      "url": "https://gomuscuapp.com/",
+      "logo": "https://gomuscuapp.com/assets/icon-512.png",
+      "email": "contact@gomuscuapp.com",
+      "sameAs": ["https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gomuscuapp.com/#site",
+      "url": "https://gomuscuapp.com/",
+      "name": "Gomuscu",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://gomuscuapp.com/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gomuscuapp.com/#page",
+      "url": "https://gomuscuapp.com/",
+      "name": "Gomuscu — Application carnet de musculation pour iPhone",
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@id": "https://gomuscuapp.com/#site" },
+      "about": { "@id": "https://gomuscuapp.com/#app" },
+      "primaryImageOfPage": "https://gomuscuapp.com/assets/og.png"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://gomuscuapp.com/#app",
+      "name": "Gomuscu",
+      "alternateName": "Gomuscu Carnet de Musculation",
+      "description": "Carnet de musculation pour iPhone : les séries de la dernière fois s’affichent en face de celles que tu saisis, avec un chrono de repos intégré. Sans compte, données sur l’iPhone.",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Musculation",
+      "operatingSystem": "iOS 18.0 ou version ultérieure",
+      "inLanguage": "fr",
+      "url": "https://gomuscuapp.com/",
+      "downloadUrl": "https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201",
+      "installUrl": "https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201",
+      "image": "https://gomuscuapp.com/assets/icon-512.png",
+      "screenshot": "https://gomuscuapp.com/assets/og.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@id": "https://gomuscuapp.com/#org" },
+      "featureList": [
+        "Séries de la dernière fois affichées pendant la saisie",
+        "Chrono de repos intégré",
+        "Catalogue de 75 exercices, 14 groupes musculaires",
+        "Programmes Push, Pull et Legs inclus",
+        "Récap de fin de séance comparé à la dernière fois",
+        "Sans compte, données enregistrées sur l’iPhone"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://gomuscuapp.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Gomuscu est-elle gratuite ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le carnet, le chrono de repos et le rappel de ta dernière fois sont gratuits, sans limite de durée. Gomuscu Pro, à 3,99 € par mois ou 29,99 € par an avec 7 jours d’essai gratuit sur l’annuel, ajoute ta progression sur tous tes exercices et les programmes illimités." }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il créer un compte ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Non. Pas d’inscription, pas de mot de passe : tu ouvres l’app et tu lances ta séance." }
+        },
+        {
+          "@type": "Question",
+          "name": "Où sont enregistrées mes séances ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sur ton iPhone, et nulle part ailleurs : Gomuscu ne se connecte à aucun serveur. Tu peux exporter tes données en JSON à tout moment, gratuitement, puis les réimporter." }
+        },
+        {
+          "@type": "Question",
+          "name": "L’app fonctionne-t-elle sans réseau ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui, entièrement. Tout est enregistré sur ton téléphone : une salle en sous-sol ne change rien." }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment marche le chrono de repos ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Appuie sur Go quand tu as fini ta série : le compte à rebours démarre. − et + l’ajustent de 15 secondes, et un tap sur le temps propose des durées toutes prêtes. À la fin, un son et une vibration ; si ton iPhone est verrouillé, une notification te prévient." }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je reprendre mon ancien carnet ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Dans les réglages, « Ajouter une séance passée » te laisse ressaisir tes anciennes séances à leur date, en piochant les exercices dans le catalogue. Elles comptent ensuite comme les autres, y compris pour ta dernière fois." }
+        },
+        {
+          "@type": "Question",
+          "name": "Gomuscu existe-t-elle sur Android ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Non. Gomuscu est disponible uniquement sur iPhone, avec iOS 18 ou plus récent." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu’est-ce que la surcharge progressive ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "C’est le principe de base pour progresser en musculation : ajouter un peu de charge, de répétitions ou de séries d’une séance à l’autre. Pour l’appliquer, il faut savoir ce que tu as fait la dernière fois. C’est exactement ce que Gomuscu affiche en face de chaque série." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
-  body {
-    margin: 0; min-height: 100vh; display: flex;
-    align-items: center; justify-content: center;
-    background: #0A0A0A; color: #FFFFFF;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7; padding: 1.5rem; text-align: center;
-    -webkit-text-size-adjust: 100%;
+/* Gomuscu — vitrine. Une seule page, aucune ressource externe (check-autonomie.sh).
+   Charte de l'app (Theme.swift) : fond #0A0A0A, lime #C6F84E, Space Grotesk.
+   Rôles des couleurs, tenus d'un bout à l'autre :
+     · lime  = ce qui agit — le bouton qui télécharge, la saisie du jour, le chrono ;
+     · cyan et violet = la lumière des dégradés (couleurs de Pull et Legs) ; le violet
+       marque aussi ce qui est Pro, comme sur le visuel App Store de la progression ;
+     · gris  = le passé — les séries de la dernière fois, comme dans l'app.
+   Le verre ne se voit que s'il a quelque chose derrière lui : un flou sur un aplat noir ne
+   montre rien. D'où les halos colorés sous chaque zone de verre. */
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/assets/fonts/space-grotesk-latin.woff2) format("woff2");
+}
+/* Repli calé sur les métriques de Space Grotesk : le titre ne saute pas quand la police arrive. */
+@font-face {
+  font-family: "Space Grotesk Repli";
+  src: local("Arial");
+  size-adjust: 109.4%;
+  ascent-override: 90%;
+  descent-override: 26.7%;
+  line-gap-override: 0%;
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #0A0A0A;
+  --surface: #1A1A1A;
+  --surface-2: #2A2A2A;
+  --text: #FFFFFF;
+  --text-2: #B9B9BF;
+  --muted: #8E8E93;
+  --faint: #636366;
+  --lime: #C6F84E;
+  --lime-ink: #0A1400;
+  --cyan: #56D8F0;
+  --violet: #C79CFF;
+  --green: #30D158;
+  --line: rgb(255 255 255 / .1);
+  --font: "Space Grotesk", "Space Grotesk Repli", system-ui, sans-serif;
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1200px;
+  --mesh: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAiCAIAAAB3FdgRAAAESklEQVR42u2XbW/cRgyEZ4bc1SVNGxtJ////bE7LfiB3pbtz7AIBWqA4ZSFQsizvoxm+hJ+/A4RICXK5013e1br6pr6pX2zL9cm2T3bJ8+cMfAb1TL+oX6xval2ty5vcZU4ZJZIAAJAgYIQIF51woQmd6GIXumETNnETNqvgcnuzC13sRBea0AgnnTDCCAIC4BJBiJBRgkQaJEigOBdqEWQGeWDuGCBAcCIQRP6QmKcPjkAQAUTGmCseAmAEIhcrHsAgBsAotgHA+6bclkRzmtGbvDE/f+tqLe/IXd5kLjeZUUYzSqWMRC1+EknOd3HqHA+XA4jAyAWMiBHcA3vgGrCABa4BRWiQAgdCwIggBjmiDEK//OYEKORGLc3Z1JraNi16sTJqV9vkXd7lTdZkzlyTkBQnZPrwpPBPKHnosNYe2CP24HXACAUU0AARyzMRCMUAB7EH9nJmiFDayb/80XIXCy8JM3MSr23qm/WLts36xbZLpWUlmBek7FByQX4kYLpusM4jYp9C7SXRQVW/EhGBEdyVz8SP28QToPyq/vtLSzulgGY0lzm9qTV6WbTUa9uUcbN+OQhbkzeal2kzjW+Sk+9kXICVPIEB7BHXoEZmc+CBakyqNtBEH3DCGcW28AD412+9kmX502hZQpu8MTWcy9q0aOvqm5WAVSQre6eAYHrzbXembgBGVgJiBHaAAQ38qOKAwD3VdVI1wUc44YSRyWbpxcJ7/bZVxUt/LosarVUeFmST93nuai3BeNxvy6WgHkrrfZFklDqBGCCTDeAAFBiAGAMjMDTzkLgO/DhTaXoSsaRLPADw1z83YBpJ1RumhtOo065+C3wETiv19JiB1SXuqslNuR/VWLDnAwMgBmKwyoYT1wgn/iJ8HGlm05OVciQBsf4aCw9nf5aGkNFMJ1SuKjKDaUiXTc1ltGwS1SdmBeXPSssAEKfKse4PDMZOGHklLCYSTkjpScyUY+RnKtP4y/eNky8FTJcyCVU7rmABZNMzLaTbNggp7Qm8WzwDwTrvEQFUmSEGsRMGaNV6wkCd6ocRYiw3rpTjnCvgL982rBt8hMSymYSjg9tU+HyptHf91vG2n4NNp47AbGURxABHQMSesuSQRQgxVVpI1JRL80NyTUr+9bWvwj3zhKtVHD0jL1OTCipXU6bqBKd+QM2290bpDIBnQiCIiMpJRgyCAdUEdOhDHAEBnty4fHL8Nf/y0nC+x/lvjR23c9aU99TWeBLq9IHKH3xv6JyERQtwQqIGq8gZcpYn8pTHPL39PPuuC/rnL36Hh7tdcVWek6k5x+Xby5sZek3UfGfmTKq1gYjTRmO+MuPS+HTzjHQXV2m5fLL3JsI7X/HhBbiBwVvf8IP/J9xHcXoJ42FDN0+8gXdzuLk+eOQf7fLXj3jTur/4Uue/tPv/5hDwxHviPfGeeE+8J94T74n3xHviPfGeeE+8/+HxN5dGau1vuRc7AAAAAElFTkSuQmCC");
+  interpolate-size: allow-keywords;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 1.0625rem/1.55 var(--font);
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  overflow-x: clip;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; }
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; border-radius: 8px; }
+.wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+.skip {
+  position: absolute; left: 12px; top: -60px; z-index: 100;
+  background: var(--lime); color: var(--lime-ink); font-weight: 700;
+  padding: 10px 16px; border-radius: 12px; text-decoration: none;
+}
+.skip:focus { top: 12px; }
+
+/* ——— Verre ————————————————————————————————————————————————————————————————— */
+/* Liseré spéculaire : un dégradé posé en bordure par masque, plus clair en haut à gauche. */
+.rim::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+  background: linear-gradient(155deg, rgb(255 255 255 / .42), rgb(255 255 255 / .06) 32%,
+              rgb(255 255 255 / 0) 60%, rgb(255 255 255 / .14));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.glass {
+  background: linear-gradient(160deg, rgb(255 255 255 / .13), rgb(255 255 255 / .04) 55%), rgb(22 22 22 / .42);
+  -webkit-backdrop-filter: blur(18px) saturate(170%);
+  backdrop-filter: blur(18px) saturate(170%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .16), 0 30px 60px -24px rgb(0 0 0 / .75);
+}
+
+/* ——— Boutons ——————————————————————————————————————————————————————————————— */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 18px; border-radius: 999px;
+  font: 700 .9375rem/1 var(--font); text-decoration: none; white-space: nowrap;
+}
+.btn--lime { background: var(--lime); color: var(--lime-ink); }
+.btn--lime:hover { background: #D4FF6A; }
+.badge { display: inline-block; border-radius: 12px; }
+.badge img { width: auto; height: 52px; }
+
+/* ——— En-tête flottant ———————————————————————————————————————————————————— */
+.nav { position: sticky; top: 0; z-index: 50; padding: 12px var(--gutter) 0; }
+.nav__bar {
+  position: relative; max-width: var(--max); margin: 0 auto;
+  display: flex; align-items: center; gap: 28px;
+  padding: 8px 8px 8px 14px; border-radius: 999px;
+  background: rgb(18 18 18 / .6);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .1), 0 12px 32px -16px rgb(0 0 0 / .8);
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 1.125rem; letter-spacing: -.01em; }
+.brand svg { width: 30px; height: 30px; border-radius: 8px; }
+.nav__links { display: none; gap: 26px; margin-left: auto; font-size: .9375rem; font-weight: 500; }
+.nav__links a { color: var(--text-2); text-decoration: none; }
+.nav__links a:hover { color: var(--text); }
+.nav__bar .btn { margin-left: auto; }
+@media (min-width: 760px) {
+  .nav__links { display: flex; }
+  .nav__bar .btn { margin-left: 0; }
+}
+
+/* ——— Hero ————————————————————————————————————————————————————————————————— */
+.hero { position: relative; isolation: isolate; padding: clamp(40px, 7vw, 88px) 0 clamp(40px, 5vw, 64px); }
+/* L'aurore du hero : le seul endroit où le dégradé prend toute la place. Fondue en bas par un
+   masque, sinon la couche s'arrête sur un bord net. */
+.hero::before {
+  content: ""; position: absolute; inset: -120px 0 -160px; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(40% 44% at 74% 30%, rgb(86 216 240 / .34), transparent 70%),
+    radial-gradient(34% 42% at 96% 64%, rgb(199 156 255 / .34), transparent 70%),
+    radial-gradient(30% 36% at 60% 74%, rgb(198 248 78 / .24), transparent 72%),
+    radial-gradient(44% 34% at 8% 4%, rgb(199 156 255 / .12), transparent 70%);
+  -webkit-mask: linear-gradient(#000 62%, transparent);
+  mask: linear-gradient(#000 62%, transparent);
+}
+.hero__grid { display: grid; gap: clamp(40px, 5vw, 56px); align-items: center; }
+@media (min-width: 960px) {
+  .hero__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+.hero__kicker {
+  display: block; margin-bottom: 20px;
+  font-size: clamp(1rem, .92rem + .35vw, 1.1875rem); font-weight: 500; line-height: 1.3;
+  color: var(--text-2); text-wrap: balance;
+}
+.hero__title {
+  display: block;
+  font-size: clamp(3.25rem, 1.4rem + 6.6vw, 6.75rem); font-weight: 700;
+  line-height: .93; letter-spacing: -.035em; text-transform: uppercase;
+  text-wrap: balance;
+}
+.hero__title em { font-style: normal; color: var(--lime); }
+.hero__lede {
+  margin-top: 26px; max-width: 32ch;
+  font-size: clamp(1.125rem, 1rem + .45vw, 1.375rem); line-height: 1.45; color: var(--text-2);
+}
+.hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; margin-top: 34px; }
+.hero__note { font-size: .875rem; line-height: 1.45; color: var(--muted); }
+
+/* La scène : l'écran de séance redessiné d'après SeanceView.swift (en points iOS, 402 × 874),
+   et deux colonnes du carnet « sorties » de l'écran — le motif des visuels App Store. */
+.stage {
+  --k: .56; --ps: .84;
+  position: relative; width: 100%; max-width: 560px; margin-inline: auto;
+  height: calc(899px * var(--k) + 36px);
+}
+@media (min-width: 560px) { .stage { --k: .64; --ps: 1.08; } }
+@media (min-width: 960px) { .stage { --k: .7; --ps: 1.22; } }
+.phone {
+  position: absolute; left: 50%; top: 18px; width: 427px; height: 899px;
+  transform-origin: 50% 0; translate: -50% 0; scale: var(--k); rotate: -2.5deg;
+  border-radius: 71px; padding: 12.5px;
+  background: linear-gradient(145deg, #4A4A4F, #1D1D20 30%, #2B2B2F 62%, #111113);
+  box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / .16), inset 0 0 0 5px #0B0B0C,
+              0 60px 90px -40px rgb(0 0 0 / .9), 0 0 0 1px rgb(0 0 0 / .6);
+}
+.pop {
+  position: absolute; width: 194px; height: 181px; border-radius: 26px; z-index: 2;
+  scale: var(--ps);
+}
+/* Hauteurs choisies pour couvrir le carnet sans masquer le nom de l'exercice (au-dessus) ni
+   « Exercice suivant » (en dessous) : les deux blocs viennent de la zone qu'ils recouvrent. */
+.pop--last { left: 0; top: calc(18px + 402px * var(--k)); transform-origin: 0 0; }
+.pop--today { right: 0; top: calc(18px + 424px * var(--k)); transform-origin: 100% 0; }
+
+/* ——— L'écran de séance ————————————————————————————————————————————————————— */
+.scr {
+  position: relative; width: 402px; height: 874px; overflow: hidden; border-radius: 58px;
+  background: var(--bg); color: var(--text); font-family: var(--font);
+  font-variant-numeric: tabular-nums;
+}
+.scr *, .pop * { position: absolute; white-space: nowrap; }
+.sf { font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; }
+.ic { width: 24px; height: 24px; }
+.island { left: 139px; top: 11px; width: 124px; height: 36px; border-radius: 18px; background: #000; }
+.clock { left: 40px; top: 20px; width: 64px; line-height: 22px; font-size: 17px; font-weight: 600; text-align: center; }
+.status { left: 296px; top: 24px; width: 80px; height: 14px; }
+.x { left: 16px; top: 75px; width: 18px; height: 18px; color: var(--muted); }
+.prog { left: 0; top: 72px; width: 402px; line-height: 24px; font-size: 15px; font-weight: 500; text-align: center; }
+
+.rest {
+  left: 16px; top: 114px; width: 370px; height: 171px; border-radius: 28px;
+  background: var(--mesh) 0 0 / 100% 100%, var(--lime);
+}
+.rest__sub, .rest__time, .rest__step, .rest__go { text-align: center; }
+.rest__sub { left: 0; top: 20px; width: 370px; line-height: 13px; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; color: rgb(10 20 0 / .6); }
+.rest__step { top: 45px; width: 44px; line-height: 44px; font-size: 28px; font-weight: 700; color: rgb(10 20 0 / .35); }
+.rest__time { left: 0; top: 45px; width: 370px; line-height: 44px; font-size: 32px; font-weight: 700; color: var(--lime-ink); }
+.rest__go { left: 20px; top: 105px; width: 330px; height: 46px; line-height: 46px; border-radius: 16px; background: var(--lime-ink); color: var(--lime); font-size: 17px; font-weight: 700; }
+
+.count { left: 16px; top: 313px; line-height: 34px; font-size: 12px; font-weight: 500; color: var(--muted); }
+.more { left: 352px; top: 313px; width: 34px; height: 34px; border-radius: 11px; background: var(--surface-2); }
+.more svg { left: 9px; top: 9px; width: 16px; height: 16px; color: var(--muted); }
+.exo { left: 16px; top: 353px; line-height: 31px; font-size: 24px; font-weight: 700; }
+
+.head { top: 396px; width: 116px; line-height: 14px; font-size: 11px; letter-spacing: .6px; text-align: center; }
+.head--last { left: 54px; font-weight: 500; color: var(--muted); }
+.head--today { left: 222px; font-weight: 700; color: var(--lime); }
+.sub { top: 416px; width: 54px; line-height: 13px; font-size: 10px; font-weight: 500; color: var(--faint); text-align: center; }
+
+/* Une rangée du carnet : numéro · rep | kg de la dernière fois · rep | kg du jour · ↳ */
+.row { left: 0; top: var(--y); width: 402px; height: 44px; }
+.num { left: 16px; top: 0; width: 30px; line-height: 44px; font-size: 14px; font-weight: 700; color: var(--muted); }
+.num.is-logged { color: var(--lime); }
+.old { top: 0; width: 54px; line-height: 44px; font-size: 15px; font-weight: 500; color: var(--faint); text-align: center; }
+.old.r { left: 54px; } .old.k { left: 116px; }
+.fld {
+  top: 0; width: 54px; height: 44px; border-radius: 10px;
+  background: var(--bg); border: 1px solid var(--surface-2);
+}
+.fld.r { left: 222px; } .fld.k { left: 284px; }
+.fld i {
+  left: 0; top: 0; width: 52px; line-height: 42px; text-align: center; font-style: normal;
+  font-size: 19px; font-weight: 700; color: var(--text);
+}
+.fld .v1 { opacity: 0; }
+.turn { left: 358px; top: 14px; width: 16px; height: 16px; color: var(--faint); }
+
+.add { left: 37px; top: 657px; line-height: 18px; font-size: 14px; font-weight: 500; color: var(--lime); }
+.add-ic { left: 16px; top: 659px; width: 15px; height: 15px; color: var(--lime); }
+.note { left: 16px; top: 689px; line-height: 14px; font-size: 11px; font-weight: 700; letter-spacing: .6px; color: var(--muted); }
+.foot { left: 0; top: 701px; width: 402px; height: 90px; background: var(--bg); }
+.dots { left: 161px; top: 8px; display: flex; gap: 6px; }
+.dots b { position: static; width: 6px; height: 6px; border-radius: 3px; background: rgb(99 99 102 / .5); }
+.dots b.on { width: 20px; background: var(--lime); }
+.back { left: 16px; top: 26px; width: 56px; height: 56px; border-radius: 17px; border: 1px solid var(--surface-2); }
+.back svg { left: 16px; top: 16px; width: 22px; height: 22px; }
+.next { left: 84px; top: 26px; width: 302px; height: 56px; line-height: 56px; border-radius: 17px; background: var(--lime); color: var(--lime-ink); font-size: 16px; font-weight: 700; text-align: center; }
+.tabs { left: 0; top: 791px; width: 402px; height: 83px; background: var(--bg); border-top: .5px solid rgb(255 255 255 / .1); }
+.tab { top: 0; width: 100.5px; height: 60px; color: var(--muted); }
+.tab svg { left: 38px; top: 8px; }
+.tab span { left: 0; top: 35px; width: 100.5px; line-height: 12px; font-size: 10px; font-weight: 500; text-align: center; }
+.tab.on { color: var(--lime); }
+.home { left: 134px; top: 861px; width: 134px; height: 5px; border-radius: 3px; background: #fff; }
+
+/* Les colonnes sorties de l'écran : mêmes cotes locales que le carnet (194 × 181 pt). */
+.pop .head { top: 20px; left: 58px; }
+.pop .sub { top: 40px; }
+.pop .sub.s { left: 20px; width: 30px; text-align: left; }
+.pop .sub.r { left: 58px; } .pop .sub.k { left: 120px; }
+.pop .num { left: 20px; }
+.pop .old.r, .pop .fld.r { left: 58px; }
+.pop .old.k, .pop .fld.k { left: 120px; }
+.pop .fld { background: rgb(10 10 10 / .7); }
+
+/* ——— La saisie, jouée une fois au chargement ——————————————————————————————
+   Chaque case porte ses instants : --in (focus), --k1 (1er chiffre), --k2 (valeur finale),
+   --out (focus perdu). Sans animation (mouvement réduit), l'état final s'affiche d'emblée.
+   🛑 Le téléphone, lui, n'a PAS d'entrée animée : un élément masqué tant qu'une animation n'a pas
+   tourné reste invisible là où elle ne tourne pas (mesuré : Chrome sans fenêtre, 2026-09-24). */
+@media (prefers-reduced-motion: no-preference) {
+  .pop--last { animation: pop-l .8s cubic-bezier(.2, .8, .2, 1) .55s both; }
+  .pop--today { animation: pop-r .8s cubic-bezier(.2, .8, .2, 1) .7s both; }
+  .typing .fld { animation: focus 1ms linear var(--in) both; animation-duration: calc(var(--out) - var(--in)); animation-fill-mode: none; }
+  .typing .fld .v1 { animation: shown 1ms linear var(--k1); animation-duration: calc(var(--k2) - var(--k1)); }
+  .typing .fld .v2 { animation: hidden 1ms linear 0s backwards; animation-delay: var(--k2); }
+  .typing .fld::after {
+    content: ""; position: absolute; left: 25px; top: 10px; width: 2px; height: 23px; border-radius: 1px;
+    background: var(--lime); opacity: 0;
+    animation: caret 1ms linear var(--in); animation-duration: calc(var(--k1) - var(--in));
   }
-  a { color: #C6F84E; }
-  p { margin: 0; }
+  .typing .fld .v1::after, .typing .fld .v2::after {
+    content: ""; position: absolute; top: 10px; width: 2px; height: 23px; border-radius: 1px; background: var(--lime);
+  }
+  .typing .fld .v1::after { left: 31px; }
+  .typing .fld .v2::after { left: 37px; opacity: 0; animation: caret 1ms linear var(--k2); animation-duration: calc(var(--out) - var(--k2)); }
+  .typing .num.is-logged { animation: past 1ms linear 0s backwards; animation-delay: var(--logged); }
+}
+@keyframes pop-l { from { opacity: 0; translate: 90px 30px; scale: calc(var(--ps) * .6); } }
+@keyframes pop-r { from { opacity: 0; translate: -90px -40px; scale: calc(var(--ps) * .6); } }
+@keyframes focus { from, to { border-color: var(--lime); } }
+@keyframes shown { from, to { opacity: 1; } }
+@keyframes hidden { from, to { opacity: 0; } }
+@keyframes caret { from, to { opacity: 1; } }
+@keyframes past { from, to { color: var(--muted); } }
+
+/* ——— Les trois gestes ———————————————————————————————————————————————————— */
+.steps { list-style: none; padding: 0; margin: clamp(48px, 6vw, 80px) auto 0; display: grid; gap: 12px; }
+@media (min-width: 900px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.step {
+  position: relative; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px;
+  padding: 20px 22px; border-radius: 22px;
+  background: linear-gradient(160deg, rgb(255 255 255 / .07), rgb(255 255 255 / .02));
+}
+.step__n {
+  grid-row: span 2; width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center;
+  background: var(--surface-2); font-weight: 700; font-size: .9375rem; font-variant-numeric: tabular-nums;
+}
+.step strong { font-size: 1.0625rem; font-weight: 700; }
+.step p { color: var(--text-2); font-size: .9375rem; }
+
+/* ——— Sections ——————————————————————————————————————————————————————————— */
+.section { position: relative; isolation: isolate; padding-block: clamp(64px, 8vw, 112px); }
+.section__head { max-width: 780px; margin-bottom: clamp(32px, 4.5vw, 56px); }
+.h2 {
+  font-size: clamp(2.25rem, 1.15rem + 3.9vw, 4.5rem); font-weight: 700;
+  line-height: .95; letter-spacing: -.03em; text-transform: uppercase; text-wrap: balance;
+}
+.section__head p { margin-top: 20px; max-width: 54ch; font-size: clamp(1.0625rem, 1rem + .3vw, 1.25rem); color: var(--text-2); }
+
+/* ——— Bento —————————————————————————————————————————————————————————————— */
+.features::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(36% 30% at 8% 40%, rgb(198 248 78 / .13), transparent 70%),
+    radial-gradient(34% 28% at 92% 26%, rgb(199 156 255 / .17), transparent 70%),
+    radial-gradient(40% 30% at 66% 86%, rgb(86 216 240 / .14), transparent 70%);
+}
+.bento { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "chrono chrono" "courbe courbe" "progs cal" "cat cat" "recap data";
+  }
+}
+@media (min-width: 1080px) {
+  .bento {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: "chrono chrono courbe courbe" "chrono chrono progs cal" "cat cat recap data";
+  }
+}
+.cell {
+  --tint: var(--cyan);
+  position: relative; overflow: hidden; isolation: isolate;
+  display: flex; flex-direction: column; gap: 20px;
+  padding: clamp(20px, 2.2vw, 28px); border-radius: 28px;
+  background:
+    radial-gradient(90% 70% at 100% 0%, color-mix(in srgb, var(--tint) 20%, transparent), transparent 65%),
+    linear-gradient(160deg, rgb(255 255 255 / .075), rgb(255 255 255 / .02) 60%),
+    rgb(14 14 14 / .6);
+}
+@media (min-width: 720px) { .cell { grid-area: var(--area); } }
+.cell h3 { font-size: 1.3125rem; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; }
+.cell p { margin-top: 8px; color: var(--text-2); font-size: 1rem; max-width: 46ch; }
+.cell__ui { margin-top: auto; }
+.tag {
+  display: inline-block; margin-bottom: 12px; padding: 4px 10px; border-radius: 999px;
+  font-size: .8125rem; font-weight: 700; line-height: 1.3;
+  background: rgb(255 255 255 / .08); color: var(--text);
+}
+.tag--pro { background: color-mix(in srgb, var(--violet) 22%, transparent); color: #E3CCFF; }
+
+/* Chrono (la plus grande case) : la barre de repos EN COURS — nominal ample de 64 pt, « Passer ». */
+.cell--chrono { --area: chrono; --tint: var(--lime); }
+.cell--chrono .cell__ui {
+  position: relative; width: min(100%, 440px); align-self: center; margin-block: auto;
+  display: flex; flex-direction: column; align-items: center;
+}
+/* Sur la grande case du bureau, la barre grandit d'un cran : même dessin, cotes × 1,2. */
+@media (min-width: 1080px) {
+  .cell--chrono .cell__ui { width: min(100%, 500px); }
+  .cell--chrono .restbar { padding: 24px; border-radius: 34px; }
+  .cell--chrono .restbar__time { font-size: 76px; }
+  .cell--chrono .restbar__btn { height: 56px; line-height: 56px; border-radius: 19px; font-size: 20px; }
+  .cell--chrono .restbar__step { font-size: 34px; }
+}
+/* Halo sous la barre : le verre de la notification a de la couleur à flouter. */
+.cell--chrono .cell__ui::before {
+  content: ""; position: absolute; inset: 10% -20% -10%; z-index: -1;
+  background: radial-gradient(50% 50% at 50% 45%, rgb(198 248 78 / .22), transparent 70%);
+}
+.restbar {
+  display: flex; flex-direction: column; align-items: center; width: 100%;
+  padding: 20px; border-radius: 28px; color: var(--lime-ink);
+  background: var(--mesh) 0 0 / 100% 100%, var(--lime);
+  box-shadow: 0 30px 70px -30px rgb(198 248 78 / .45);
+}
+.restbar__sub { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; opacity: .6; line-height: 13px; }
+.restbar__row { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 12px; }
+.restbar__step { width: 44px; text-align: center; font-size: 28px; font-weight: 700; opacity: .35; }
+.restbar__time { font-size: clamp(48px, 7vw, 64px); font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.restbar__btn {
+  width: 100%; margin-top: 16px; height: 46px; line-height: 46px; border-radius: 16px; text-align: center;
+  background: var(--lime-ink); color: var(--lime); font-size: 17px; font-weight: 700;
+}
+/* La notification de fin de repos (titre « Repos terminé », corps = l'exercice), posée sous la
+   barre et mordant sur son bas : c'est ce qui prend le relais téléphone verrouillé. */
+.notif {
+  position: relative; width: 92%; margin-top: -14px;
+  display: grid; grid-template-columns: 38px minmax(0, 1fr) auto; gap: 2px 12px; align-items: center;
+  padding: 12px 14px; border-radius: 22px; color: var(--text);
+}
+.notif svg { grid-row: span 2; width: 38px; height: 38px; border-radius: 9px; }
+.notif b { font-size: .9375rem; font-weight: 700; }
+.notif span { font-size: .9375rem; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.notif time { font-size: .8125rem; color: var(--text-2); align-self: start; }
+
+/* Courbe : la fiche d'un exercice. */
+.cell--courbe { --area: courbe; --tint: var(--violet); }
+@media (min-width: 560px) {
+  .cell--courbe { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; }
+}
+.fiche { padding: 18px 18px 12px; border-radius: 20px; background: rgb(10 10 10 / .72); box-shadow: inset 0 0 0 1px var(--line); }
+.fiche__name { font-weight: 700; font-size: 1rem; }
+.fiche__now { display: flex; align-items: baseline; gap: 10px; margin-top: 10px; }
+.fiche__label { display: block; margin-top: 12px; font-size: .6875rem; font-weight: 700; letter-spacing: 1px; color: var(--muted); }
+.fiche__kg { font-size: 2rem; font-weight: 700; letter-spacing: -.02em; }
+.fiche__kg small { font-size: .9375rem; font-weight: 500; color: var(--text-2); margin-left: 2px; }
+.delta { padding: 3px 8px; border-radius: 8px; font-size: .8125rem; font-weight: 700; color: var(--lime); background: rgb(198 248 78 / .14); }
+.fiche svg { width: 100%; height: auto; margin-top: 8px; }
+
+/* Programmes : l'accueil, une couleur par programme. */
+.cell--progs { --area: progs; --tint: var(--cyan); }
+.plist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.plist li {
+  display: grid; grid-template-columns: minmax(0, 1fr) 34px; align-items: center; gap: 0 10px;
+  padding: 10px 10px 10px 14px; border-radius: 16px; background: rgb(10 10 10 / .6); box-shadow: inset 0 0 0 1px var(--line);
+}
+.plist b { font-size: 1rem; color: var(--c); }
+.plist span { grid-column: 1; font-size: .75rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.plist i { grid-column: 2; grid-row: 1 / span 2; width: 34px; height: 34px; border-radius: 50%; background: var(--c); display: grid; place-items: center; }
+.plist i::before { content: ""; width: 0; height: 0; margin-left: 3px; border-style: solid; border-width: 6px 0 6px 10px; border-color: transparent transparent transparent var(--lime-ink); }
+.plist .libre { box-shadow: inset 0 0 0 1px rgb(198 248 78 / .45); }
+.plist .libre i { background: transparent; box-shadow: inset 0 0 0 1.5px var(--lime); }
+.plist .libre i::before { border-color: transparent transparent transparent var(--lime); }
+
+/* Calendrier : pastille à la couleur du programme, anneau lime = aujourd'hui. */
+.cell--cal { --area: cal; --tint: var(--lime); }
+.cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; text-align: center; }
+.cal abbr { text-decoration: none; font-size: .6875rem; font-weight: 700; color: var(--muted); }
+.cal span {
+  aspect-ratio: 1; display: grid; place-items: center; border-radius: 8px;
+  font-size: .75rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text-2);
+}
+.cal .p { background: var(--c); color: var(--lime-ink); }
+.cal .auj { box-shadow: inset 0 0 0 1.5px var(--lime); color: var(--text); }
+.cal .fut { color: var(--faint); }
+
+/* Catalogue : les 14 groupes musculaires. */
+.cell--cat { --area: cat; --tint: var(--cyan); }
+@media (min-width: 560px) {
+  .cell--cat { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: start; }
+}
+.search {
+  display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border-radius: 12px;
+  background: rgb(10 10 10 / .7); box-shadow: inset 0 0 0 1px var(--line); color: var(--muted); font-size: .9375rem;
+}
+.search svg { width: 16px; height: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+.chips li { padding: 6px 12px; border-radius: 999px; font-size: .8125rem; font-weight: 500; background: rgb(255 255 255 / .07); color: var(--text-2); }
+.chips li.on { background: var(--lime); color: var(--lime-ink); font-weight: 700; }
+
+/* Récap : « vs la dernière fois ». */
+.cell--recap { --area: recap; --tint: var(--violet); }
+.vs { padding: 14px 16px; border-radius: 18px; background: rgb(10 10 10 / .7); box-shadow: inset 0 0 0 1px var(--line); font-size: .875rem; }
+.vs__t { display: block; font-size: .6875rem; font-weight: 700; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }
+.vs div { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-top: 1px solid rgb(255 255 255 / .06); }
+.vs div:first-of-type { border-top: 0; }
+.vs .plus { color: var(--green); font-weight: 700; }
+.vs .ex { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+.vs .ex span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rec { justify-self: start; margin-top: 4px; padding: 2px 8px; border-radius: 7px; box-shadow: inset 0 0 0 1px rgb(198 248 78 / .5); color: var(--lime); font-size: .6875rem; font-weight: 700; letter-spacing: .8px; }
+
+/* Données : l'export, gratuit. */
+.cell--data { --area: data; --tint: var(--cyan); }
+.rows { padding: 6px 16px; border-radius: 18px; background: rgb(10 10 10 / .7); box-shadow: inset 0 0 0 1px var(--line); }
+.rows span { display: block; padding: 10px 0; font-size: .9375rem; font-weight: 500; color: var(--lime); }
+.rows span + span { border-top: 1px solid rgb(255 255 255 / .06); }
+.rows__t { display: block; margin: 0 0 8px 2px; font-size: .6875rem; font-weight: 700; letter-spacing: 1px; color: var(--muted); }
+
+/* ——— Tarifs ————————————————————————————————————————————————————————————— */
+.pricing::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(30% 40% at 78% 55%, rgb(199 156 255 / .16), transparent 70%),
+    radial-gradient(30% 36% at 20% 60%, rgb(86 216 240 / .07), transparent 70%);
+}
+.plans { display: grid; gap: 14px; }
+@media (min-width: 820px) { .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.plan {
+  position: relative; display: flex; flex-direction: column;
+  padding: clamp(24px, 3vw, 36px); border-radius: 30px;
+  background: linear-gradient(160deg, rgb(255 255 255 / .075), rgb(255 255 255 / .02) 60%), rgb(14 14 14 / .6);
+}
+.plan--pro {
+  background:
+    radial-gradient(80% 60% at 100% 0%, rgb(199 156 255 / .2), transparent 70%),
+    linear-gradient(160deg, rgb(255 255 255 / .1), rgb(255 255 255 / .03) 60%), rgb(14 14 14 / .6);
+}
+.plan h3 { font-size: 1.3125rem; font-weight: 700; }
+.plan__price { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.plan__price strong { font-size: clamp(2.75rem, 2.2rem + 2vw, 3.75rem); font-weight: 700; letter-spacing: -.035em; line-height: 1; }
+.plan__price span { color: var(--text-2); }
+.plan__alt { margin-top: 8px; color: var(--text-2); font-size: .9375rem; }
+.plan ul { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 12px; }
+.plan li { display: grid; grid-template-columns: 20px 1fr; gap: 12px; align-items: start; }
+.plan li::before {
+  content: ""; width: 20px; height: 20px; margin-top: 2px; background: var(--text-2);
+  -webkit-mask: var(--check) center / contain no-repeat; mask: var(--check) center / contain no-repeat;
+}
+.plan--pro li::before { background: var(--violet); }
+.plans { --check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.4 4.4L19 7.4' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.pricing__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 28px; }
+.pricing__foot p { max-width: 64ch; font-size: .875rem; color: var(--muted); }
+
+/* ——— Questions ————————————————————————————————————————————————————————— */
+.faq { display: grid; gap: 32px; }
+@media (min-width: 960px) {
+  .faq { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; }
+  .faq .section__head { position: sticky; top: 112px; align-self: start; margin-bottom: 0; }
+}
+.faq__list { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  position: relative; list-style: none; cursor: pointer; padding: 22px 48px 22px 0;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary h3 { font-size: clamp(1.0625rem, 1rem + .3vw, 1.25rem); font-weight: 600; line-height: 1.35; }
+.faq summary::after {
+  content: ""; position: absolute; right: 6px; top: 50%; width: 16px; height: 16px; translate: 0 -50%;
+  background:
+    linear-gradient(var(--text-2) 0 0) center / 16px 2px no-repeat,
+    linear-gradient(var(--text-2) 0 0) center / 2px 16px no-repeat;
+  transition: rotate .25s ease;
+}
+.faq details[open] summary::after { rotate: 45deg; }
+.faq summary:hover h3 { color: var(--lime); }
+.faq details p { padding: 0 48px 24px 0; color: var(--text-2); max-width: 64ch; }
+.faq details::details-content { block-size: 0; overflow: clip; transition: block-size .3s ease, content-visibility .3s allow-discrete; }
+.faq details[open]::details-content { block-size: auto; }
+.faq a { color: var(--lime); }
+
+/* ——— Fin ———————————————————————————————————————————————————————————————— */
+.final { padding-top: 0; }
+.final__panel {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; justify-items: center; text-align: center;
+  padding: clamp(48px, 8vw, 104px) clamp(20px, 5vw, 64px); border-radius: 36px;
+  background:
+    radial-gradient(40% 60% at 18% 100%, rgb(86 216 240 / .28), transparent 70%),
+    radial-gradient(44% 64% at 85% 0%, rgb(199 156 255 / .3), transparent 70%),
+    radial-gradient(50% 50% at 50% 120%, rgb(198 248 78 / .2), transparent 70%),
+    linear-gradient(160deg, rgb(255 255 255 / .08), rgb(255 255 255 / .02)), rgb(14 14 14 / .6);
+}
+.final__icon { width: 72px; height: 72px; border-radius: 17px; box-shadow: 0 24px 60px -20px rgb(198 248 78 / .6); }
+.final .h2 { margin-top: 28px; }
+.final p { margin-top: 16px; font-size: clamp(1.0625rem, 1rem + .35vw, 1.3125rem); color: var(--text-2); }
+.final .badge { margin-top: 30px; }
+.final p.final__note { margin-top: 14px; font-size: .875rem; color: var(--muted); }
+
+/* ——— Pied de page ——————————————————————————————————————————————————————— */
+.site-foot { padding: 48px 0 calc(40px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); font-size: .875rem; color: var(--muted); }
+.site-foot__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
+.site-foot .brand { color: var(--text); }
+.site-foot nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.site-foot nav a { color: var(--text-2); text-decoration: none; }
+.site-foot nav a:hover { color: var(--text); text-decoration: underline; }
+.site-foot__legal { margin-top: 28px; display: grid; gap: 6px; max-width: 80ch; }
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass, .nav__bar { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--surface); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 </style>
 </head>
 <body>
-<p>Gomuscu — <a href="/support">assistance</a> · <a href="/confidentialite">politique de confidentialité</a></p>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="go" viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#C6F84E"/><rect x="80" y="80" width="864" height="864" rx="149" fill="#0E0E0E"/><path fill="#C6F84E" d="M336.1 694.4Q300.1 694.4 270.8 678.1Q241.5 661.8 224.2 630.5Q206.9 599.2 206.9 554.1V469.9Q206.9 402.3 245 366Q283 329.6 348.2 329.6Q412.8 329.6 448.1 364Q483.4 398.3 483.4 456.9V458.9H418.3V454.9Q418.3 436.3 410.5 421.3Q402.8 406.3 387.3 397.5Q371.7 388.8 348.2 388.8Q313.1 388.8 293.1 410.3Q273 431.8 273 468.9V555.1Q273 591.7 293.1 614Q313.1 636.2 349.2 636.2Q385.2 636.2 401.8 617.2Q418.3 598.2 418.3 569.1V564.1H335.1V508H483.4V687.4H422.3V653.8H413.3Q409.8 662.3 402 671.8Q394.3 681.3 378.7 687.9Q363.2 694.4 336.1 694.4ZM672.8 694.4Q606.7 694.4 567.6 658Q528.5 621.7 528.5 554.1V469.9Q528.5 402.3 567.6 366Q606.7 329.6 672.8 329.6Q739 329.6 778 366Q817.1 402.3 817.1 469.9V554.1Q817.1 621.7 778 658Q739 694.4 672.8 694.4ZM672.8 635.2Q709.9 635.2 730.4 613.7Q751 592.2 751 556.1V467.9Q751 431.8 730.4 410.3Q709.9 388.8 672.8 388.8Q636.2 388.8 615.5 410.3Q594.7 431.8 594.7 467.9V556.1Q594.7 592.2 615.5 613.7Q636.2 635.2 672.8 635.2Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6 18 18M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="19" cy="12" r="2" fill="currentColor"/></symbol>
+  <symbol id="i-turn" viewBox="0 0 24 24"><path d="M6 4v7a3 3 0 0 0 3 3h10M15 10l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.2 12 3.6l9 7.6V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="currentColor"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><circle cx="5" cy="6" r="1.7" fill="currentColor"/><circle cx="5" cy="12" r="1.7" fill="currentColor"/><circle cx="5" cy="18" r="1.7" fill="currentColor"/><path d="M9.5 6H20M9.5 12H20M9.5 18H20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 3.5V20h16.5M7.5 15l3.8-4.6 3 2.8 4.7-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.6" r="3.3" fill="currentColor"/><path d="M6.4 18.3c1.6-3 9.6-3 11.2 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 4.5 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="nav__bar rim">
+    <a class="brand" href="/" aria-label="Gomuscu, accueil"><svg aria-hidden="true"><use href="#go"/></svg><span>Gomuscu</span></a>
+    <nav class="nav__links" aria-label="Sections de la page">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn btn--lime" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201">Télécharger</a>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="hero" aria-labelledby="titre">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 id="titre">
+        <span class="hero__kicker">Gomuscu, le carnet de musculation pour iPhone</span>
+        <span class="hero__title">Bats ta dernière fois.</span>
+      </h1>
+      <p class="hero__lede">Tes séries de la dernière fois s’affichent en face de celles que tu saisis. Tu sais quoi battre, série après série.</p>
+      <div class="hero__cta">
+        <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
+        <p class="hero__note">Gratuit, sans compte.<br>iPhone, iOS 18 ou plus récent.</p>
+      </div>
+    </div>
+
+    <div class="stage typing" role="img" aria-label="L’écran de séance de Gomuscu pour le développé incliné haltères : les séries du 5 août, 12 répétitions à 22 kg puis 10 à 22 kg, s’affichent à côté de celles d’aujourd’hui, 12 répétitions à 24 kg deux fois, sous le chrono de repos.">
+      <div class="phone" aria-hidden="true">
+        <div class="scr">
+          <span class="island"></span>
+          <span class="clock sf">9:41</span>
+          <svg class="status" viewBox="0 0 80 14" fill="#fff"><rect x="0" y="9" width="3.2" height="4" rx="1"/><rect x="4.8" y="6.5" width="3.2" height="6.5" rx="1"/><rect x="9.6" y="4" width="3.2" height="9" rx="1"/><rect x="14.4" y="1.5" width="3.2" height="11.5" rx="1"/><path d="M31 12.6a1.6 1.6 0 1 0 .01 0zM26.4 8.6a6.6 6.6 0 0 1 9.2 0l-1.3 1.3a4.8 4.8 0 0 0-6.6 0zM23.6 5.8a10.6 10.6 0 0 1 14.8 0l-1.3 1.3a8.8 8.8 0 0 0-12.2 0z"/><rect x="47.5" y="1.5" width="24" height="11.5" rx="3.6" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.2"/><rect x="49.5" y="3.5" width="18" height="7.5" rx="2"/><rect x="72.6" y="5" width="1.8" height="4.5" rx=".9" fill-opacity=".45"/></svg>
+          <svg class="x"><use href="#i-x"/></svg>
+          <span class="prog">Push</span>
+
+          <div class="rest">
+            <span class="rest__sub">REPOS</span>
+            <span class="rest__step" style="left:20px">−</span>
+            <span class="rest__time">02:00</span>
+            <span class="rest__step" style="left:306px">+</span>
+            <span class="rest__go">Go</span>
+          </div>
+
+          <span class="count">Exercice 2 / 6</span>
+          <span class="more"><svg><use href="#i-more"/></svg></span>
+          <span class="exo">Développé incliné haltères</span>
+
+          <span class="head head--last">5 AOÛT</span>
+          <span class="head head--today">AUJOURD’HUI</span>
+          <span class="sub" style="left:16px;width:30px;text-align:left">série</span>
+          <span class="sub" style="left:54px">rep</span><span class="sub" style="left:116px">kg</span>
+          <span class="sub" style="left:222px">rep</span><span class="sub" style="left:284px">kg</span>
+
+          <div class="row" style="--y:439px">
+            <span class="num is-logged" style="--logged:1.9s">1</span>
+            <span class="old r">12</span><span class="old k">22</span>
+            <span class="fld r" style="--in:1.5s;--k1:1.72s;--k2:1.9s;--out:2.22s"><i class="v1">1</i><i class="v2">12</i></span>
+            <span class="fld k" style="--in:2.22s;--k1:2.42s;--k2:2.6s;--out:2.98s"><i class="v1">2</i><i class="v2">24</i></span>
+            <svg class="turn"><use href="#i-turn"/></svg>
+          </div>
+          <div class="row" style="--y:493px">
+            <span class="num is-logged" style="--logged:3.36s">2</span>
+            <span class="old r">10</span><span class="old k">22</span>
+            <span class="fld r" style="--in:2.98s;--k1:3.18s;--k2:3.36s;--out:3.66s"><i class="v1">1</i><i class="v2">12</i></span>
+            <span class="fld k" style="--in:3.66s;--k1:3.86s;--k2:4.04s;--out:4.8s"><i class="v1">2</i><i class="v2">24</i></span>
+            <svg class="turn"><use href="#i-turn"/></svg>
+          </div>
+          <div class="row" style="--y:547px">
+            <span class="num">3</span>
+            <span class="old r">10</span><span class="old k">20</span>
+            <span class="fld r"></span><span class="fld k"></span>
+            <svg class="turn"><use href="#i-turn"/></svg>
+          </div>
+          <div class="row" style="--y:601px">
+            <span class="num">4</span>
+            <span class="old r">8</span><span class="old k">20</span>
+            <span class="fld r"></span><span class="fld k"></span>
+            <svg class="turn"><use href="#i-turn"/></svg>
+          </div>
+
+          <svg class="add-ic"><use href="#i-plus"/></svg>
+          <span class="add">Ajouter une série</span>
+          <span class="note">NOTE</span>
+
+          <div class="foot">
+            <span class="dots"><b></b><b class="on"></b><b></b><b></b><b></b><b></b></span>
+            <span class="back"><svg><use href="#i-back"/></svg></span>
+            <span class="next">Exercice suivant</span>
+          </div>
+          <div class="tabs">
+            <span class="tab on" style="left:0"><svg class="ic"><use href="#i-home"/></svg><span class="sf">Accueil</span></span>
+            <span class="tab" style="left:100.5px"><svg class="ic"><use href="#i-list"/></svg><span class="sf">Programmes</span></span>
+            <span class="tab" style="left:201px"><svg class="ic"><use href="#i-chart"/></svg><span class="sf">Historique</span></span>
+            <span class="tab" style="left:301.5px"><svg class="ic"><use href="#i-person"/></svg><span class="sf">Profil</span></span>
+          </div>
+          <span class="home"></span>
+        </div>
+      </div>
+
+      <div class="pop pop--last glass rim" aria-hidden="true">
+        <span class="head head--last">5 AOÛT</span>
+        <span class="sub s">série</span><span class="sub r">rep</span><span class="sub k">kg</span>
+        <div class="row" style="--y:63px"><span class="num">1</span><span class="old r">12</span><span class="old k">22</span></div>
+        <div class="row" style="--y:117px"><span class="num">2</span><span class="old r">10</span><span class="old k">22</span></div>
+      </div>
+      <div class="pop pop--today glass rim" aria-hidden="true">
+        <span class="head head--today">AUJOURD’HUI</span>
+        <span class="sub s">série</span><span class="sub r">rep</span><span class="sub k">kg</span>
+        <div class="row" style="--y:63px">
+          <span class="num is-logged" style="--logged:1.9s">1</span>
+          <span class="fld r" style="--in:1.5s;--k1:1.72s;--k2:1.9s;--out:2.22s"><i class="v1">1</i><i class="v2">12</i></span>
+          <span class="fld k" style="--in:2.22s;--k1:2.42s;--k2:2.6s;--out:2.98s"><i class="v1">2</i><i class="v2">24</i></span>
+        </div>
+        <div class="row" style="--y:117px">
+          <span class="num is-logged" style="--logged:3.36s">2</span>
+          <span class="fld r" style="--in:2.98s;--k1:3.18s;--k2:3.36s;--out:3.66s"><i class="v1">1</i><i class="v2">12</i></span>
+          <span class="fld k" style="--in:3.66s;--k1:3.86s;--k2:4.04s;--out:4.8s"><i class="v1">2</i><i class="v2">24</i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrap" aria-labelledby="t-gestes">
+    <h2 id="t-gestes" class="sr-only">Comment ça marche</h2>
+    <ol class="steps">
+      <li class="step rim"><span class="step__n" aria-hidden="true">1</span><strong>Tu écris.</strong><p>Une case, un chiffre. La série est notée.</p></li>
+      <li class="step rim"><span class="step__n" aria-hidden="true">2</span><strong>Tu compares.</strong><p>Ta dernière fois s’affiche juste en regard.</p></li>
+      <li class="step rim"><span class="step__n" aria-hidden="true">3</span><strong>Tu lances le repos.</strong><p>Le chrono t’attend en haut de la séance.</p></li>
+    </ol>
+  </section>
+</section>
+
+<section id="fonctionnalites" class="section features" aria-labelledby="t-fonct">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 id="t-fonct" class="h2">Tout ce qu’il faut entre deux séries</h2>
+      <p>Pensé pour la salle : de grosses cases, peu d’écrans, et l’écran reste allumé pendant toute la séance.</p>
+    </header>
+
+    <div class="bento">
+      <article class="cell cell--chrono rim">
+        <div>
+          <span class="tag">Gratuit, toujours</span>
+          <h3>Chrono de repos intégré</h3>
+          <p>Appuie sur Go quand tu as fini ta série. Ajuste de 15 secondes avec − et +. À la fin, un son et une vibration ; téléphone verrouillé, une notification prend le relais.</p>
+        </div>
+        <div class="cell__ui" aria-hidden="true">
+          <div class="restbar">
+            <span class="restbar__sub">REPOS</span>
+            <span class="restbar__row"><span class="restbar__step">−</span><span class="restbar__time">01:24</span><span class="restbar__step">+</span></span>
+            <span class="restbar__btn">Passer</span>
+          </div>
+          <div class="notif glass rim">
+            <svg><use href="#go"/></svg>
+            <b>Repos terminé</b>
+            <time>maintenant</time>
+            <span>Développé incliné haltères</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cell cell--courbe rim">
+        <div>
+          <span class="tag tag--pro">Pro</span>
+          <h3>Ta courbe, exercice par exercice</h3>
+          <p>Chaque séance ajoute un point. Ta charge, ton record et ton volume se suivent sans rien remplir de plus.</p>
+        </div>
+        <div class="cell__ui fiche" aria-hidden="true">
+          <span class="fiche__name">Développé couché barre</span>
+          <span class="fiche__label">MAINTENANT</span>
+          <span class="fiche__now"><span class="fiche__kg">82,5<small>kg</small></span><span class="delta">+12,5 kg</span></span>
+          <svg viewBox="0 0 320 112">
+            <defs>
+              <linearGradient id="aire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C6F84E" stop-opacity=".32"/><stop offset="1" stop-color="#C6F84E" stop-opacity="0"/></linearGradient>
+            </defs>
+            <path d="M8 96H312" stroke="rgb(255 255 255 / .08)"/>
+            <path d="M8 96L36 96L64 84L92 84L120 72L148 72L176 72L204 60L232 48L260 48L288 36L312 24V104H8Z" fill="url(#aire)"/>
+            <path d="M8 96L36 96L64 84L92 84L120 72L148 72L176 72L204 60L232 48L260 48L288 36L312 24" fill="none" stroke="#C6F84E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="312" cy="24" r="5" fill="#C6F84E"/>
+            <circle cx="312" cy="24" r="10" fill="none" stroke="#C6F84E" stroke-opacity=".35" stroke-width="2"/>
+            <text x="8" y="86" fill="#8E8E93" font-size="11" font-weight="600" font-family="Space Grotesk, sans-serif">70</text>
+          </svg>
+        </div>
+      </article>
+
+      <article class="cell cell--progs rim">
+        <div>
+          <h3>Ta séance en un tap</h3>
+          <p>Push, Pull et Legs sont prêts dès l’installation. Crée les tiens, ou lance une séance libre quand tu improvises.</p>
+        </div>
+        <ul class="cell__ui plist" aria-hidden="true">
+          <li style="--c:var(--lime)"><b>Push</b><span>Développé couché haltères, Développé incliné haltères +4 autres</span><i></i></li>
+          <li style="--c:var(--cyan)"><b>Pull</b><span>Traction, Rowing barre +4 autres</span><i></i></li>
+          <li style="--c:var(--violet)"><b>Legs</b><span>Squat, Presse à cuisses +3 autres</span><i></i></li>
+          <li class="libre" style="--c:var(--lime)"><b>Séance libre</b><span>J’improvise, j’ajoute au fur et à mesure</span><i></i></li>
+        </ul>
+      </article>
+
+      <article class="cell cell--cal rim">
+        <div>
+          <h3>Ton mois en couleur</h3>
+          <p>Chaque séance colore sa journée dans le calendrier de l’accueil, à la couleur de son programme.</p>
+        </div>
+        <div class="cell__ui cal" aria-hidden="true">
+          <abbr>L</abbr><abbr>M</abbr><abbr>M</abbr><abbr>J</abbr><abbr>V</abbr><abbr>S</abbr><abbr>D</abbr>
+          <span></span><span class="p" style="--c:var(--lime)">1</span><span>2</span><span class="p" style="--c:var(--cyan)">3</span><span>4</span><span class="p" style="--c:var(--violet)">5</span><span>6</span>
+          <span>7</span><span class="p" style="--c:var(--lime)">8</span><span>9</span><span class="p" style="--c:var(--cyan)">10</span><span>11</span><span class="p" style="--c:var(--violet)">12</span><span>13</span>
+          <span>14</span><span class="p" style="--c:var(--lime)">15</span><span>16</span><span class="p" style="--c:var(--cyan)">17</span><span>18</span><span>19</span><span class="p" style="--c:var(--violet)">20</span>
+          <span>21</span><span class="p" style="--c:var(--lime)">22</span><span>23</span><span class="auj">24</span><span class="fut">25</span><span class="fut">26</span><span class="fut">27</span>
+          <span class="fut">28</span><span class="fut">29</span><span class="fut">30</span>
+        </div>
+      </article>
+
+      <article class="cell cell--cat rim">
+        <div>
+          <h3>75 exercices, 14 groupes musculaires</h3>
+          <p>Pioche dans le catalogue ou crée tes exercices. Un mouvement garde un seul nom, donc un seul historique.</p>
+        </div>
+        <div class="cell__ui" aria-hidden="true">
+          <div class="search"><svg><use href="#i-search"/></svg>Rechercher un exercice</div>
+          <ul class="chips">
+            <li class="on">Pecs</li><li>Dos</li><li>Épaules</li><li>Trapèzes</li><li>Biceps</li><li>Triceps</li><li>Avant-bras</li>
+            <li>Abdos</li><li>Lombaires</li><li>Fessiers</li><li>Quadriceps</li><li>Ischios</li><li>Mollets</li><li>Adducteurs</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cell cell--recap rim">
+        <div>
+          <h3>Le récap, face à la dernière fois</h3>
+          <p>En fin de séance, l’écart de tonnage et de durée, exercice par exercice. Un record s’affiche comme tel.</p>
+        </div>
+        <div class="cell__ui vs" aria-hidden="true">
+          <span class="vs__t">VS LA DERNIÈRE FOIS</span>
+          <div><span>Tonnage</span><span class="plus">+860 kg</span></div>
+          <div><span>Durée</span><span>−3 min</span></div>
+          <div class="ex"><span>Développé incliné haltères</span><span class="plus">+2 kg</span><span class="rec">RECORD</span></div>
+        </div>
+      </article>
+
+      <article class="cell cell--data rim">
+        <div>
+          <h3>Rien à créer</h3>
+          <p>Pas d’inscription, pas de mot de passe. Tes séances restent sur ton iPhone, et l’export JSON reste gratuit, toujours.</p>
+        </div>
+        <div class="cell__ui" aria-hidden="true">
+          <span class="rows__t">DONNÉES</span>
+          <div class="rows"><span>↑ Export JSON</span><span>↓ Import JSON</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs" class="section pricing" aria-labelledby="t-tarifs">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 id="t-tarifs" class="h2">Gratuit, avec Pro en option</h2>
+      <p>Le carnet complet ne coûte rien. Pro ajoute tes courbes sur tous tes exercices et les programmes illimités.</p>
+    </header>
+    <div class="plans">
+      <article class="plan rim">
+        <h3>Gratuit</h3>
+        <p class="plan__price"><strong>0&nbsp;€</strong><span>sans limite de durée</span></p>
+        <ul>
+          <li>Séances illimitées</li>
+          <li>Ta dernière fois, série par série</li>
+          <li>Chrono de repos</li>
+          <li>Récap de fin de séance</li>
+          <li>Calendrier, profil et badges</li>
+          <li>Export JSON de tes données</li>
+        </ul>
+      </article>
+      <article class="plan plan--pro rim">
+        <h3>Gomuscu Pro</h3>
+        <p class="plan__price"><strong>29,99&nbsp;€</strong><span>par an, soit 2,50&nbsp;€ par mois</span></p>
+        <p class="plan__alt">7 jours d’essai gratuit sur l’annuel. Ou 3,99&nbsp;€ par mois, sans engagement.</p>
+        <ul>
+          <li>Ta progression sur tous tes exercices : courbe, record, volume</li>
+          <li>Programmes illimités</li>
+          <li>Tout ce qui est gratuit</li>
+        </ul>
+      </article>
+    </div>
+    <div class="pricing__foot">
+      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <p>Prix TTC en France. L’App Store affiche le prix de ton pays avant tout achat. L’abonnement se renouvelle automatiquement ; tu l’arrêtes quand tu veux dans les réglages de ton compte Apple.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions" class="section" aria-labelledby="t-faq">
+  <div class="wrap faq">
+    <header class="section__head">
+      <h2 id="t-faq" class="h2">Questions fréquentes</h2>
+      <p>Une autre question ? Écris à <a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a> : tu auras une vraie réponse.</p>
+    </header>
+    <div class="faq__list">
+      <details>
+        <summary><h3>Gomuscu est-elle gratuite ?</h3></summary>
+        <p>Oui. Le carnet, le chrono de repos et le rappel de ta dernière fois sont gratuits, sans limite de durée. Gomuscu Pro, à 3,99&nbsp;€ par mois ou 29,99&nbsp;€ par an avec 7 jours d’essai gratuit sur l’annuel, ajoute ta progression sur tous tes exercices et les programmes illimités.</p>
+      </details>
+      <details>
+        <summary><h3>Faut-il créer un compte ?</h3></summary>
+        <p>Non. Pas d’inscription, pas de mot de passe : tu ouvres l’app et tu lances ta séance.</p>
+      </details>
+      <details>
+        <summary><h3>Où sont enregistrées mes séances ?</h3></summary>
+        <p>Sur ton iPhone, et nulle part ailleurs : Gomuscu ne se connecte à aucun serveur. Tu peux exporter tes données en JSON à tout moment, gratuitement, puis les réimporter.</p>
+      </details>
+      <details>
+        <summary><h3>L’app fonctionne-t-elle sans réseau ?</h3></summary>
+        <p>Oui, entièrement. Tout est enregistré sur ton téléphone : une salle en sous-sol ne change rien.</p>
+      </details>
+      <details>
+        <summary><h3>Comment marche le chrono de repos ?</h3></summary>
+        <p>Appuie sur Go quand tu as fini ta série : le compte à rebours démarre. − et + l’ajustent de 15 secondes, et un tap sur le temps propose des durées toutes prêtes. À la fin, un son et une vibration ; si ton iPhone est verrouillé, une notification te prévient.</p>
+      </details>
+      <details>
+        <summary><h3>Puis-je reprendre mon ancien carnet ?</h3></summary>
+        <p>Oui. Dans les réglages, « Ajouter une séance passée » te laisse ressaisir tes anciennes séances à leur date, en piochant les exercices dans le catalogue. Elles comptent ensuite comme les autres, y compris pour ta dernière fois.</p>
+      </details>
+      <details>
+        <summary><h3>Gomuscu existe-t-elle sur Android ?</h3></summary>
+        <p>Non. Gomuscu est disponible uniquement sur iPhone, avec iOS 18 ou plus récent.</p>
+      </details>
+      <details>
+        <summary><h3>Qu’est-ce que la surcharge progressive ?</h3></summary>
+        <p>C’est le principe de base pour progresser en musculation : ajouter un peu de charge, de répétitions ou de séries d’une séance à l’autre. Pour l’appliquer, il faut savoir ce que tu as fait la dernière fois. C’est exactement ce que Gomuscu affiche en face de chaque série.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section final" aria-labelledby="t-fin">
+  <div class="wrap">
+    <div class="final__panel rim">
+      <svg class="final__icon" aria-hidden="true"><use href="#go"/></svg>
+      <h2 id="t-fin" class="h2">Tu sais quoi battre.</h2>
+      <p>Ta première séance lance le suivi.</p>
+      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <p class="final__note">Gratuit, sans compte.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__top">
+      <a class="brand" href="/"><svg aria-hidden="true"><use href="#go"/></svg><span>Gomuscu</span></a>
+      <nav aria-label="Liens utiles">
+        <ul>
+          <li><a href="/support/">Assistance</a></li>
+          <li><a href="/confidentialite/">Confidentialité et mentions légales</a></li>
+          <li><a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-foot__legal">
+      <p>Ce site ne dépose aucun cookie et ne mesure pas son audience.</p>
+      <p>Apple et le logo Apple sont des marques commerciales d’Apple Inc., enregistrées aux États-Unis et dans d’autres pays et régions. App Store est une marque de service d’Apple Inc.</p>
+      <p>© 2026 Gomuscu</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
