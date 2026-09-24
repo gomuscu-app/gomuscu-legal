@@ -48,7 +48,7 @@
 <main>
 
 <h1>Assistance</h1>
-<p class="date">Gomuscu · dernière mise à jour : 8 août 2026</p>
+<p class="date">Gomuscu · dernière mise à jour : 24 septembre 2026</p>
 <p class="lang"><a href="#english">Read this page in English</a></p>
 
 <div class="lede">
@@ -75,7 +75,8 @@ serveur, rien qui parte vers nous. C'est expliqué en détail dans la
 <a href="/confidentialite">politique de confidentialité</a>.</p>
 
 <h3>Comment sauvegarder mes séances ?</h3>
-<p>Réglages → section <strong>DONNÉES</strong> → <strong>↑ Export JSON</strong>. Tu obtiens un fichier
+<p>Profil → engrenage en haut à droite → Réglages → section <strong>DONNÉES</strong> →
+<strong>Sauvegarde &amp; export</strong> → <strong>↑ Export JSON</strong>. Tu obtiens un fichier
 <code>gomuscu-sauvegarde.json</code> que tu ranges où tu veux : Fichiers, iCloud Drive, un mail à
 toi-même. Cet export est <strong>gratuit et le restera</strong> : tes données ne sont jamais retenues
 derrière un abonnement.</p>
@@ -90,9 +91,9 @@ déjà là.</p>
 <h3>Je n'entends pas l'alerte de fin de repos</h3>
 <p>Deux réglages à vérifier, dans cet ordre :</p>
 <ul>
-  <li>dans Gomuscu, Réglages → <strong>Alerte de fin de repos</strong> doit être activée ;</li>
+  <li>dans Gomuscu, Profil → engrenage → Réglages → <strong>Alerte de fin de repos</strong> doit être activée ;</li>
   <li>dans Réglages iOS → Notifications → Gomuscu, les notifications doivent être autorisées. Si tu
-      les as refusées au premier lancement, l'app ne peut plus te prévenir — c'est iOS qui décide, et
+      les as refusées quand iOS te les a demandées, à ton premier repos, l'app ne peut plus te prévenir — c'est iOS qui décide, et
       seul ce réglage le rouvre.</li>
 </ul>
 <p>Le décompte sonore des dernières secondes, lui, est un bonus : il s'arrête si iOS met l'app en
@@ -100,16 +101,18 @@ veille. C'est la notification qui fait foi.</p>
 
 <h3>Qu'est-ce qui est gratuit, et qu'est-ce qui est dans Pro ?</h3>
 <p><strong>Gratuit, sans limite de durée</strong> : le carnet de séance et le chrono de repos, sans
-aucune restriction ; le récap de fin de séance ; les 90 derniers jours d'historique ; trois programmes
-personnalisés — ceux livrés d'origine ne comptent pas ; et l'export JSON de toutes tes données.</p>
-<p><strong>Gomuscu Pro</strong> ajoute : les stats de progression, l'historique complet, les
-programmes illimités et l'export CSV.</p>
+aucune restriction ; le récap de fin de séance ; ton historique en entier ; la progression de ton
+exercice le plus pratiqué, courbe complète comprise ; quatre programmes au total, ceux livrés au
+départ compris ; et les exports JSON et CSV de toutes tes données.</p>
+<p><strong>Gomuscu Pro</strong> ajoute : ta progression sur tous tes exercices — la courbe de chacun,
+le volume total, les records —, les programmes illimités, et six programmes prêts à l'emploi à
+ajouter aux tiens.</p>
 <p>Les tarifs s'affichent dans l'app, dans ta devise et pour ton pays — c'est l'App Store qui les
 fixe. Si un essai gratuit s'applique à ton compte, l'écran d'abonnement te l'indique avant tout
 paiement.</p>
 
 <h3>J'ai payé mais Pro n'est pas actif</h3>
-<p>Réglages → section <strong>GOMUSCU PRO</strong> → <strong>Restaurer les achats</strong>. iOS te
+<p>Profil → engrenage → Réglages → section <strong>GOMUSCU PRO</strong> → <strong>Restaurer les achats</strong>. iOS te
 demandera peut-être de te connecter à ton compte Apple. Si ça ne suffit pas, écris-moi en précisant
 la date approximative de l'achat.</p>
 
@@ -141,7 +144,7 @@ Les retours d'utilisateurs ont déjà changé plusieurs choses dans l'app — le
 <hr>
 
 <h1 id="english">Support</h1>
-<p class="date">Gomuscu · last updated: 8 August 2026</p>
+<p class="date">Gomuscu · last updated: 24 September 2026</p>
 
 <div class="lede">
 <p>A question, a problem, an idea? Write to
@@ -166,7 +169,8 @@ allow a few days.</p>
 sent to us. The <a href="/confidentialite">privacy policy</a> explains this in full.</p>
 
 <h3>How do I back up my workouts?</h3>
-<p>Settings → <strong>DONNÉES</strong> section → <strong>↑ Export JSON</strong>. You get a
+<p>Profile tab → gear at the top right → Settings → <strong>DONNÉES</strong> section →
+<strong>Sauvegarde &amp; export</strong> (Backup &amp; export) → <strong>↑ Export JSON</strong>. You get a
 <code>gomuscu-sauvegarde.json</code> file you can keep wherever you like: Files, iCloud Drive, an
 email to yourself. This export is <strong>free and will stay free</strong>: your data is never held
 behind a subscription.</p>
@@ -180,9 +184,9 @@ first. So import onto a fresh install, or export what is already there beforehan
 <h3>I don't get the rest-timer alert</h3>
 <p>Two settings to check, in this order:</p>
 <ul>
-  <li>in Gomuscu, Settings → <strong>Alerte de fin de repos</strong> must be on;</li>
+  <li>in Gomuscu, Profile → gear → Settings → <strong>Alerte de fin de repos</strong> must be on;</li>
   <li>in iOS Settings → Notifications → Gomuscu, notifications must be allowed. If you declined them
-      at first launch, the app can no longer alert you — that is iOS's decision, and only this
+      when iOS asked, at your first rest, the app can no longer alert you — that is iOS's decision, and only this
       setting reopens it.</li>
 </ul>
 <p>The audible countdown of the last few seconds is a bonus: it stops if iOS suspends the app. The
@@ -190,15 +194,16 @@ notification is the reliable one.</p>
 
 <h3>What is free, and what is in Pro?</h3>
 <p><strong>Free, with no time limit</strong>: the workout log and the rest timer, entirely
-unrestricted; the end-of-workout summary; the last 90 days of history; three custom programmes — the
-ones shipped with the app don't count; and the JSON export of all your data.</p>
-<p><strong>Gomuscu Pro</strong> adds: progression stats, full history, unlimited programmes and CSV
-export.</p>
+unrestricted; the end-of-workout summary; your full history; the progression of your most-practised
+exercise, full curve included; four programmes in total, the ones shipped with the app included; and
+the JSON and CSV exports of all your data.</p>
+<p><strong>Gomuscu Pro</strong> adds: your progression on every exercise — each one's curve, total
+volume and records —, unlimited programmes, and six ready-made programmes to add to yours.</p>
 <p>Prices are shown in the app, in your currency and for your country — the App Store sets them. If a
 free trial applies to your account, the subscription screen tells you before any payment.</p>
 
 <h3>I paid but Pro isn't active</h3>
-<p>Settings → <strong>GOMUSCU PRO</strong> section → <strong>Restaurer les achats</strong> (Restore
+<p>Profile → gear → Settings → <strong>GOMUSCU PRO</strong> section → <strong>Restaurer les achats</strong> (Restore
 purchases). iOS may ask you to sign in to your Apple Account. If that isn't enough, write to me with
 the approximate purchase date.</p>
 
