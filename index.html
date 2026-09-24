@@ -246,6 +246,9 @@ h1, h2, h3 { margin: 0; }
 .btn--lime { background: var(--lime); color: var(--lime-ink); }
 .btn--lime:hover { background: #D4FF6A; }
 .badge { display: inline-block; border-radius: 12px; }
+/* Apple : « Use one App Store badge per layout » — le badge officiel ne figure QUE dans le hero ;
+   plus bas, l'action est un bouton lime qui ne cite pas l'App Store (pas de badge maison). */
+.btn--lg { min-height: 52px; padding: 0 26px; font-size: 1.0625rem; }
 .badge img { width: auto; height: 52px; }
 
 /* ——— En-tête flottant ———————————————————————————————————————————————————— */
@@ -724,7 +727,7 @@ h1, h2, h3 { margin: 0; }
 .final__icon { width: 72px; height: 72px; border-radius: 17px; box-shadow: 0 24px 60px -20px rgb(198 248 78 / .6); }
 .final .h2 { margin-top: 28px; }
 .final p { margin-top: 16px; font-size: clamp(1.0625rem, 1rem + .35vw, 1.3125rem); color: var(--text-2); }
-.final .badge { margin-top: 30px; }
+.final .btn { margin-top: 30px; }
 .final p.final__note { margin-top: 14px; font-size: .875rem; color: var(--muted); }
 
 /* ——— Pied de page ——————————————————————————————————————————————————————— */
@@ -784,7 +787,7 @@ h1, h2, h3 { margin: 0; }
       </h1>
       <p class="hero__lede">Tes séries de la dernière fois s’affichent en face de celles que tu saisis. Tu sais quoi battre, série après série.</p>
       <div class="hero__cta">
-        <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
+        <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.svg" width="164" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
         <p class="hero__note">Gratuit, sans compte.<br>iPhone, iOS 18 ou plus récent.</p>
       </div>
     </div>
@@ -1058,7 +1061,7 @@ h1, h2, h3 { margin: 0; }
       </article>
     </div>
     <div class="pricing__foot">
-      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <a class="btn btn--lime btn--lg" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201">Télécharger Gomuscu</a>
       <p>Prix TTC en France. L’App Store affiche le prix de ton pays avant tout achat. L’abonnement se renouvelle automatiquement ; tu l’arrêtes quand tu veux dans les réglages de ton compte Apple.</p>
     </div>
   </div>
@@ -1113,7 +1116,7 @@ h1, h2, h3 { margin: 0; }
       <svg class="final__icon" aria-hidden="true"><use href="#go"/></svg>
       <h2 id="t-fin" class="h2">Tu sais quoi battre.</h2>
       <p>Ta première séance lance le suivi.</p>
-      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <a class="btn btn--lime btn--lg" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201">Télécharger Gomuscu</a>
       <p class="final__note">Gratuit, sans compte.</p>
     </div>
   </div>
