@@ -25,8 +25,9 @@ pages légales.
 ## Tenir la vitrine à jour
 
 - **Prix** (3,99 € / mois, 29,99 € / an, essai de 7 jours sur l'annuel) : écrits dans `index.html`
-  — carte Pro, question « Gomuscu est-elle gratuite ? » et sa copie dans le JSON-LD — et dans
-  `llms.txt`. La seule source est App Store Connect : les recopier à chaque changement de palier.
+  — cartes Pro Mensuel et Pro Annuel (avec « soit 2,50 € par mois »), question « Gomuscu est-elle
+  gratuite ? » et sa copie dans le JSON-LD — et dans `llms.txt`. La seule source est App Store
+  Connect : les recopier à chaque changement de palier.
 - **Réponses de la FAQ** : chaque texte existe deux fois, dans la page et dans le JSON-LD. Les
   garder identiques mot pour mot.
 - **`sitemap.xml`** : mettre `lastmod` à la date de la modification.

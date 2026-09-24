@@ -23,10 +23,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Gomuscu : les séries du 5 août à côté de celles d’aujourd’hui, avec le titre « Bats ta dernière fois ».">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Données structurées : du JSON, jamais exécuté — la seule forme de balise script que
      check-autonomie.sh admet. Chaque réponse de la FAQ est recopiée MOT POUR MOT depuis la
      page : Google exige que les données reflètent le contenu visible. -->
@@ -152,7 +152,7 @@
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-latin.woff2) format("woff2");
+  src: url(assets/fonts/space-grotesk-latin.woff2) format("woff2");
 }
 /* Repli calé sur les métriques de Space Grotesk : le titre ne saute pas quand la police arrive. */
 @font-face {
@@ -636,7 +636,7 @@ h1, h2, h3 { margin: 0; }
     radial-gradient(30% 36% at 20% 60%, rgb(86 216 240 / .07), transparent 70%);
 }
 .plans { display: grid; gap: 14px; }
-@media (min-width: 820px) { .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .plan {
   position: relative; display: flex; flex-direction: column;
   padding: clamp(24px, 3vw, 36px); border-radius: 30px;
@@ -644,10 +644,19 @@ h1, h2, h3 { margin: 0; }
 }
 .plan--pro {
   background:
-    radial-gradient(80% 60% at 100% 0%, rgb(199 156 255 / .2), transparent 70%),
+    radial-gradient(80% 60% at 100% 0%, rgb(199 156 255 / .1), transparent 70%),
+    linear-gradient(160deg, rgb(255 255 255 / .09), rgb(255 255 255 / .03) 60%), rgb(14 14 14 / .6);
+}
+/* L'annuel porte l'essai de 7 jours : même carte, un halo violet plus franc et un liseré. */
+.plan--annuel {
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgb(199 156 255 / .26), transparent 70%),
     linear-gradient(160deg, rgb(255 255 255 / .1), rgb(255 255 255 / .03) 60%), rgb(14 14 14 / .6);
+  box-shadow: inset 0 0 0 1px rgb(199 156 255 / .35);
 }
 .plan h3 { font-size: 1.3125rem; font-weight: 700; }
+.plan__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.plan__top .tag { margin: 0; }
 .plan__price { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
 .plan__price strong { font-size: clamp(2.75rem, 2.2rem + 2vw, 3.75rem); font-weight: 700; letter-spacing: -.035em; line-height: 1; }
 .plan__price span { color: var(--text-2); }
@@ -660,6 +669,16 @@ h1, h2, h3 { margin: 0; }
 }
 .plan--pro li::before { background: var(--violet); }
 .plans { --check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.4 4.4L19 7.4' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+/* Côte à côte, les rangées des trois cartes s'alignent par sous-grille (titre, prix, précision,
+   liste) : les listes démarrent à la même hauteur même quand une précision fait deux lignes.
+   Sans sous-grille, chaque carte garde son empilement. */
+@media (min-width: 900px) {
+  .plans .plan { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; align-content: start; }
+  .plans .plan > :first-child { grid-row: 1; }
+  .plans .plan__price { grid-row: 2; }
+  .plans .plan__alt { grid-row: 3; }
+  .plans .plan ul { grid-row: 4; align-self: start; }
+}
 .pricing__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 28px; }
 .pricing__foot p { max-width: 64ch; font-size: .875rem; color: var(--muted); }
 
@@ -765,7 +784,7 @@ h1, h2, h3 { margin: 0; }
       </h1>
       <p class="hero__lede">Tes séries de la dernière fois s’affichent en face de celles que tu saisis. Tu sais quoi battre, série après série.</p>
       <div class="hero__cta">
-        <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
+        <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
         <p class="hero__note">Gratuit, sans compte.<br>iPhone, iOS 18 ou plus récent.</p>
       </div>
     </div>
@@ -1002,7 +1021,7 @@ h1, h2, h3 { margin: 0; }
   <div class="wrap">
     <header class="section__head">
       <h2 id="t-tarifs" class="h2">Gratuit, avec Pro en option</h2>
-      <p>Le carnet complet ne coûte rien. Pro ajoute tes courbes sur tous tes exercices et les programmes illimités.</p>
+      <p>Le carnet complet ne coûte rien. Pro ajoute tes courbes sur tous tes exercices et les programmes illimités, au mois ou à l’année.</p>
     </header>
     <div class="plans">
       <article class="plan rim">
@@ -1018,9 +1037,19 @@ h1, h2, h3 { margin: 0; }
         </ul>
       </article>
       <article class="plan plan--pro rim">
-        <h3>Gomuscu Pro</h3>
-        <p class="plan__price"><strong>29,99&nbsp;€</strong><span>par an, soit 2,50&nbsp;€ par mois</span></p>
-        <p class="plan__alt">7 jours d’essai gratuit sur l’annuel. Ou 3,99&nbsp;€ par mois, sans engagement.</p>
+        <h3>Pro Mensuel</h3>
+        <p class="plan__price"><strong>3,99&nbsp;€</strong><span>par mois</span></p>
+        <p class="plan__alt">Sans engagement.</p>
+        <ul>
+          <li>Ta progression sur tous tes exercices : courbe, record, volume</li>
+          <li>Programmes illimités</li>
+          <li>Tout ce qui est gratuit</li>
+        </ul>
+      </article>
+      <article class="plan plan--pro plan--annuel rim">
+        <div class="plan__top"><h3>Pro Annuel</h3><span class="tag tag--pro">7 jours d’essai gratuit</span></div>
+        <p class="plan__price"><strong>29,99&nbsp;€</strong><span>par an</span></p>
+        <p class="plan__alt">Soit 2,50&nbsp;€ par mois. Essai gratuit de 7&nbsp;jours, puis 29,99&nbsp;€ par an.</p>
         <ul>
           <li>Ta progression sur tous tes exercices : courbe, record, volume</li>
           <li>Programmes illimités</li>
@@ -1029,7 +1058,7 @@ h1, h2, h3 { margin: 0; }
       </article>
     </div>
     <div class="pricing__foot">
-      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
       <p>Prix TTC en France. L’App Store affiche le prix de ton pays avant tout achat. L’abonnement se renouvelle automatiquement ; tu l’arrêtes quand tu veux dans les réglages de ton compte Apple.</p>
     </div>
   </div>
@@ -1084,7 +1113,7 @@ h1, h2, h3 { margin: 0; }
       <svg class="final__icon" aria-hidden="true"><use href="#go"/></svg>
       <h2 id="t-fin" class="h2">Tu sais quoi battre.</h2>
       <p>Ta première séance lance le suivi.</p>
-      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="/assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
+      <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.png" width="175" height="52" loading="lazy" alt="Télécharger Gomuscu dans l’App Store"></a>
       <p class="final__note">Gratuit, sans compte.</p>
     </div>
   </div>
