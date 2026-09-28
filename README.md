@@ -42,6 +42,9 @@ pages légales.
 - **`sitemap.xml`** : mettre `lastmod` à la date de la modification.
 - **Image de partage** (`assets/og.png`) : sa source vit dans le dépôt de l'application,
   `docs/marketing/vitrine/`.
+- **Google Search Console** : la balise `google-site-verification` du `<head>` de `index.html`
+  prouve la propriété de `https://gomuscuapp.com/` (préfixe d'URL). Ne jamais la retirer :
+  Google la relit, et son absence fait perdre l'accès. Elle ne dépose rien, aucun consentement.
 - **Google Analytics** : l'identifiant vit dans `assets/cookies.js` **et** dans le tableau des
   cookies de `mentions-legales/` (le cookie s'appelle `_ga_<identifiant sans G->`) : changer les deux.
 
