@@ -16,3 +16,22 @@
 - [Site officiel](https://gomuscuapp.com/)
 - [Assistance](https://gomuscuapp.com/support/)
 - [Politique de confidentialité](https://gomuscuapp.com/confidentialite/)
+
+## Blog
+
+- [Le blog Gomuscu](https://gomuscuapp.com/blog/) : Programmes, exercices, nutrition, récupération : des articles concrets pour progresser en musculation, séance après séance, études à l’appui.
+- [Surcharge progressive : le principe pour progresser en musculation](https://gomuscuapp.com/blog/surcharge-progressive/) : La surcharge progressive, c’est faire un peu plus que la dernière fois. Les leviers, la double progression pas à pas, et quoi faire quand ça bloque.
+- [Temps de repos entre les séries : combien de temps récupérer](https://gomuscuapp.com/blog/temps-de-repos-entre-series/) : Combien de temps se reposer entre deux séries de musculation ? Ce que disent les études, des repères selon l’exercice et l’objectif, et comment les tenir.
+- [Carnet de musculation : quoi noter à chaque séance, et pourquoi](https://gomuscuapp.com/blog/carnet-de-musculation/) : Ce qu’il faut noter à chaque séance de musculation, un exemple de séance bien tenue, et le choix entre carnet papier, tableur et application.
+- [Programme musculation débutant : 3 séances par semaine en salle](https://gomuscuapp.com/blog/programme-musculation-debutant/) : Un programme full body pour débuter la musculation en salle : trois séances par semaine, les exercices, les charges et la progression des premiers mois.
+- [Programme Push Pull Legs : organiser ta semaine de musculation](https://gomuscuapp.com/blog/programme-push-pull-legs/) : Push, Pull, Legs : pousser, tirer, jambes. Comment organiser ce programme sur 3 à 6 jours par semaine, avec un exemple complet et les erreurs à éviter.
+- [Série dégressive : définition, exemples et quand l’utiliser](https://gomuscuapp.com/blog/serie-degressive/) : La série dégressive enchaîne sans repos des paliers de charge décroissante. Définition, exemples, exercices adaptés, et comment la noter.
+- [Les meilleurs exercices pour les pectoraux en salle](https://gomuscuapp.com/blog/meilleurs-exercices-pectoraux/) : Développé couché, incliné, dips, écartés : les exercices qui font travailler tout le pectoral, comment les faire, et une séance type pour progresser.
+- [Les meilleurs exercices pour le dos en salle](https://gomuscuapp.com/blog/meilleurs-exercices-dos/) : Tractions, tirage vertical, rowings, soulevé de terre : les exercices qui construisent un dos large et épais, comment les faire, et une séance type.
+- [Les meilleurs exercices pour les fessiers en salle](https://gomuscuapp.com/blog/meilleurs-exercices-fessiers/) : Hip thrust, squat, fentes, soulevé de terre roumain : les exercices qui font travailler les fessiers, comment les faire, et une séance type.
+- [Les meilleurs exercices abdos, et ce qu’ils ne font pas](https://gomuscuapp.com/blog/meilleurs-exercices-abdos/) : Crunch à la poulie, relevé de jambes, gainage : les exercices utiles pour les abdominaux, comment les faire, et pourquoi ils ne font pas fondre le ventre.
+- [Les meilleurs compléments alimentaires en musculation, et les inutiles](https://gomuscuapp.com/blog/complements-alimentaires-musculation/) : Créatine, caféine, whey, BCAA : les compléments dont l’effet est démontré en musculation, ceux qui ne servent à rien, et comment choisir un produit sûr.
+- [Créatine : effets, dosage et idées reçues](https://gomuscuapp.com/blog/creatine/) : La créatine est l’un des compléments les plus étudiés en musculation : ses effets réels, la dose, le moment de la prise, et les idées reçues.
+- [Combien de protéines par jour pour prendre du muscle ?](https://gomuscuapp.com/blog/proteines-par-jour-musculation/) : Combien de protéines manger par jour quand on fait de la musculation, comment les répartir, où les trouver, et à quoi sert vraiment la whey.
+- [Prise de masse : comment prendre du muscle sans trop de gras](https://gomuscuapp.com/blog/prise-de-masse/) : Combien manger en plus, à quel rythme prendre du poids, quoi mettre dans l’assiette et comment s’entraîner pour une prise de masse sans excès de gras.
+- [Courbatures : pourquoi elles arrivent et comment les soulager](https://gomuscuapp.com/blog/courbatures/) : Pourquoi on a des courbatures après la musculation, combien de temps elles durent, ce qui les soulage vraiment, et quand il faut consulter.

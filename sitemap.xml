@@ -1,8 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- La vitrine seule : les pages légales sont en noindex, elles n'ont rien à faire ici. -->
+<!-- La vitrine et le blog : les pages légales sont en noindex, elles n'ont rien à faire ici. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gomuscuapp.com/</loc>
     <lastmod>2026-09-28</lastmod>
   </url>
+  <!-- blog:début — bloc tenu par gen-blog.mjs (dépôt de l’app, docs/marketing/vitrine/blog/) : ne pas l’éditer à la main. -->
+  <url>
+    <loc>https://gomuscuapp.com/blog/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/surcharge-progressive/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/temps-de-repos-entre-series/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/carnet-de-musculation/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/programme-musculation-debutant/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/programme-push-pull-legs/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/serie-degressive/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/meilleurs-exercices-pectoraux/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/meilleurs-exercices-dos/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/meilleurs-exercices-fessiers/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/meilleurs-exercices-abdos/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/complements-alimentaires-musculation/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/creatine/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/proteines-par-jour-musculation/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/prise-de-masse/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/courbatures/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <!-- blog:fin -->
 </urlset>
