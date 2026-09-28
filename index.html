@@ -753,15 +753,19 @@ h1, h2, h3 { margin: 0; }
 .consent[hidden] { display: none; }
 .consent__titre { color: var(--text); font-weight: 700; font-size: 1rem; }
 .consent__choix { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+/* Fond OPAQUE : translucide, le décor vu à travers la carte (la lueur lime du téléphone, à droite)
+   teintait « Accepter » et pas « Refuser » — mesuré le 2026-09-28, styles calculés identiques. */
 .consent__btn {
-  border: 1px solid rgb(255 255 255 / .18); background: rgb(255 255 255 / .1);
+  border: 1px solid rgb(255 255 255 / .18); background: var(--surface-2);
   color: var(--text); cursor: pointer;
 }
-.consent__btn:hover { background: rgb(255 255 255 / .18); }
+.consent__btn:hover { background: #363636; }
 .consent__plus { justify-self: start; font-size: .875rem; }
 .consent__plus:hover { color: var(--text); }
+/* À partir de 760 px : en bas à DROITE. À gauche, la carte masquait l'accroche et le badge App Store
+   du hero tant qu'aucun choix n'était fait (capture à 1280 px, 2026-09-28). */
 @media (min-width: 760px) {
-  .consent { right: auto; width: 400px; bottom: calc(24px + env(safe-area-inset-bottom)); }
+  .consent { left: auto; width: 400px; bottom: calc(24px + env(safe-area-inset-bottom)); }
 }
 
 @media (prefers-reduced-transparency: reduce) {
