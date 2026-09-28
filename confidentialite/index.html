@@ -114,13 +114,18 @@ tout moment dans Profil → Réglages → Données → Mesure des publicités.</
 <ul>
   <li>l'installation, puis chaque ouverture de l'application ;</li>
   <li>le démarrage d'un essai gratuit, et un abonnement payé avec son montant et sa devise ;</li>
-  <li>des informations techniques : un identifiant d'appareil propre à Gomuscu (l'IDFV,
-      différent de l'identifiant publicitaire), l'adresse IP, le modèle de l'appareil, les
+  <li>pendant la période de mesure d'Apple (SKAdNetwork, de quelques jours à quelques semaines après
+      l'installation), des échanges réguliers tant que l'application est ouverte ;</li>
+  <li>des informations techniques : des identifiants propres à Gomuscu (l'IDFV d'Apple, différent
+      de l'identifiant publicitaire, et un identifiant créé par AppsFlyer, rangé dans le trousseau
+      de l'iPhone pour reconnaître une réinstallation), l'adresse IP, le modèle de l'appareil, les
       versions d'iOS et de l'application, la langue, le fuseau horaire et l'opérateur.</li>
 </ul>
 <p>AppsFlyer ne reçoit jamais tes séances, tes exercices, tes programmes, ton pseudo ni tes notes.
-Il nous rend des statistiques par campagne ; les régies publicitaires ne reçoivent de nous aucune
-donnée individuelle, seulement des résultats agrégés.</p>
+Il nous rend des statistiques par campagne. Les régies publicitaires ne reçoivent de nous que des
+résultats agrégés, à une exception près : pour les annonces de l'App Store, AppsFlyer renvoie à
+Apple le jeton que ton iPhone a lui-même produit, afin de savoir si l'installation vient d'une de
+ces annonces.</p>
 <p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; AppsFlyer
 (AppsFlyer Ltd., Israël, et ses filiales) agit pour notre compte, comme sous-traitant. Israël
 bénéficie d'une décision d'adéquation de la Commission européenne ; les transferts vers les
@@ -149,9 +154,9 @@ La mesure des publicités, si tu l'as acceptée : AppsFlyer la conserve 24 mois 
 <h2>Rôle et base légale</h2>
 <p>Tes séances ne nous parviennent pas : nous n'y effectuons <strong>aucun traitement</strong> au
 sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton matériel.</p>
-<p>La mesure des publicités est le seul traitement de données personnelles que nous faisons. Sa
-base légale est <strong>ton consentement</strong> (article 6.1.a du RGPD et article 82 de la loi
-Informatique et Libertés) ; le refuser ne change rien à l'application.</p>
+<p>Dans l'application, la mesure des publicités est le seul traitement de données personnelles que
+nous faisons. Sa base légale est <strong>ton consentement</strong> (article 6.1.a du RGPD et article
+82 de la loi Informatique et Libertés) ; le refuser ne change rien à l'application.</p>
 <p>Pour l'abonnement, la relation contractuelle et le traitement associé relèvent d'Apple.</p>
 
 <h2>Tes droits, et comment les exercer</h2>
@@ -164,13 +169,15 @@ détenons aucune copie de tes séances, <strong>tu les exerces directement, sans
       dans l'application.</li>
   <li><strong>Effacement</strong> — désinstalle Gomuscu : iOS supprime le bac à sable de
       l'application, et le fichier avec. L'application ne propose pas de bouton « tout effacer » ; la
-      désinstallation est le moyen d'effacer l'ensemble. Pense à exporter avant si tu veux garder une
-      trace.</li>
+      désinstallation est le moyen d'effacer tes séances. Pense à exporter avant si tu veux garder une
+      trace. Si tu as accepté la mesure des publicités, l'identifiant créé par AppsFlyer reste dans le
+      trousseau de l'iPhone après la désinstallation.</li>
   <li><strong>Mesure des publicités</strong> — retire ton accord dans Profil → Réglages →
-      Données → Mesure des publicités : plus rien ne part. Pour les données déjà envoyées,
-      écris-nous : nous ne connaissons ni ton nom ni ton e-mail, seulement un identifiant technique
-      de ton appareil, et AppsFlyer les efface de toute façon au bout de 24 mois au plus. Tu peux
-      aussi adresser une réclamation à la
+      Données → Mesure des publicités : l'application n'envoie plus rien. Les données déjà
+      envoyées ne sont rattachées qu'à des identifiants techniques de ton appareil, que
+      l'application ne t'affiche pas : sans eux, nous ne pouvons pas les retrouver (article 11 du
+      RGPD), et AppsFlyer les efface de toute façon au bout de 24 mois au plus. Pour toute
+      question, écris-nous ; tu peux aussi adresser une réclamation à la
       <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</li>
 </ul>
 <p>Si tu as sauvegardé ton iPhone, une copie peut subsister dans cette sauvegarde ; elle se gère
@@ -247,12 +254,17 @@ Data → Ad measurement.</p>
 <ul>
   <li>the install, then each time the app is opened;</li>
   <li>the start of a free trial, and a paid subscription with its amount and currency;</li>
-  <li>technical information: a device identifier specific to Gomuscu (the IDFV, distinct from the
-      advertising identifier), the IP address, the device model, the iOS and app versions, the
-      language, the time zone and the carrier.</li>
+  <li>during Apple's measurement period (SKAdNetwork, from a few days to a few weeks after the
+      install), regular exchanges while the app is open;</li>
+  <li>technical information: identifiers specific to Gomuscu (Apple's IDFV, distinct from the
+      advertising identifier, and an identifier created by AppsFlyer, stored in the iPhone's
+      keychain to recognise a reinstall), the IP address, the device model, the iOS and app
+      versions, the language, the time zone and the carrier.</li>
 </ul>
 <p>AppsFlyer never receives your workouts, exercises, programmes, nickname or notes. It gives us
-statistics per campaign; ad networks receive no individual data from us, only aggregated results.</p>
+statistics per campaign. Ad networks receive only aggregated results from us, with one exception:
+for App Store ads, AppsFlyer sends Apple back the token your iPhone itself generated, to find out
+whether the install came from one of those ads.</p>
 <p><strong>Who does what.</strong> We are the controller of this processing; AppsFlyer (AppsFlyer
 Ltd., Israel, and its affiliates) acts on our behalf as a processor. Israel benefits from a European
 Commission adequacy decision; transfers to the United States are governed by the Standard
@@ -280,7 +292,7 @@ Ad measurement, if you agreed to it: AppsFlyer keeps it for 24 months at most.</
 <h2>Role and legal basis</h2>
 <p>Your workouts never reach us: we carry out <strong>no processing</strong> of them within the
 meaning of the GDPR. What you enter remains under your sole control, on your own hardware.</p>
-<p>Ad measurement is the only processing of personal data we carry out. Its legal basis is
+<p>In the app, ad measurement is the only processing of personal data we carry out. Its legal basis is
 <strong>your consent</strong> (Article 6(1)(a) GDPR and Article 82 of the French Data Protection
 Act); refusing changes nothing in the app.</p>
 <p>For the subscription, the contractual relationship and the associated processing are Apple's.</p>
@@ -294,12 +306,14 @@ copy of your workouts, <strong>you exercise them directly, without writing to us
   <li><strong>Rectification</strong> — edit or delete a workout, an exercise or a programme in the
       app.</li>
   <li><strong>Erasure</strong> — uninstall Gomuscu: iOS deletes the app's sandbox, and the file with
-      it. The app offers no "erase everything" button; uninstalling is how you erase the lot. Export
-      first if you want to keep a record.</li>
+      it. The app offers no "erase everything" button; uninstalling is how you erase your workouts.
+      Export first if you want to keep a record. If you agreed to ad measurement, the identifier
+      created by AppsFlyer stays in the iPhone's keychain after uninstalling.</li>
   <li><strong>Ad measurement</strong> — withdraw your consent under Profile → Settings → Data →
-      Ad measurement: nothing more is sent. For data already sent, write to us: we know neither
-      your name nor your email, only a technical identifier of your device, and AppsFlyer deletes
-      it after 24 months at most anyway. You may also lodge a complaint with the
+      Ad measurement: the app sends nothing more. Data already sent is tied only to technical
+      identifiers of your device, which the app does not show you: without them, we cannot find
+      it (Article 11 GDPR), and AppsFlyer deletes it after 24 months at most anyway. For any
+      question, write to us; you may also lodge a complaint with the
       <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</li>
 </ul>
 <p>If you have backed up your iPhone, a copy may remain in that backup; it is managed from iOS
