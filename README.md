@@ -30,7 +30,8 @@ sur la vitrine seulement ; dans un script, la seule adresse absolue admise est c
 Jouer `./check-autonomie.sh` après toute modification ; le « après Accepter », lui, se vérifie au
 navigateur (requêtes réseau et cookies, avant et après le choix).
 
-L'app et le site ont deux politiques distinctes : `/confidentialite/` (l'app ne collecte rien) et
+L'app et le site ont deux politiques distinctes : `/confidentialite/` (l'app : les séances restent
+sur l'iPhone, la mesure des pubs n'a lieu que sur consentement) et
 `/mentions-legales/#donnees` (le site, avec Google Analytics).
 
 🛑 Jamais de `Disallow` dans `robots.txt` : il empêcherait les moteurs de lire le `noindex` des
