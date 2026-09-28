@@ -1,8 +1,8 @@
 # gomuscuapp.com — tout le site est ouvert à l'exploration.
 #
-# 🛑 Aucun Disallow, jamais. /confidentialite/ et /support/ portent un « noindex » : un Disallow
-# empêcherait les moteurs de LIRE ce noindex, et l'URL resterait indexée en lien nu. Ce fichier
-# n'existe que pour déclarer le sitemap.
+# 🛑 Aucun Disallow, jamais. /confidentialite/, /support/ et /mentions-legales/ portent un
+# « noindex » : un Disallow empêcherait les moteurs de LIRE ce noindex, et l'URL resterait indexée
+# en lien nu. Ce fichier n'existe que pour déclarer le sitemap.
 User-agent: *
 Allow: /
 
