@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Gomuscu</title>
-<meta name="description" content="Gomuscu enregistre tes séances sur ton iPhone et nulle part ailleurs. La mesure de nos publicités ne fonctionne que si tu l'acceptes.">
+<meta name="description" content="Gomuscu enregistre tes séances sur ton iPhone et nulle part ailleurs. Des statistiques d'usage anonymes, que tu peux couper ; la mesure de nos publicités, seulement si tu l'acceptes.">
 <meta name="robots" content="noindex, follow">
 <style>
   :root {
@@ -31,6 +31,7 @@
     padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin: 0 0 2rem;
   }
   .lede p { margin: 0; }
+  .lede ul { margin: .25rem 0 0; }
   ul { padding-left: 1.25rem; }
   li { margin: .35rem 0; }
   a { color: var(--lime); }
@@ -48,7 +49,7 @@
 <main>
 
 <h1>Politique de confidentialité</h1>
-<p class="date">Gomuscu · dernière mise à jour : 29 septembre 2026</p>
+<p class="date">Gomuscu · dernière mise à jour : 5 octobre 2026</p>
 <p class="lang"><a href="#english">Read this page in English</a></p>
 <p class="portee">Cette politique concerne l'application. Le site gomuscuapp.com a ses propres
 <a href="/mentions-legales/">mentions légales</a>, cookies compris.</p>
@@ -56,9 +57,15 @@
 <div class="lede">
 <p>Gomuscu enregistre tes séances <strong>sur ton iPhone, et nulle part ailleurs</strong>. Nous
 n'en recevons aucune copie et n'avons aucun moyen de les consulter.</p>
-<p>Une seule chose peut quitter ton iPhone, et <strong>seulement si tu l'acceptes</strong> :
-depuis la version 1.0.2, la mesure de nos publicités (voir plus bas). Tes séances n'en font
-jamais partie.</p>
+<p>Trois choses peuvent quitter ton iPhone, et tes séances n'en font jamais partie :</p>
+<ul>
+  <li>depuis la version 1.0.4, des <strong>statistiques d'usage anonymes</strong> (écrans vus,
+      séances terminées), que tu peux couper à tout moment ;</li>
+  <li>depuis la version 1.0.4, tes <strong>achats dans l'application</strong>, pour le suivi des
+      abonnements ;</li>
+  <li>depuis la version 1.0.2, la <strong>mesure de nos publicités</strong>, seulement si tu
+      l'acceptes.</li>
+</ul>
 </div>
 
 <h2>Qui est responsable</h2>
@@ -84,13 +91,17 @@ ton téléphone.</p>
 <ul>
   <li>pas de compte, pas d'inscription, pas de mot de passe ;</li>
   <li>pas de serveur à nous : tes séances ne sont envoyées nulle part ;</li>
-  <li>pas de mesure de ce que tu fais dans l'app : ni écrans, ni séances, ni exercices ;</li>
+  <li>aucune donnée d'entraînement transmise : ni exercices, ni programmes, ni charges, ni
+      répétitions, ni notes, ni pseudo ;</li>
   <li>pas de publicité dans l'app, pas d'identifiant publicitaire (IDFA), aucun suivi entre
       applications ;</li>
-  <li>pas de géolocalisation, pas d'accès aux contacts, aux photos, au micro ni à l'app Santé.</li>
+  <li>pas de localisation précise (GPS) : seule la mesure des publicités, si tu l'acceptes, déduit
+      de l'adresse IP un pays et une ville approximatifs ;</li>
+  <li>pas d'accès aux contacts, aux photos, au micro ni à l'app Santé.</li>
 </ul>
-<p>Une seule bibliothèque tierce est intégrée : celle d'AppsFlyer, pour la mesure des publicités.
-Elle ne fonctionne que si tu l'acceptes.</p>
+<p>Trois bibliothèques tierces sont intégrées : PostHog pour les statistiques d'usage, RevenueCat
+pour le suivi des abonnements, et AppsFlyer pour la mesure des publicités, qui ne fonctionne que si
+tu l'acceptes.</p>
 
 <h2>Notifications</h2>
 <p>Si tu actives l'alerte de fin de repos, iOS te demande l'autorisation d'afficher des
@@ -98,17 +109,83 @@ notifications. Elles sont <strong>entièrement locales</strong> : ton appareil l
 affiche lui-même. Rien n'est envoyé ni reçu. Tu peux les révoquer à tout moment dans les Réglages
 iOS.</p>
 
+<h2>Statistiques d'usage — anonymes, et tu peux les couper</h2>
+<p>Depuis la version 1.0.4, pour savoir quels écrans servent et ce qui peut être amélioré, Gomuscu
+envoie des statistiques d'usage anonymes à <strong>PostHog</strong>, notre outil de mesure
+d'audience. Comme la loi le permet pour une mesure d'audience qui respecte les conditions fixées par
+la <a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">CNIL</a>,
+elles fonctionnent sans te demander ton accord. Tu peux les couper à tout moment dans Profil →
+Réglages → Données → Statistiques d'usage : dès que tu l'éteins, plus rien ne part.</p>
+<p>PostHog reçoit :</p>
+<ul>
+  <li>les écrans que tu ouvres : Accueil, Séance, Programmes, Progression, Profil, Réglages, la
+      présentation du premier lancement et l'écran d'abonnement ;</li>
+  <li>l'installation, les mises à jour, l'ouverture et la mise en arrière-plan de
+      l'application ;</li>
+  <li>quelques étapes : présentation terminée, programme créé (depuis un modèle ou non), séance
+      terminée (la première ou non, le nombre d'exercices, séance libre ou non), écran d'abonnement
+      affiché (et depuis quel endroit de l'application), essai commencé ou abonnement souscrit
+      (mensuel ou annuel), achats restaurés ;</li>
+  <li>des informations techniques : un identifiant aléatoire créé par l'application, le modèle de
+      l'appareil, les versions d'iOS et de l'application, la langue, le fuseau horaire, la taille de
+      l'écran et le type de connexion (Wi-Fi ou réseau mobile).</li>
+</ul>
+<p>PostHog ne reçoit jamais tes séances, tes exercices, tes charges, tes programmes, ton pseudo ni
+tes notes, ni aucun identifiant d'Apple, de RevenueCat ou d'AppsFlyer. Ton adresse IP n'est pas
+conservée et ne sert à aucune localisation. Ces statistiques ne servent qu'à nous, pour améliorer
+l'application : elles ne sont croisées avec aucune autre donnée et ne sont transmises à aucune régie
+publicitaire.</p>
+<p>L'identifiant aléatoire est remplacé par un nouveau au plus tard tous les 13 mois, et chaque fois
+que tu rallumes les statistiques. Les statistiques sont conservées <strong>25 mois au
+plus</strong>.</p>
+<p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; PostHog (PostHog
+Inc., États-Unis) agit pour notre compte, comme sous-traitant. Les données sont hébergées dans
+l'Union européenne, en Allemagne (Francfort, chez Amazon Web Services). Les équipes de PostHog, son
+support compris, et certains de ses sous-traitants peuvent y accéder depuis l'extérieur de l'Union
+européenne, notamment depuis les États-Unis ; ces accès sont encadrés par le Data Privacy Framework,
+auquel PostHog Inc. est certifiée, et par les clauses contractuelles types de la Commission
+européenne (voir <a href="https://posthog.com/dpa">l'accord de traitement de PostHog</a>).</p>
+
 <h2>Achats et abonnement</h2>
 <p>L'abonnement Gomuscu Pro passe par l'App Store. <strong>C'est Apple qui traite le paiement</strong>
 et qui connaît l'acheteur. Gomuscu ne reçoit ni ton nom, ni ton moyen de paiement, ni ton identifiant
-Apple : l'application lit uniquement une réponse d'Apple indiquant si un abonnement est actif. Le
+Apple. C'est la réponse d'Apple, lue sur ton iPhone, qui décide si Gomuscu Pro est actif. Le
 traitement des données de paiement relève de la politique de confidentialité d'Apple.</p>
+
+<h2>Suivi des abonnements</h2>
+<p>Depuis la version 1.0.4, Gomuscu transmet tes achats dans l'application à
+<strong>RevenueCat</strong>, notre outil de suivi des abonnements. Il nous montre combien
+d'abonnements sont actifs, renouvelés, annulés ou remboursés, et nous aide à répondre si tu nous
+écris au sujet du tien. Il ne décide pas de ce que tu débloques : c'est toujours la réponse d'Apple.
+Ce suivi ne se coupe pas dans l'application ; tu peux t'y opposer en nous écrivant (voir « Tes
+droits »).</p>
+<p>RevenueCat reçoit :</p>
+<ul>
+  <li>tes achats dans Gomuscu : l'abonnement choisi, l'essai éventuel, les dates d'achat, de
+      renouvellement et d'expiration, le prix, la devise et le pays de ta boutique App Store. Apple
+      lui signale aussi directement les renouvellements, annulations et remboursements, même quand
+      l'application est fermée ;</li>
+  <li>des identifiants : un identifiant aléatoire créé par RevenueCat, et l'IDFV d'Apple, propre
+      aux applications de l'éditeur sur ton iPhone et différent de l'identifiant publicitaire ;</li>
+  <li>des informations techniques : l'adresse IP, dont RevenueCat ne garde que le pays qu'il en
+      déduit, le modèle de l'appareil, les versions d'iOS et de l'application, les langues de
+      l'appareil, et l'état de l'autorisation de suivi d'Apple, que Gomuscu ne demande jamais.</li>
+</ul>
+<p>RevenueCat ne reçoit ni ton nom, ni ton moyen de paiement, ni ton identifiant Apple, ni tes
+séances. Nous ne l'avons relié ni à PostHog ni à AppsFlyer.</p>
+<p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; RevenueCat
+(RevenueCat, Inc., États-Unis) agit pour notre compte, comme sous-traitant. Les données sont
+hébergées aux États-Unis, chez Amazon Web Services. Ce transfert hors de l'Union européenne est
+encadré par les clauses contractuelles types de la Commission européenne, intégrées à
+<a href="https://www.revenuecat.com/dpa">l'accord de traitement de RevenueCat</a>. RevenueCat
+conserve ces données tant que nous utilisons son service ; nous les faisons effacer sur ta demande,
+et toutes à la fin de notre contrat avec lui.</p>
 
 <h2>Mesure des publicités — seulement si tu l'acceptes</h2>
 <p>Gomuscu se fait connaître avec des publicités (Meta, Google, Apple). Pour savoir lesquelles
 fonctionnent, l'application peut signaler à <strong>AppsFlyer</strong>, notre service de mesure,
 que tu l'as installée et si tu t'es abonné. À la fin de la présentation du premier lancement, une
-fenêtre te le demande : <strong>sans ton accord, rien ne part</strong>. Tu peux changer d'avis à
+fenêtre te le demande : <strong>sans ton accord, rien ne part vers AppsFlyer</strong>. Tu peux changer d'avis à
 tout moment dans Profil → Réglages → Données → Mesure des publicités.</p>
 <p>Si tu acceptes, AppsFlyer reçoit :</p>
 <ul>
@@ -152,19 +229,34 @@ Tu peux exclure Gomuscu des sauvegardes iCloud dans Réglages iOS → ton nom �
 
 <h2>Combien de temps</h2>
 <p>Tes séances : sur ton appareil, tant que l'application est installée ; rien ne nous parvient.<br>
+Les statistiques d'usage : 25 mois au plus ; l'identifiant aléatoire change au plus tard tous les
+13 mois.<br>
+Le suivi des abonnements : tant que nous utilisons RevenueCat, avec effacement sur ta demande, et de
+tout à la fin de notre contrat avec lui.<br>
 La mesure des publicités, si tu l'as acceptée : AppsFlyer la conserve 24 mois au plus.</p>
 
 <h2>Rôle et base légale</h2>
 <p>Tes séances ne nous parviennent pas : nous n'y effectuons <strong>aucun traitement</strong> au
 sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton matériel.</p>
-<p>Dans l'application, la mesure des publicités est le seul traitement de données personnelles que
-nous faisons. Sa base légale est <strong>ton consentement</strong> (article 6.1.a du RGPD et article
-82 de la loi Informatique et Libertés) ; le refuser ne change rien à l'application.</p>
-<p>Pour l'abonnement, la relation contractuelle et le traitement associé relèvent d'Apple.</p>
+<p>Dans l'application, nous faisons trois traitements de données personnelles :</p>
+<ul>
+  <li><strong>les statistiques d'usage</strong> reposent sur notre intérêt légitime à mesurer
+      l'audience de l'application pour l'améliorer (article 6.1.f du RGPD). Elles n'exigent pas ton
+      consentement parce qu'elles respectent les conditions de la CNIL pour la mesure d'audience
+      (article 82 de la loi Informatique et Libertés) ; tu peux t'y opposer à tout moment avec
+      l'interrupteur des Réglages ;</li>
+  <li><strong>le suivi des abonnements</strong> repose sur notre intérêt légitime à suivre nos
+      abonnements et à répondre à nos abonnés (article 6.1.f du RGPD) ;</li>
+  <li><strong>la mesure des publicités</strong> repose sur <strong>ton consentement</strong>
+      (article 6.1.a du RGPD et article 82 de la loi Informatique et Libertés) ; la refuser ne
+      change rien à l'application.</li>
+</ul>
+<p>Le paiement de l'abonnement et la relation contractuelle qui l'accompagne relèvent d'Apple.</p>
 
 <h2>Tes droits, et comment les exercer</h2>
-<p>Le RGPD te donne un droit d'accès, de rectification, d'effacement et de portabilité. Comme nous ne
-détenons aucune copie de tes séances, <strong>tu les exerces directement, sans nous écrire</strong> :</p>
+<p>Le RGPD te donne un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et
+de portabilité. Comme nous ne détenons aucune copie de tes séances, <strong>tu les exerces
+directement, sans nous écrire</strong> :</p>
 <ul>
   <li><strong>Accès et portabilité</strong> — l'export JSON ou CSV, dans Profil → Réglages → Données → Sauvegarde &amp; export, te rend
       l'intégralité de tes données dans un format ouvert.</li>
@@ -174,17 +266,28 @@ détenons aucune copie de tes séances, <strong>tu les exerces directement, sans
       l'application, et le fichier avec. L'application ne propose pas de bouton « tout effacer » ; la
       désinstallation est le moyen d'effacer tes séances. Pense à exporter avant si tu veux garder une
       trace. Si tu as accepté la mesure des publicités, l'identifiant créé par AppsFlyer reste dans le
-      trousseau de l'iPhone après la désinstallation.</li>
+      trousseau de l'iPhone après la désinstallation. Les identifiants aléatoires de PostHog et de
+      RevenueCat, eux, disparaissent avec l'application.</li>
+  <li><strong>Statistiques d'usage</strong> — éteins l'interrupteur dans Profil → Réglages →
+      Données → Statistiques d'usage : plus rien ne part, et c'est ainsi que tu t'y opposes. Les
+      statistiques déjà envoyées ne sont rattachées qu'à l'identifiant aléatoire, que l'application
+      ne t'affiche pas : nous ne pouvons pas les retrouver (article 11 du RGPD), et elles sont
+      effacées de toute façon au bout de 25 mois au plus.</li>
+  <li><strong>Suivi des abonnements</strong> — pour accéder à ces données, les faire effacer ou
+      t'opposer à ce suivi, écris-nous. Elles ne sont rattachées qu'à des identifiants techniques
+      que l'application ne t'affiche pas : donne-nous les références de ton achat (le reçu envoyé par
+      Apple), et nous ferons notre possible pour les retrouver chez RevenueCat ; sans elles, nous ne
+      pouvons pas les rattacher à toi (article 11 du RGPD).</li>
   <li><strong>Mesure des publicités</strong> — retire ton accord dans Profil → Réglages →
-      Données → Mesure des publicités : l'application n'envoie plus rien. Les données déjà
-      envoyées ne sont rattachées qu'à des identifiants techniques de ton appareil, que
+      Données → Mesure des publicités : l'application n'envoie plus rien à AppsFlyer. Les données
+      déjà envoyées ne sont rattachées qu'à des identifiants techniques de ton appareil, que
       l'application ne t'affiche pas : sans eux, nous ne pouvons pas les retrouver (article 11 du
-      RGPD), et AppsFlyer les efface de toute façon au bout de 24 mois au plus. Pour toute
-      question, écris-nous ; tu peux aussi adresser une réclamation à la
-      <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</li>
+      RGPD), et AppsFlyer les efface de toute façon au bout de 24 mois au plus.</li>
 </ul>
 <p>Si tu as sauvegardé ton iPhone, une copie peut subsister dans cette sauvegarde ; elle se gère
 depuis les Réglages iOS.</p>
+<p>Pour toute question, écris-nous ; tu peux aussi adresser une réclamation à la
+<a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</p>
 
 <h2>Modifications</h2>
 <p>Cette politique peut évoluer si l'application change. La date en haut de page fait foi. Une
@@ -196,15 +299,21 @@ modification substantielle sera signalée dans les nouveautés de la version con
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="date">Gomuscu · last updated: 29 September 2026</p>
+<p class="date">Gomuscu · last updated: 5 October 2026</p>
 <p class="portee">This policy covers the app. The gomuscuapp.com website has its own
 <a href="/mentions-legales/">legal notice</a> (in French), cookies included.</p>
 
 <div class="lede">
 <p>Gomuscu stores your workouts <strong>on your iPhone and nowhere else</strong>. We receive no
 copy of them and have no way to look at them.</p>
-<p>Only one thing can leave your iPhone, and <strong>only if you agree</strong>: since version
-1.0.2, the measurement of our ads (see below). Your workouts are never part of it.</p>
+<p>Three things can leave your iPhone, and your workouts are never part of them:</p>
+<ul>
+  <li>since version 1.0.4, <strong>anonymous usage statistics</strong> (screens viewed, workouts
+      finished), which you can turn off at any time;</li>
+  <li>since version 1.0.4, your <strong>in-app purchases</strong>, for subscription
+      tracking;</li>
+  <li>since version 1.0.2, the <strong>measurement of our ads</strong>, only if you agree.</li>
+</ul>
 </div>
 
 <h2>Who is responsible</h2>
@@ -229,29 +338,92 @@ personal or health information. They stay where everything else stays — on you
 <ul>
   <li>no account, no sign-up, no password;</li>
   <li>no server of ours: your workouts are sent nowhere;</li>
-  <li>no measurement of what you do in the app: no screens, no workouts, no exercises;</li>
+  <li>no workout data sent: no exercises, programmes, loads, repetitions, notes or nickname;</li>
   <li>no advertising in the app, no advertising identifier (IDFA), no cross-app tracking;</li>
-  <li>no location, no access to contacts, photos, microphone or the Health app.</li>
+  <li>no precise location (GPS): only ad measurement, if you agree to it, derives an approximate
+      country and city from the IP address;</li>
+  <li>no access to contacts, photos, microphone or the Health app.</li>
 </ul>
-<p>A single third-party library is included: AppsFlyer's, for ad measurement. It only works if
-you agree.</p>
+<p>Three third-party libraries are included: PostHog for usage statistics, RevenueCat for
+subscription tracking, and AppsFlyer for ad measurement, which only works if you agree.</p>
 
 <h2>Notifications</h2>
 <p>If you enable the rest-timer alert, iOS asks for permission to display notifications. They are
 <strong>entirely local</strong>: your device schedules and displays them itself. Nothing is sent or
 received. You can revoke them at any time in iOS Settings.</p>
 
+<h2>Usage statistics — anonymous, and you can turn them off</h2>
+<p>Since version 1.0.4, to learn which screens are useful and what can be improved, Gomuscu sends
+anonymous usage statistics to <strong>PostHog</strong>, our audience measurement tool. As the law
+allows for audience measurement that meets the conditions set by the French data protection
+authority (<a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">CNIL</a>),
+they work without asking for your consent. You can turn them off at any time under Profile →
+Settings → Data → Usage statistics: as soon as you do, nothing more is sent.</p>
+<p>PostHog receives:</p>
+<ul>
+  <li>the screens you open: Home, Workout, Programmes, Progress, Profile, Settings, the first-launch
+      introduction and the subscription screen;</li>
+  <li>the install, updates, and the app being opened and sent to the background;</li>
+  <li>a few steps: introduction finished, programme created (from a template or not), workout
+      finished (the first one or not, the number of exercises, free workout or not), subscription
+      screen shown (and from which part of the app), trial started or subscription purchased
+      (monthly or yearly), purchases restored;</li>
+  <li>technical information: a random identifier created by the app, the device model, the iOS and
+      app versions, the language, the time zone, the screen size and the connection type (Wi-Fi or
+      mobile network).</li>
+</ul>
+<p>PostHog never receives your workouts, exercises, loads, programmes, nickname or notes, nor any
+Apple, RevenueCat or AppsFlyer identifier. Your IP address is not stored and is not used for any
+location. These statistics are for us alone, to improve the app: they are not combined with any
+other data and are not passed on to any ad network.</p>
+<p>The random identifier is replaced by a new one at least every 13 months, and every time you turn
+the statistics back on. The statistics are kept for <strong>25 months at most</strong>.</p>
+<p><strong>Who does what.</strong> We are the controller of this processing; PostHog (PostHog Inc.,
+United States) acts on our behalf as a processor. The data is hosted in the European Union, in
+Germany (Frankfurt, on Amazon Web Services). PostHog's teams, support included, and some of its
+sub-processors may access it from outside the European Union, notably from the United States; such
+access is governed by the Data Privacy Framework, under which PostHog Inc. is certified, and by the
+European Commission's Standard Contractual Clauses (see
+<a href="https://posthog.com/dpa">PostHog's data processing agreement</a>).</p>
+
 <h2>Purchases and subscription</h2>
 <p>The Gomuscu Pro subscription goes through the App Store. <strong>Apple processes the
 payment</strong> and knows the buyer. Gomuscu receives neither your name, nor your payment method,
-nor your Apple Account identifier: the app only reads a response from Apple indicating whether a
-subscription is active. Processing of payment data is governed by Apple's privacy policy.</p>
+nor your Apple Account identifier. Apple's response, read on your iPhone, decides whether Gomuscu
+Pro is active. Processing of payment data is governed by Apple's privacy policy.</p>
+
+<h2>Subscription tracking</h2>
+<p>Since version 1.0.4, Gomuscu sends your in-app purchases to <strong>RevenueCat</strong>, our
+subscription tracking tool. It shows us how many subscriptions are active, renewed, cancelled or
+refunded, and helps us answer if you write to us about yours. It does not decide what you unlock:
+Apple's response still does. This tracking cannot be turned off in the app; you can object to it by
+writing to us (see "Your rights").</p>
+<p>RevenueCat receives:</p>
+<ul>
+  <li>your purchases in Gomuscu: the subscription chosen, any trial, the purchase, renewal and
+      expiry dates, the price, the currency and the country of your App Store. Apple also notifies
+      it directly of renewals, cancellations and refunds, even when the app is closed;</li>
+  <li>identifiers: a random identifier created by RevenueCat, and Apple's IDFV, specific to the
+      publisher's apps on your iPhone and distinct from the advertising identifier;</li>
+  <li>technical information: the IP address, of which RevenueCat keeps only the country it derives
+      from it, the device model, the iOS and app versions, the device languages, and the status of
+      Apple's tracking permission, which Gomuscu never asks for.</li>
+</ul>
+<p>RevenueCat receives neither your name, nor your payment method, nor your Apple Account
+identifier, nor your workouts. We have connected it neither to PostHog nor to AppsFlyer.</p>
+<p><strong>Who does what.</strong> We are the controller of this processing; RevenueCat
+(RevenueCat, Inc., United States) acts on our behalf as a processor. The data is hosted in the
+United States, on Amazon Web Services. This transfer outside the European Union is governed by the
+European Commission's Standard Contractual Clauses, built into
+<a href="https://www.revenuecat.com/dpa">RevenueCat's data processing agreement</a>. RevenueCat
+keeps this data for as long as we use its service; we have it erased at your request, and all of it
+at the end of our contract with RevenueCat.</p>
 
 <h2>Ad measurement — only if you agree</h2>
 <p>Gomuscu gets known through ads (Meta, Google, Apple). To find out which ones work, the app can
 tell <strong>AppsFlyer</strong>, our measurement service, that you installed it and whether you
 subscribed. At the end of the first-launch introduction, a prompt asks you: <strong>without your
-consent, nothing is sent</strong>. You can change your mind at any time under Profile → Settings →
+consent, nothing is sent to AppsFlyer</strong>. You can change your mind at any time under Profile → Settings →
 Data → Ad measurement.</p>
 <p>If you agree, AppsFlyer receives:</p>
 <ul>
@@ -293,19 +465,31 @@ in iOS Settings → your name → iCloud → Backup.</p>
 
 <h2>How long</h2>
 <p>Your workouts: on your device, for as long as the app is installed; nothing reaches us.<br>
+Usage statistics: 25 months at most; the random identifier changes at least every 13 months.<br>
+Subscription tracking: for as long as we use RevenueCat, erased at your request, and entirely at
+the end of our contract with RevenueCat.<br>
 Ad measurement, if you agreed to it: AppsFlyer keeps it for 24 months at most.</p>
 
 <h2>Role and legal basis</h2>
 <p>Your workouts never reach us: we carry out <strong>no processing</strong> of them within the
 meaning of the GDPR. What you enter remains under your sole control, on your own hardware.</p>
-<p>In the app, ad measurement is the only processing of personal data we carry out. Its legal basis is
-<strong>your consent</strong> (Article 6(1)(a) GDPR and Article 82 of the French Data Protection
-Act); refusing changes nothing in the app.</p>
-<p>For the subscription, the contractual relationship and the associated processing are Apple's.</p>
+<p>In the app, we carry out three processing operations on personal data:</p>
+<ul>
+  <li><strong>usage statistics</strong> rely on our legitimate interest in measuring the app's
+      audience to improve it (Article 6(1)(f) GDPR). They do not require your consent because they
+      meet the CNIL's conditions for audience measurement (Article 82 of the French Data Protection
+      Act); you can object at any time with the switch in Settings;</li>
+  <li><strong>subscription tracking</strong> relies on our legitimate interest in following our
+      subscriptions and answering our subscribers (Article 6(1)(f) GDPR);</li>
+  <li><strong>ad measurement</strong> relies on <strong>your consent</strong> (Article 6(1)(a) GDPR
+      and Article 82 of the French Data Protection Act); refusing changes nothing in the app.</li>
+</ul>
+<p>The subscription payment and the contractual relationship that comes with it are Apple's.</p>
 
 <h2>Your rights, and how to exercise them</h2>
-<p>The GDPR grants you rights of access, rectification, erasure and portability. Since we hold no
-copy of your workouts, <strong>you exercise them directly, without writing to us</strong>:</p>
+<p>The GDPR grants you rights of access, rectification, erasure, restriction, objection and
+portability. Since we hold no copy of your workouts, <strong>you exercise them directly, without
+writing to us</strong>:</p>
 <ul>
   <li><strong>Access and portability</strong> — the JSON or CSV export, under Profile → Settings → Data → Backup &amp; export, gives
       you all of your data in an open format.</li>
@@ -314,16 +498,27 @@ copy of your workouts, <strong>you exercise them directly, without writing to us
   <li><strong>Erasure</strong> — uninstall Gomuscu: iOS deletes the app's sandbox, and the file with
       it. The app offers no "erase everything" button; uninstalling is how you erase your workouts.
       Export first if you want to keep a record. If you agreed to ad measurement, the identifier
-      created by AppsFlyer stays in the iPhone's keychain after uninstalling.</li>
+      created by AppsFlyer stays in the iPhone's keychain after uninstalling. The random identifiers
+      of PostHog and RevenueCat, however, disappear with the app.</li>
+  <li><strong>Usage statistics</strong> — turn off the switch under Profile → Settings → Data →
+      Usage statistics: nothing more is sent, and that is how you object. Statistics already sent
+      are tied only to the random identifier, which the app does not show you: we cannot find them
+      (Article 11 GDPR), and they are deleted after 25 months at most anyway.</li>
+  <li><strong>Subscription tracking</strong> — to access this data, have it erased or object to
+      this tracking, write to us. It is tied only to technical identifiers that the app does not
+      show you: give us the references of your purchase (the receipt sent by Apple) and we will do
+      our best to find it at RevenueCat; without them, we cannot link it to you (Article 11
+      GDPR).</li>
   <li><strong>Ad measurement</strong> — withdraw your consent under Profile → Settings → Data →
-      Ad measurement: the app sends nothing more. Data already sent is tied only to technical
-      identifiers of your device, which the app does not show you: without them, we cannot find
-      it (Article 11 GDPR), and AppsFlyer deletes it after 24 months at most anyway. For any
-      question, write to us; you may also lodge a complaint with the
-      <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</li>
+      Ad measurement: the app sends nothing more to AppsFlyer. Data already sent is tied only to
+      technical identifiers of your device, which the app does not show you: without them, we
+      cannot find it (Article 11 GDPR), and AppsFlyer deletes it after 24 months at most
+      anyway.</li>
 </ul>
 <p>If you have backed up your iPhone, a copy may remain in that backup; it is managed from iOS
 Settings.</p>
+<p>For any question, write to us; you may also lodge a complaint with the
+<a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a>.</p>
 
 <h2>Changes</h2>
 <p>This policy may change if the app changes. The date at the top of the page is authoritative. A

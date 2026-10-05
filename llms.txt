@@ -8,7 +8,7 @@
 - Gratuit : séances illimitées, rappel de la dernière fois série par série, chrono de repos, récap de fin de séance, calendrier, profil et badges, export JSON des données.
 - Pro : la progression sur tous les exercices (courbe, record, volume) et les programmes illimités.
 - Catalogue : 75 exercices sur 14 groupes musculaires ; programmes Push, Pull et Legs inclus.
-- Confidentialité de l’app : pas de compte ; les séances ne quittent pas l’iPhone ; mesure des publicités (AppsFlyer, sans identifiant publicitaire) seulement si l’utilisateur l’accepte.
+- Confidentialité de l’app : pas de compte ; les séances ne quittent pas l’iPhone ; depuis la version 1.0.4, statistiques d’usage anonymes (PostHog, hébergées dans l’Union européenne), désactivables dans les réglages, et suivi des abonnements (RevenueCat) ; mesure des publicités (AppsFlyer, sans identifiant publicitaire) seulement si l’utilisateur l’accepte.
 
 ## Liens
 
