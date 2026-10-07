@@ -9,8 +9,12 @@
 # Deux balises <script> seulement, chacune sous une forme EXACTE, effacée du texte AVANT le
 # balayage — toute autre forme (module, casse différente, attribut en plus) reste refusée :
 #   · `<script type="application/ld+json">` : données structurées, jamais exécutées ; partout ;
-#   · `<script src="assets/cookies.js" defer></script>` : ./index.html SEULEMENT. Posée sur une
-#     autre page, elle y est refusée comme n'importe quel script.
+#   · cookies.js, la mesure d'audience après consentement, sur la vitrine et le blog SEULEMENT :
+#     `<script src="assets/cookies.js" defer></script>` sur ./index.html,
+#     `<script src="/assets/cookies.js" defer></script>` sur ./blog/ (chemin absolu, comme toutes
+#     ses ressources ; depuis le 2026-10-07). Chaque forme ne vaut que là : posée ailleurs — pages
+#     légales et assistance, qu'ouvrent l'app et App Store Connect —, elle est refusée comme
+#     n'importe quel script.
 #
 # Scripts (*.js) : la seule adresse absolue admise est celle de gtag.js, que cookies.js ne charge
 # qu'après « Accepter ». Ce « après » ne se prouve pas par grep : il se vérifie au navigateur
@@ -33,16 +37,17 @@ if [ -z "$PAGES" ]; then
 fi
 
 JSONLD='<script type="application/ld+json">'
-COOKIES='<script src="assets/cookies\.js" defer></script>'
+COOKIES_VITRINE='<script src="assets/cookies\.js" defer></script>'
+COOKIES_BLOG='<script src="/assets/cookies\.js" defer></script>'
 MOTIF="<script|<link[^>]+(stylesheet|href=[\"']?https?:)|@import|(src|srcset|poster)=([\"'][^\"']*)?https?:|[[:space:]]data=[\"']https?:|url\\([\"']?https?:"
 
 FAIL=0
 for F in $PAGES; do
-  if [ "$F" = "./index.html" ]; then
-    TEXTE=$(sed -e "s#$JSONLD##g" -e "s#$COOKIES##g" "$F")
-  else
-    TEXTE=$(sed -e "s#$JSONLD##g" "$F")
-  fi
+  case "$F" in
+    ./index.html) TEXTE=$(sed -e "s#$JSONLD##g" -e "s#$COOKIES_VITRINE##g" "$F") ;;
+    ./blog/*)     TEXTE=$(sed -e "s#$JSONLD##g" -e "s#$COOKIES_BLOG##g" "$F") ;;
+    *)            TEXTE=$(sed -e "s#$JSONLD##g" "$F") ;;
+  esac
   TEXTE=$(printf '%s\n' "$TEXTE" | sed -E 's#<link rel="(canonical|alternate)"[^>]*>##g')
   if printf '%s\n' "$TEXTE" | grep -nEi "$MOTIF"; then
     echo "ÉCHEC : ressource externe ci-dessus, dans $F"
@@ -62,8 +67,8 @@ for J in $SCRIPTS; do
   fi
 done
 
-if grep -qF 'src="assets/cookies.js"' ./index.html 2>/dev/null && [ ! -f ./assets/cookies.js ]; then
-  echo "ÉCHEC : index.html charge assets/cookies.js, qui n'existe pas"
+if [ ! -f ./assets/cookies.js ] && grep -lE 'src="/?assets/cookies\.js"' $PAGES; then
+  echo "ÉCHEC : les pages ci-dessus chargent assets/cookies.js, qui n'existe pas"
   FAIL=1
 fi
 

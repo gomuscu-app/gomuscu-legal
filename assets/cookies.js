@@ -4,9 +4,11 @@
  * Consent Mode de Google : gtag.js n'est même pas téléchargé tant que le visiteur n'a pas accepté.
  * Le choix, oui comme non, est retenu 180 jours dans le navigateur, puis redemandé.
  *
- * check-autonomie.sh n'admet ce fichier que sur la vitrine (index.html), et n'admet dans un script
- * aucune adresse absolue autre que celle de gtag.js — n'en écrire aucune autre, même en commentaire.
- * La bannière (#consentement) et ses styles vivent dans index.html. L'identifiant apparaît aussi
+ * check-autonomie.sh n'admet ce fichier que sur la vitrine (index.html) et le blog (blog/, depuis le
+ * 2026-10-07), et n'admet dans un script aucune adresse absolue autre que celle de gtag.js — n'en
+ * écrire aucune autre, même en commentaire. La bannière (#consentement) et ses styles vivent dans
+ * index.html, et pour le blog dans son générateur (dépôt de l'app, docs/marketing/vitrine/blog/) :
+ * changer l'un, c'est changer l'autre. L'identifiant apparaît aussi
  * dans le tableau des cookies de mentions-legales/ (cookie _ga_<identifiant>) : changer les deux.
  */
 (function () {
@@ -107,7 +109,7 @@
     if (mesure) activerMesure(); else couperMesure();
   }
 
-  // « Gérer les cookies » : tout lien vers #cookies (pied de la vitrine, /mentions-legales/) rouvre
+  // « Gérer les cookies » : tout lien vers #cookies (pied de la vitrine et du blog, /mentions-legales/) rouvre
   // la bannière, même après un choix. Le fragment est retiré aussitôt : un second clic la rouvre.
   function surFragment() {
     if (location.hash !== '#cookies') return;

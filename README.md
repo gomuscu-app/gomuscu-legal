@@ -4,10 +4,11 @@ Site de l'application iOS **Gomuscu**, servi par GitHub Pages sur <https://gomus
 la vitrine à la racine, le blog sous `/blog/`, et les pages légales.
 
 - `index.html` + `assets/` — la vitrine (page d'accueil, indexée) ; `assets/cookies.js` y gère le
-  consentement et ne charge Google Analytics qu'après « Accepter »
+  consentement, comme sur le blog, et ne charge Google Analytics qu'après « Accepter »
 - `blog/` — le blog (sommaire et articles, indexés), **généré** depuis le dépôt de l'app,
   `docs/marketing/vitrine/blog/` : ne jamais l'éditer à la main, modifier la source et régénérer
-  (voir le README de ce dossier). Aucun script : le blog n'est pas mesuré par Google Analytics
+  (voir le README de ce dossier). Mesuré comme la vitrine depuis le 2026-10-07 : même
+  `assets/cookies.js`, même bannière, recopiée par le générateur
 - `mentions-legales/` — mentions légales du site, données et cookies, en `noindex`
 - `confidentialite/` — politique de confidentialité **de l'app** (FR + EN), en `noindex`
 - `support/` — page d'assistance (FR + EN), en `noindex`
@@ -19,14 +20,14 @@ la vitrine à la racine, le blog sous `/blog/`, et les pages légales.
 Ce dépôt est **public** parce que GitHub Pages l'exige pour servir un site sans plan payant.
 Il ne contient **que** ce site : le code source de l'application reste privé.
 
-⚠️ **Aucune requête sortante avant le consentement.** Seule la vitrine mesure son audience (Google
-Analytics 4, `G-M0FDVT393T`), et `assets/cookies.js` ne télécharge `gtag.js` qu'après « Accepter »
-(mode « de base » du Consent Mode). Les autres pages — le blog, les mentions légales, et la
-politique de l'app et l'assistance qu'ouvrent l'app et App Store Connect — n'émettent **jamais**
-rien : ni script, ni police, ni feuille de style distante. Ne **jamais** coller l'extrait fourni par Google dans le `<head>` : il chargerait
+⚠️ **Aucune requête sortante avant le consentement.** Seuls la vitrine et le blog mesurent leur
+audience (Google Analytics 4, `G-M0FDVT393T`), et `assets/cookies.js` ne télécharge `gtag.js`
+qu'après « Accepter » (mode « de base » du Consent Mode). Les autres pages — les mentions légales,
+et la politique de l'app et l'assistance qu'ouvrent l'app et App Store Connect — n'émettent
+**jamais** rien : ni script, ni police, ni feuille de style distante. Ne **jamais** coller l'extrait fourni par Google dans le `<head>` : il chargerait
 Google avant tout choix. `check-autonomie.sh` n'admet que deux balises `<script>`, sous forme
-exacte : le JSON-LD de la vitrine (jamais exécuté) et `<script src="assets/cookies.js" defer></script>`,
-sur la vitrine seulement ; dans un script, la seule adresse absolue admise est celle de `gtag.js`.
+exacte : le JSON-LD (jamais exécuté) et la balise de `cookies.js`, `<script src="assets/cookies.js" defer></script>`
+sur la vitrine, `<script src="/assets/cookies.js" defer></script>` sur le blog, nulle part ailleurs ; dans un script, la seule adresse absolue admise est celle de `gtag.js`.
 Jouer `./check-autonomie.sh` après toute modification ; le « après Accepter », lui, se vérifie au
 navigateur (requêtes réseau et cookies, avant et après le choix).
 
