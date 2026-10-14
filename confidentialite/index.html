@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Gomuscu</title>
-<meta name="description" content="Gomuscu enregistre tes séances sur ton iPhone et nulle part ailleurs. Des statistiques d'usage anonymes, que tu peux couper ; la mesure de nos publicités, seulement si tu l'acceptes.">
+<meta name="description" content="Gomuscu enregistre tes séances sur ton iPhone. Un compte facultatif pour les sauvegarder ; des statistiques d'usage anonymes, que tu peux couper ; la mesure de nos publicités, seulement si tu l'acceptes.">
 <meta name="robots" content="noindex, follow">
 <style>
   :root {
@@ -49,18 +49,22 @@
 <main>
 
 <h1>Politique de confidentialité</h1>
-<p class="date">Gomuscu · dernière mise à jour : 5 octobre 2026</p>
+<p class="date">Gomuscu · dernière mise à jour : 14 octobre 2026</p>
 <p class="lang"><a href="#english">Read this page in English</a></p>
 <p class="portee">Cette politique concerne l'application. Le site gomuscuapp.com a ses propres
 <a href="/mentions-legales/">mentions légales</a>, cookies compris.</p>
 
 <div class="lede">
-<p>Gomuscu enregistre tes séances <strong>sur ton iPhone, et nulle part ailleurs</strong>. Nous
-n'en recevons aucune copie et n'avons aucun moyen de les consulter.</p>
-<p>Trois choses peuvent quitter ton iPhone, et tes séances n'en font jamais partie :</p>
+<p>Gomuscu enregistre tes séances <strong>sur ton iPhone</strong>. Sans compte, elles ne vont
+nulle part ailleurs : nous n'en recevons aucune copie et n'avons aucun moyen de les consulter.</p>
+<p>Quatre choses peuvent quitter ton iPhone. Tes séances n'en font partie que si tu crées un
+compte :</p>
 <ul>
+  <li>depuis la version 1.0.5, si tu crées un <strong>compte</strong>, qui est facultatif : ton
+      adresse e-mail et la sauvegarde de tes données ;</li>
   <li>depuis la version 1.0.4, des <strong>statistiques d'usage anonymes</strong> (écrans vus,
-      séances terminées), que tu peux couper à tout moment ;</li>
+      séances terminées et, depuis la version 1.0.5, tes réponses aux questions du premier
+      lancement), que tu peux couper à tout moment ;</li>
   <li>depuis la version 1.0.4, tes <strong>achats dans l'application</strong>, pour le suivi des
       abonnements ;</li>
   <li>depuis la version 1.0.2, la <strong>mesure de nos publicités</strong>, seulement si tu
@@ -75,33 +79,44 @@ Contact : <a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a></p>
 <h2>Quelles données, et où elles vivent</h2>
 <p>Gomuscu enregistre ce que tu saisis :</p>
 <ul>
-  <li>un pseudo, si tu choisis d'en renseigner un ;</li>
-  <li>tes exercices et tes programmes : noms, groupes musculaires, durées de repos ;</li>
+  <li>un prénom ou un pseudo, si tu choisis d'en donner un : au premier lancement, ou dans
+      Profil ;</li>
+  <li>depuis la version 1.0.5, tes réponses aux questions du premier lancement : objectif, niveau,
+      jours d'entraînement, durée des séances et zones prioritaires. Elles servent à construire ta
+      semaine de programmes. Tes deux autres réponses, ce qui t'a freiné et comment tu as connu
+      Gomuscu, ne sont pas enregistrées : elles ne vont qu'à nos statistiques d'usage ;</li>
+  <li>tes exercices et tes programmes : noms, groupes musculaires, durées de repos, et les jours où
+      tu prévois chaque programme ;</li>
   <li>tes séances : date, durée, exercices, charges, répétitions, séries dégressives, et les notes
       libres que tu écris.</li>
 </ul>
 <p>Le tout tient dans un <strong>unique fichier JSON</strong>, rangé dans l'espace privé de
 l'application sur ton appareil — le « bac à sable » iOS. Aucune autre application ne peut le lire.</p>
-<p>Les notes libres et le pseudo sont des champs de texte : tu peux y écrire ce que tu veux, y
-compris des informations personnelles ou de santé. Elles restent au même endroit que le reste, sur
-ton téléphone.</p>
+<p>Les notes libres et le prénom sont des champs de texte : tu peux y écrire ce que tu veux, y
+compris des informations personnelles ou de santé. Ils suivent le même chemin que le reste : sur ton
+téléphone, et dans ta sauvegarde si tu crées un compte.</p>
 
 <h2>Ce qui n'existe pas</h2>
 <p>Pour être explicite, voici ce que Gomuscu <strong>ne fait pas</strong> :</p>
 <ul>
-  <li>pas de compte, pas d'inscription, pas de mot de passe ;</li>
-  <li>pas de serveur à nous : tes séances ne sont envoyées nulle part ;</li>
-  <li>aucune donnée d'entraînement transmise : ni exercices, ni programmes, ni charges, ni
-      répétitions, ni notes, ni pseudo ;</li>
+  <li>pas de mot de passe : le compte est facultatif, et il se crée avec Apple, avec Google ou avec
+      un code reçu par e-mail ;</li>
+  <li>sans compte, tes séances ne sont envoyées nulle part ;</li>
+  <li>aucune donnée de séance transmise à un outil de mesure ou de publicité : ni exercices, ni
+      programmes, ni charges, ni répétitions, ni notes, ni prénom. Une seule exception : tes
+      réponses aux questions du premier lancement, et le type de semaine qu'elles donnent,
+      rejoignent nos statistiques d'usage, sous forme de valeurs fixes (voir plus bas) ;</li>
   <li>pas de publicité dans l'app, pas d'identifiant publicitaire (IDFA), aucun suivi entre
       applications ;</li>
   <li>pas de localisation précise (GPS) : seule la mesure des publicités, si tu l'acceptes, déduit
-      de l'adresse IP un pays et une ville approximatifs ;</li>
+      de l'adresse IP un pays et une ville approximatifs. Si tu te connectes avec Google, Google
+      déclare aussi recueillir une localisation approximative ;</li>
   <li>pas d'accès aux contacts, aux photos, au micro ni à l'app Santé.</li>
 </ul>
-<p>Trois bibliothèques tierces sont intégrées : PostHog pour les statistiques d'usage, RevenueCat
-pour le suivi des abonnements, et AppsFlyer pour la mesure des publicités, qui ne fonctionne que si
-tu l'acceptes.</p>
+<p>Les bibliothèques de cinq services tiers sont intégrées : PostHog pour les statistiques d'usage,
+RevenueCat pour le suivi des abonnements, AppsFlyer pour la mesure des publicités, qui ne fonctionne
+que si tu l'acceptes, et, depuis la version 1.0.5, Supabase et Google pour le compte facultatif.
+Sans compte, l'application ne contacte ni Supabase ni Google.</p>
 
 <h2>Notifications</h2>
 <p>Si tu actives l'alerte de fin de repos, iOS te demande l'autorisation d'afficher des
@@ -112,29 +127,42 @@ iOS.</p>
 <h2>Statistiques d'usage — anonymes, et tu peux les couper</h2>
 <p>Depuis la version 1.0.4, pour savoir quels écrans servent et ce qui peut être amélioré, Gomuscu
 envoie des statistiques d'usage anonymes à <strong>PostHog</strong>, notre outil de mesure
-d'audience. Comme la loi le permet pour une mesure d'audience qui respecte les conditions fixées par
+d'audience. Depuis la version 1.0.5, elles nous disent aussi à quelle étape du premier lancement on
+s'arrête, et comment on a connu Gomuscu. Comme la loi le permet pour une mesure d'audience qui respecte les conditions fixées par
 la <a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">CNIL</a>,
 elles fonctionnent sans te demander ton accord. Tu peux les couper à tout moment dans Profil →
 Réglages → Données → Statistiques d'usage : dès que tu l'éteins, plus rien ne part.</p>
 <p>PostHog reçoit :</p>
 <ul>
-  <li>les écrans que tu ouvres : Accueil, Séance, Programmes, Progression, Profil, Réglages, la
-      présentation du premier lancement et l'écran d'abonnement ;</li>
+  <li>les écrans que tu ouvres : Accueil, Séance, Programmes, Progression, Profil, Réglages,
+      Compte, la présentation du premier lancement et l'écran d'abonnement ;</li>
   <li>l'installation, les mises à jour, l'ouverture et la mise en arrière-plan de
       l'application ;</li>
   <li>quelques étapes : présentation terminée, programme créé (depuis un modèle ou non), séance
       terminée (la première ou non, le nombre d'exercices, séance libre ou non), écran d'abonnement
       affiché (et depuis quel endroit de l'application), essai commencé ou abonnement souscrit
-      (mensuel ou annuel), achats restaurés ;</li>
+      (mensuel ou annuel), achats restaurés. Depuis la version 1.0.5, « séance terminée » et
+      « écran d'abonnement affiché » disent aussi si tu es abonné et, sinon, si tu utilisais déjà
+      l'application avant la version 1.0.5 ;</li>
+  <li>depuis la version 1.0.5, la présentation du premier lancement : chaque écran affiché, chaque
+      écran passé, puis tes réponses, sous forme de valeurs fixes. Ce sont ton objectif, ton niveau,
+      tes jours d'entraînement et leur nombre, la durée de tes séances, tes zones prioritaires, ce
+      qui t'a freiné et comment tu as connu Gomuscu ; s'y ajoutent deux oui ou non : si tu as
+      donné un prénom, jamais le prénom lui-même, et si tu as tout passé. Puis la semaine
+      proposée : son découpage, machines ou poids libres, son nombre de programmes, et si elle a
+      été enregistrée ;</li>
+  <li>depuis la version 1.0.5, le compte facultatif : compte proposé (et à quel moment), remis à
+      plus tard ou connecté (avec Apple, Google ou un e-mail, compte nouveau ou non), ta réponse aux
+      e-mails de conseils et d'offres (oui ou non), sauvegarde récupérée, compte supprimé ;</li>
   <li>des informations techniques : un identifiant aléatoire créé par l'application, le modèle de
       l'appareil, les versions d'iOS et de l'application, la langue, le fuseau horaire, la taille de
       l'écran et le type de connexion (Wi-Fi ou réseau mobile).</li>
 </ul>
-<p>PostHog ne reçoit jamais tes séances, tes exercices, tes charges, tes programmes, ton pseudo ni
-tes notes, ni aucun identifiant d'Apple, de RevenueCat ou d'AppsFlyer. Ton adresse IP n'est pas
-conservée et ne sert à aucune localisation. Ces statistiques ne servent qu'à nous, pour améliorer
-l'application : elles ne sont croisées avec aucune autre donnée et ne sont transmises à aucune régie
-publicitaire.</p>
+<p>PostHog ne reçoit jamais tes séances, tes exercices, tes charges, le contenu de tes programmes,
+ton prénom ni tes notes, ni ton adresse e-mail, ni aucun identifiant d'Apple, de Google, de ton
+compte, de RevenueCat ou d'AppsFlyer. Ton adresse IP n'est pas conservée et ne sert à aucune
+localisation. Ces statistiques ne servent qu'à nous : elles ne sont croisées avec aucune autre
+donnée et ne sont transmises à aucune régie publicitaire.</p>
 <p>L'identifiant aléatoire est remplacé par un nouveau au plus tard tous les 13 mois, et chaque fois
 que tu rallumes les statistiques. Les statistiques sont conservées <strong>25 mois au
 plus</strong>.</p>
@@ -148,8 +176,8 @@ européenne (voir <a href="https://posthog.com/dpa">l'accord de traitement de Po
 
 <h2>Achats et abonnement</h2>
 <p>L'abonnement Gomuscu Pro passe par l'App Store. <strong>C'est Apple qui traite le paiement</strong>
-et qui connaît l'acheteur. Gomuscu ne reçoit ni ton nom, ni ton moyen de paiement, ni ton identifiant
-Apple. C'est la réponse d'Apple, lue sur ton iPhone, qui décide si Gomuscu Pro est actif. Le
+et qui connaît l'acheteur. Pour ton achat, Gomuscu ne reçoit ni ton nom, ni ton moyen de paiement,
+ni ton identifiant Apple. C'est la réponse d'Apple, lue sur ton iPhone, qui décide si Gomuscu Pro est actif. Le
 traitement des données de paiement relève de la politique de confidentialité d'Apple.</p>
 
 <h2>Suivi des abonnements</h2>
@@ -171,8 +199,9 @@ droits »).</p>
       déduit, le modèle de l'appareil, les versions d'iOS et de l'application, les langues de
       l'appareil, et l'état de l'autorisation de suivi d'Apple, que Gomuscu ne demande jamais.</li>
 </ul>
-<p>RevenueCat ne reçoit ni ton nom, ni ton moyen de paiement, ni ton identifiant Apple, ni tes
-séances. Nous ne l'avons relié ni à PostHog ni à AppsFlyer.</p>
+<p>RevenueCat ne reçoit ni ton nom, ni ton moyen de paiement, ni ton identifiant Apple, ni ton
+adresse e-mail, ni tes séances. Nous ne l'avons relié ni à PostHog, ni à AppsFlyer, ni à ton
+compte.</p>
 <p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; RevenueCat
 (RevenueCat, Inc., États-Unis) agit pour notre compte, comme sous-traitant. Les données sont
 hébergées aux États-Unis, chez Amazon Web Services. Ce transfert hors de l'Union européenne est
@@ -184,8 +213,8 @@ et toutes à la fin de notre contrat avec lui.</p>
 <h2>Mesure des publicités — seulement si tu l'acceptes</h2>
 <p>Gomuscu se fait connaître avec des publicités (Meta, Google, Apple). Pour savoir lesquelles
 fonctionnent, l'application peut signaler à <strong>AppsFlyer</strong>, notre service de mesure,
-que tu l'as installée et si tu t'es abonné. À la fin de la présentation du premier lancement, une
-fenêtre te le demande : <strong>sans ton accord, rien ne part vers AppsFlyer</strong>. Tu peux changer d'avis à
+que tu l'as installée et si tu t'es abonné. Au premier lancement, après la présentation et la
+proposition de compte, une fenêtre te le demande : <strong>sans ton accord, rien ne part vers AppsFlyer</strong>. Tu peux changer d'avis à
 tout moment dans Profil → Réglages → Données → Mesure des publicités.</p>
 <p>Si tu acceptes, AppsFlyer reçoit :</p>
 <ul>
@@ -198,8 +227,9 @@ tout moment dans Profil → Réglages → Données → Mesure des publicités.</
       de l'iPhone pour reconnaître une réinstallation), l'adresse IP, le modèle de l'appareil, les
       versions d'iOS et de l'application, la langue, le fuseau horaire et l'opérateur.</li>
 </ul>
-<p>AppsFlyer ne reçoit jamais tes séances, tes exercices, tes programmes, ton pseudo ni tes notes.
-Il nous rend des statistiques par campagne. Les régies publicitaires ne reçoivent de nous que des
+<p>AppsFlyer ne reçoit jamais tes séances, tes exercices, tes programmes, ton prénom, tes notes, tes
+réponses aux questions du premier lancement ni ton adresse e-mail. Il nous rend des statistiques par
+campagne. Les régies publicitaires ne reçoivent de nous que des
 résultats agrégés, à une exception près : pour les annonces de l'App Store, AppsFlyer renvoie à
 Apple le jeton que ton iPhone a lui-même produit, afin de savoir si l'installation vient d'une de
 ces annonces.</p>
@@ -211,6 +241,67 @@ données, ainsi que depuis les États-Unis, l'Inde, la Chine et Hong Kong ; ces 
 encadrés par les clauses contractuelles types (voir
 <a href="https://www.appsflyer.com/legal/dpa/">l'accord de traitement d'AppsFlyer</a>). AppsFlyer
 conserve ces données <strong>24 mois au plus</strong>.</p>
+
+<h2>Compte et sauvegarde — facultatifs</h2>
+<p>Depuis la version 1.0.5, tu peux créer un compte pour sauvegarder tes données : elles reviennent
+si tu réinstalles l'application ou si tu changes d'iPhone. Le compte t'est proposé une fois, et tu
+peux aussi le créer plus tard depuis Profil. Sans compte, rien ne change : tes séances restent sur
+ton téléphone.</p>
+<ul>
+  <li><strong>Se connecter :</strong> avec Apple, avec Google ou avec un code à 6 chiffres reçu par
+      e-mail. Pas de mot de passe.</li>
+  <li><strong>Ce qu'on garde :</strong> ton adresse e-mail (ou l'adresse relais d'Apple si tu
+      choisis de masquer la tienne) ; l'identifiant de ton compte, et celui qu'Apple ou Google
+      donne à ta connexion ; ta façon de te connecter (Apple, Google ou e-mail) ; les dates de
+      création du compte, de ta dernière connexion et de ta dernière sauvegarde ; si tu es abonné à
+      Gomuscu Pro, et la date du dernier changement de ce statut ; ta réponse aux e-mails, avec sa
+      date, d'où elle vient et la version du texte qui t'a été montré ; et la copie de tes données
+      Gomuscu, la dernière et la précédente : séances, programmes et leurs jours, exercices, notes,
+      prénom, réponses aux questions du premier lancement et réglages. Tes choix sur la mesure des
+      publicités et sur les statistiques d'usage, eux, ne sont pas sauvegardés.</li>
+  <li><strong>Avec Apple ou Google :</strong> ils confirment ton identité, selon leurs propres
+      politiques. À Apple, nous ne demandons que ton adresse. Google, lui, joint toujours à la
+      connexion ton nom et le lien de ta photo de profil : ils sont gardés avec ton compte, mais nous
+      ne nous en servons pas.</li>
+  <li><strong>Avec un code par e-mail :</strong> le code t'est envoyé par Brevo, notre service
+      d'envoi d'e-mails, qui reçoit pour cela ton adresse.</li>
+  <li><strong>Pourquoi :</strong> faire fonctionner le compte et la sauvegarde que tu as demandés
+      (exécution du service, article 6.1.b du RGPD). Ton statut d'abonné ne sert qu'à choisir les
+      e-mails de conseils et d'offres, si tu as accepté de les recevoir.</li>
+  <li><strong>Où :</strong> chez Supabase, notre hébergeur, sur des serveurs situés à Paris.
+      Supabase, Inc. est une société américaine : le transfert vers elle est encadré par les clauses
+      contractuelles types de la Commission européenne, intégrées à
+      <a href="https://supabase.com/legal/dpa">l'accord de traitement de Supabase</a>.</li>
+  <li><strong>Sur ton iPhone :</strong> l'application garde aussi ton adresse et l'état de ta
+      sauvegarde dans un petit fichier à part, et ta session de connexion dans le trousseau
+      d'iOS.</li>
+  <li><strong>Combien de temps :</strong> jusqu'à la suppression de ton compte. Un compte sans
+      sauvegarde depuis 3 ans est supprimé ; nous faisons ce tri une fois par an. Une adresse saisie
+      dont le code n'a jamais été validé est effacée automatiquement après 48 heures.</li>
+  <li><strong>Supprimer :</strong> Profil → Compte → Supprimer mon compte. Ton compte, ta sauvegarde
+      et ton adresse sont effacés, chez Supabase comme chez Brevo ; tes séances restent sur ton
+      iPhone. Si tu t'étais connecté avec Apple, nous demandons aussi à Apple de retirer l'accès que
+      tu nous avais donné ; avec Google, l'application le retire elle-même.</li>
+</ul>
+
+<h2>E-mails de conseils et d'offres — seulement si tu dis oui</h2>
+<p>Après la création du compte, on te demande si tu veux recevoir de temps en temps des conseils
+d'entraînement et nos offres. Sans ton « oui », tu ne reçois de nous que l'e-mail nécessaire au
+compte : le code de connexion.</p>
+<ul>
+  <li><strong>Base légale :</strong> ton consentement (article 6.1.a du RGPD ; article L34-5 du Code
+      des postes et des communications électroniques).</li>
+  <li><strong>Outil d'envoi :</strong> Brevo, une société française, à qui on transmet ton adresse,
+      la date de création de ton compte, ta façon de te connecter et si tu es abonné à Gomuscu Pro.
+      Seules les personnes qui ont dit oui y figurent. Brevo ne reçoit ni ton prénom, ni tes
+      réponses du premier lancement, ni tes séances.</li>
+  <li><strong>Arrêter :</strong> le lien de désinscription de chaque e-mail, ou l'interrupteur
+      « Recevoir nos e-mails » dans Profil → Compte. Ton adresse est alors retirée de nos contacts
+      chez Brevo.</li>
+  <li><strong>Combien de temps :</strong> tant que tu ne retires pas ton accord, et au plus 3 ans
+      après ton dernier contact avec nous. Supprimer ton compte retire aussi ton adresse de
+      Brevo.</li>
+</ul>
 
 <h2>Exports, sauvegardes et imports</h2>
 <p>Gomuscu te permet d'exporter tes séances en CSV (<code>gomuscu-seances.csv</code>) et de sauvegarder
@@ -228,7 +319,12 @@ iCloud ou sur un ordinateur, tes séances sont incluses dans cette sauvegarde,
 Tu peux exclure Gomuscu des sauvegardes iCloud dans Réglages iOS → ton nom → iCloud → Sauvegarde.</p>
 
 <h2>Combien de temps</h2>
-<p>Tes séances : sur ton appareil, tant que l'application est installée ; rien ne nous parvient.<br>
+<p>Tes séances : sur ton appareil, tant que l'application est installée ; sans compte, rien ne nous
+parvient.<br>
+Le compte et sa sauvegarde, si tu en crées un : jusqu'à ce que tu le supprimes, et au plus 3 ans
+sans sauvegarde ; une adresse dont le code n'a jamais été validé : 48 heures.<br>
+Les e-mails de conseils et d'offres : tant que tu ne retires pas ton accord, et au plus 3 ans après
+ton dernier contact avec nous.<br>
 Les statistiques d'usage : 25 mois au plus ; l'identifiant aléatoire change au plus tard tous les
 13 mois.<br>
 Le suivi des abonnements : tant que nous utilisons RevenueCat, avec effacement sur ta demande, et de
@@ -236,10 +332,16 @@ tout à la fin de notre contrat avec lui.<br>
 La mesure des publicités, si tu l'as acceptée : AppsFlyer la conserve 24 mois au plus.</p>
 
 <h2>Rôle et base légale</h2>
-<p>Tes séances ne nous parviennent pas : nous n'y effectuons <strong>aucun traitement</strong> au
-sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton matériel.</p>
-<p>Dans l'application, nous faisons trois traitements de données personnelles :</p>
+<p>Sans compte, tes séances ne nous parviennent pas : nous n'y effectuons <strong>aucun
+traitement</strong> au sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton
+matériel.</p>
+<p>Dans l'application, nous faisons cinq traitements de données personnelles :</p>
 <ul>
+  <li><strong>le compte et la sauvegarde</strong>, si tu crées un compte, reposent sur l'exécution
+      du service que tu demandes (article 6.1.b du RGPD) ;</li>
+  <li><strong>les e-mails de conseils et d'offres</strong> reposent sur <strong>ton
+      consentement</strong> (article 6.1.a du RGPD et article L34-5 du Code des postes et des
+      communications électroniques) ; les refuser ne change rien à l'application ;</li>
   <li><strong>les statistiques d'usage</strong> reposent sur notre intérêt légitime à mesurer
       l'audience de l'application pour l'améliorer (article 6.1.f du RGPD). Elles n'exigent pas ton
       consentement parce qu'elles respectent les conditions de la CNIL pour la mesure d'audience
@@ -255,11 +357,11 @@ sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton matériel.
 
 <h2>Tes droits, et comment les exercer</h2>
 <p>Le RGPD te donne un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et
-de portabilité. Comme nous ne détenons aucune copie de tes séances, <strong>tu les exerces
-directement, sans nous écrire</strong> :</p>
+de portabilité. Sans compte, nous ne détenons aucune copie de tes séances : <strong>tu les
+exerces directement, sans nous écrire</strong> :</p>
 <ul>
   <li><strong>Accès et portabilité</strong> — l'export JSON ou CSV, dans Profil → Réglages → Données → Sauvegarde &amp; export, te rend
-      l'intégralité de tes données dans un format ouvert.</li>
+      l'intégralité de tes données Gomuscu dans un format ouvert.</li>
   <li><strong>Rectification</strong> — modifie ou supprime une séance, un exercice ou un programme
       dans l'application.</li>
   <li><strong>Effacement</strong> — désinstalle Gomuscu : iOS supprime le bac à sable de
@@ -267,7 +369,18 @@ directement, sans nous écrire</strong> :</p>
       désinstallation est le moyen d'effacer tes séances. Pense à exporter avant si tu veux garder une
       trace. Si tu as accepté la mesure des publicités, l'identifiant créé par AppsFlyer reste dans le
       trousseau de l'iPhone après la désinstallation. Les identifiants aléatoires de PostHog et de
-      RevenueCat, eux, disparaissent avec l'application.</li>
+      RevenueCat, eux, disparaissent avec l'application. Si tu as un compte, la désinstallation ne
+      le supprime pas : supprime-le d'abord (voir « Compte » ci-dessous). Sinon, ta session de
+      connexion reste aussi dans le trousseau ; elle ne sert plus sans l'application, et s'efface
+      à ta prochaine connexion.</li>
+  <li><strong>Compte</strong> — l'export JSON contient tout ce que contient ta sauvegarde. Ce que tu
+      corriges dans l'application rejoint ta sauvegarde suivante. Profil → Compte → Supprimer mon
+      compte efface ton compte, ta sauvegarde et ton adresse. Pour obtenir le reste de ce que nous
+      gardons (ton adresse, tes dates, ta réponse aux e-mails) ou pour corriger ton adresse,
+      écris-nous.</li>
+  <li><strong>E-mails de conseils et d'offres</strong> — retire ton accord avec le lien de
+      désinscription de chaque e-mail, ou avec l'interrupteur « Recevoir nos e-mails » dans
+      Profil → Compte.</li>
   <li><strong>Statistiques d'usage</strong> — éteins l'interrupteur dans Profil → Réglages →
       Données → Statistiques d'usage : plus rien ne part, et c'est ainsi que tu t'y opposes. Les
       statistiques déjà envoyées ne sont rattachées qu'à l'identifiant aléatoire, que l'application
@@ -299,17 +412,21 @@ modification substantielle sera signalée dans les nouveautés de la version con
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="date">Gomuscu · last updated: 5 October 2026</p>
+<p class="date">Gomuscu · last updated: 14 October 2026</p>
 <p class="portee">This policy covers the app. The gomuscuapp.com website has its own
 <a href="/mentions-legales/">legal notice</a> (in French), cookies included.</p>
 
 <div class="lede">
-<p>Gomuscu stores your workouts <strong>on your iPhone and nowhere else</strong>. We receive no
-copy of them and have no way to look at them.</p>
-<p>Three things can leave your iPhone, and your workouts are never part of them:</p>
+<p>Gomuscu stores your workouts <strong>on your iPhone</strong>. Without an account, they go
+nowhere else: we receive no copy of them and have no way to look at them.</p>
+<p>Four things can leave your iPhone. Your workouts are part of them only if you create an
+account:</p>
 <ul>
+  <li>since version 1.0.5, if you create an <strong>account</strong>, which is optional: your email
+      address and the backup of your data;</li>
   <li>since version 1.0.4, <strong>anonymous usage statistics</strong> (screens viewed, workouts
-      finished), which you can turn off at any time;</li>
+      finished and, since version 1.0.5, your answers to the first-launch questions), which you can
+      turn off at any time;</li>
   <li>since version 1.0.4, your <strong>in-app purchases</strong>, for subscription
       tracking;</li>
   <li>since version 1.0.2, the <strong>measurement of our ads</strong>, only if you agree.</li>
@@ -323,29 +440,42 @@ Contact: <a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a></p>
 <h2>What data, and where it lives</h2>
 <p>Gomuscu stores what you enter:</p>
 <ul>
-  <li>a nickname, if you choose to set one;</li>
-  <li>your exercises and programmes: names, muscle groups, rest durations;</li>
+  <li>a first name or a nickname, if you choose to give one: at first launch, or in Profile;</li>
+  <li>since version 1.0.5, your answers to the first-launch questions: goal, level, training days,
+      workout length and priority areas. They are used to build your week of programmes. Your two
+      other answers, what has held you back and how you heard about Gomuscu, are not stored: they
+      only go to our usage statistics;</li>
+  <li>your exercises and programmes: names, muscle groups, rest durations, and the days you plan
+      each programme for;</li>
   <li>your workouts: date, duration, exercises, loads, repetitions, drop sets, and any free-form
       notes you write.</li>
 </ul>
 <p>All of it sits in a <strong>single JSON file</strong> inside the app's private storage on your
 device — the iOS sandbox. No other app can read it.</p>
-<p>Free-form notes and the nickname are text fields: you may write anything in them, including
-personal or health information. They stay where everything else stays — on your phone.</p>
+<p>Free-form notes and the first name are text fields: you may write anything in them, including
+personal or health information. They follow the same path as everything else: on your phone, and in
+your backup if you create an account.</p>
 
 <h2>What does not exist</h2>
 <p>To be explicit, here is what Gomuscu <strong>does not do</strong>:</p>
 <ul>
-  <li>no account, no sign-up, no password;</li>
-  <li>no server of ours: your workouts are sent nowhere;</li>
-  <li>no workout data sent: no exercises, programmes, loads, repetitions, notes or nickname;</li>
+  <li>no password: the account is optional, and you create it with Apple, with Google or with a
+      code received by email;</li>
+  <li>without an account, your workouts are sent nowhere;</li>
+  <li>no workout data sent to any measurement or advertising tool: no exercises, programmes, loads,
+      repetitions, notes or first name. One single exception: your answers to the first-launch
+      questions, and the type of week they lead to, go to our usage statistics as fixed values (see
+      below);</li>
   <li>no advertising in the app, no advertising identifier (IDFA), no cross-app tracking;</li>
   <li>no precise location (GPS): only ad measurement, if you agree to it, derives an approximate
-      country and city from the IP address;</li>
+      country and city from the IP address. If you sign in with Google, Google also states that it
+      collects an approximate location;</li>
   <li>no access to contacts, photos, microphone or the Health app.</li>
 </ul>
-<p>Three third-party libraries are included: PostHog for usage statistics, RevenueCat for
-subscription tracking, and AppsFlyer for ad measurement, which only works if you agree.</p>
+<p>The libraries of five third-party services are included: PostHog for usage statistics,
+RevenueCat for subscription tracking, AppsFlyer for ad measurement, which only works if you agree,
+and, since version 1.0.5, Supabase and Google for the optional account. Without an account, the app
+contacts neither Supabase nor Google.</p>
 
 <h2>Notifications</h2>
 <p>If you enable the rest-timer alert, iOS asks for permission to display notifications. They are
@@ -354,28 +484,41 @@ received. You can revoke them at any time in iOS Settings.</p>
 
 <h2>Usage statistics — anonymous, and you can turn them off</h2>
 <p>Since version 1.0.4, to learn which screens are useful and what can be improved, Gomuscu sends
-anonymous usage statistics to <strong>PostHog</strong>, our audience measurement tool. As the law
-allows for audience measurement that meets the conditions set by the French data protection
+anonymous usage statistics to <strong>PostHog</strong>, our audience measurement tool. Since
+version 1.0.5, they also tell us at which step of the first launch people stop, and how people
+heard about Gomuscu. As the law allows for audience measurement that meets the conditions set by the French data protection
 authority (<a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">CNIL</a>),
 they work without asking for your consent. You can turn them off at any time under Profile →
 Settings → Data → Usage statistics: as soon as you do, nothing more is sent.</p>
 <p>PostHog receives:</p>
 <ul>
-  <li>the screens you open: Home, Workout, Programmes, Progress, Profile, Settings, the first-launch
-      introduction and the subscription screen;</li>
+  <li>the screens you open: Home, Workout, Programmes, Progress, Profile, Settings, Account, the
+      first-launch introduction and the subscription screen;</li>
   <li>the install, updates, and the app being opened and sent to the background;</li>
   <li>a few steps: introduction finished, programme created (from a template or not), workout
       finished (the first one or not, the number of exercises, free workout or not), subscription
       screen shown (and from which part of the app), trial started or subscription purchased
-      (monthly or yearly), purchases restored;</li>
+      (monthly or yearly), purchases restored. Since version 1.0.5, "workout finished" and
+      "subscription screen shown" also say whether you are a subscriber and, if not, whether you
+      were already using the app before version 1.0.5;</li>
+  <li>since version 1.0.5, the first-launch introduction: each screen shown, each screen skipped,
+      then your answers, as fixed values. These are your goal, your level, your training days and
+      how many there are, the length of your workouts, your priority areas, what has held you back
+      and how you heard about Gomuscu; plus two yes-or-no values: whether you gave a first name,
+      never the name itself, and whether you skipped everything. Then the week offered: its split,
+      machines or free weights, its number of programmes, and whether it was saved;</li>
+  <li>since version 1.0.5, the optional account: account offered (and at which moment), put off or
+      signed in to (with Apple, Google or an email, new account or not), your answer about tips and
+      offers emails (yes or no), backup restored, account deleted;</li>
   <li>technical information: a random identifier created by the app, the device model, the iOS and
       app versions, the language, the time zone, the screen size and the connection type (Wi-Fi or
       mobile network).</li>
 </ul>
-<p>PostHog never receives your workouts, exercises, loads, programmes, nickname or notes, nor any
-Apple, RevenueCat or AppsFlyer identifier. Your IP address is not stored and is not used for any
-location. These statistics are for us alone, to improve the app: they are not combined with any
-other data and are not passed on to any ad network.</p>
+<p>PostHog never receives your workouts, exercises, loads, the content of your programmes, first
+name or notes, nor your email address, nor any Apple, Google, account, RevenueCat or AppsFlyer
+identifier. Your IP address is not stored and is not used for any location. These statistics are
+for us alone: they are not combined with any other data and are not passed on to any ad
+network.</p>
 <p>The random identifier is replaced by a new one at least every 13 months, and every time you turn
 the statistics back on. The statistics are kept for <strong>25 months at most</strong>.</p>
 <p><strong>Who does what.</strong> We are the controller of this processing; PostHog (PostHog Inc.,
@@ -388,8 +531,8 @@ European Commission's Standard Contractual Clauses (see
 
 <h2>Purchases and subscription</h2>
 <p>The Gomuscu Pro subscription goes through the App Store. <strong>Apple processes the
-payment</strong> and knows the buyer. Gomuscu receives neither your name, nor your payment method,
-nor your Apple Account identifier. Apple's response, read on your iPhone, decides whether Gomuscu
+payment</strong> and knows the buyer. For your purchase, Gomuscu receives neither your name, nor
+your payment method, nor your Apple Account identifier. Apple's response, read on your iPhone, decides whether Gomuscu
 Pro is active. Processing of payment data is governed by Apple's privacy policy.</p>
 
 <h2>Subscription tracking</h2>
@@ -410,7 +553,8 @@ writing to us (see "Your rights").</p>
       Apple's tracking permission, which Gomuscu never asks for.</li>
 </ul>
 <p>RevenueCat receives neither your name, nor your payment method, nor your Apple Account
-identifier, nor your workouts. We have connected it neither to PostHog nor to AppsFlyer.</p>
+identifier, nor your email address, nor your workouts. We have connected it neither to PostHog, nor
+to AppsFlyer, nor to your account.</p>
 <p><strong>Who does what.</strong> We are the controller of this processing; RevenueCat
 (RevenueCat, Inc., United States) acts on our behalf as a processor. The data is hosted in the
 United States, on Amazon Web Services. This transfer outside the European Union is governed by the
@@ -422,8 +566,8 @@ at the end of our contract with RevenueCat.</p>
 <h2>Ad measurement — only if you agree</h2>
 <p>Gomuscu gets known through ads (Meta, Google, Apple). To find out which ones work, the app can
 tell <strong>AppsFlyer</strong>, our measurement service, that you installed it and whether you
-subscribed. At the end of the first-launch introduction, a prompt asks you: <strong>without your
-consent, nothing is sent to AppsFlyer</strong>. You can change your mind at any time under Profile → Settings →
+subscribed. At first launch, after the introduction and the account offer, a prompt asks you:
+<strong>without your consent, nothing is sent to AppsFlyer</strong>. You can change your mind at any time under Profile → Settings →
 Data → Ad measurement.</p>
 <p>If you agree, AppsFlyer receives:</p>
 <ul>
@@ -436,8 +580,8 @@ Data → Ad measurement.</p>
       keychain to recognise a reinstall), the IP address, the device model, the iOS and app
       versions, the language, the time zone and the carrier.</li>
 </ul>
-<p>AppsFlyer never receives your workouts, exercises, programmes, nickname or notes. It gives us
-statistics per campaign. Ad networks receive only aggregated results from us, with one exception:
+<p>AppsFlyer never receives your workouts, exercises, programmes, first name, notes, answers to the
+first-launch questions or email address. It gives us statistics per campaign. Ad networks receive only aggregated results from us, with one exception:
 for App Store ads, AppsFlyer sends Apple back the token your iPhone itself generated, to find out
 whether the install came from one of those ads.</p>
 <p><strong>Who does what.</strong> We are the controller of this processing; AppsFlyer (AppsFlyer
@@ -447,6 +591,65 @@ European Commission recognises as protecting personal data, and from the United 
 China and Hong Kong, where such access is governed by the Standard Contractual Clauses (see
 <a href="https://www.appsflyer.com/legal/dpa/">AppsFlyer's data processing agreement</a>).
 AppsFlyer keeps this data for <strong>24 months at most</strong>.</p>
+
+<h2>Account and backup — optional</h2>
+<p>Since version 1.0.5, you can create an account to back up your data: it comes back if you
+reinstall the app or change iPhone. The account is offered to you once, and you can also create it
+later from Profile. Without an account, nothing changes: your workouts stay on your phone.</p>
+<ul>
+  <li><strong>Signing in:</strong> with Apple, with Google or with a 6-digit code received by email.
+      No password.</li>
+  <li><strong>What we keep:</strong> your email address (or Apple's relay address if you choose to
+      hide yours); your account identifier, and the one Apple or Google gives to your sign-in; how
+      you sign in (Apple, Google or email); the dates your account was created, you last signed in
+      and you last backed up; whether you subscribe to Gomuscu Pro, and the date this status last
+      changed; your answer about emails, with its date, where it came from and the version of the
+      text you were shown; and the copy of your Gomuscu data, the latest one and the previous one:
+      workouts, programmes and their days, exercises, notes, first name, answers to the first-launch
+      questions and settings. Your choices on ad measurement and usage statistics are not backed
+      up.</li>
+  <li><strong>With Apple or Google:</strong> they confirm your identity, under their own policies.
+      From Apple, we only ask for your email address. Google always adds your name and a link to
+      your profile picture to the sign-in: they are kept with your account, but we do not use
+      them.</li>
+  <li><strong>With a code by email:</strong> the code is sent to you by Brevo, our email service,
+      which receives your address for that purpose.</li>
+  <li><strong>Why:</strong> to run the account and the backup you asked for (performance of the
+      service, Article 6(1)(b) GDPR). Your subscriber status is only used to choose the tips and
+      offers emails, if you agreed to receive them.</li>
+  <li><strong>Where:</strong> at Supabase, our host, on servers located in Paris. Supabase, Inc. is
+      an American company: the transfer to it is governed by the European Commission's Standard
+      Contractual Clauses, built into
+      <a href="https://supabase.com/legal/dpa">Supabase's data processing agreement</a>.</li>
+  <li><strong>On your iPhone:</strong> the app also keeps your email address and the state of your
+      backup in a small separate file, and your sign-in session in the iOS keychain.</li>
+  <li><strong>How long:</strong> until you delete your account. An account with no backup for 3
+      years is deleted; we do this clean-up once a year. An address entered whose code was never
+      confirmed is erased automatically after 48 hours.</li>
+  <li><strong>Deleting:</strong> Profile → Account → Delete my account. Your account, your backup
+      and your address are erased, at Supabase and at Brevo alike; your workouts stay on your
+      iPhone. If you had signed in with Apple, we also ask Apple to withdraw the access you had
+      given us; with Google, the app withdraws it itself.</li>
+</ul>
+
+<h2>Tips and offers emails — only if you say yes</h2>
+<p>After you create the account, we ask whether you want to receive training tips and our offers
+from time to time. Without your "yes", the only email you get from us is the one the account needs:
+the sign-in code.</p>
+<ul>
+  <li><strong>Legal basis:</strong> your consent (Article 6(1)(a) GDPR; Article L34-5 of the French
+      Postal and Electronic Communications Code).</li>
+  <li><strong>Sending tool:</strong> Brevo, a French company, to which we pass your address, the
+      date your account was created, how you sign in and whether you subscribe to Gomuscu Pro. Only
+      people who said yes are on it. Brevo receives neither your first name, nor your first-launch
+      answers, nor your workouts.</li>
+  <li><strong>Stopping:</strong> the unsubscribe link in each email, or the "Receive our emails"
+      switch under Profile → Account. Your address is then removed from our contacts at
+      Brevo.</li>
+  <li><strong>How long:</strong> as long as you do not withdraw your consent, and at most 3 years
+      after your last contact with us. Deleting your account also removes your address from
+      Brevo.</li>
+</ul>
 
 <h2>Exports, backups and imports</h2>
 <p>Gomuscu lets you export your workouts as CSV (<code>gomuscu-seances.csv</code>) and back up all your
@@ -464,17 +667,28 @@ and subject to Apple's rules. We have no access to it. You can exclude Gomuscu f
 in iOS Settings → your name → iCloud → Backup.</p>
 
 <h2>How long</h2>
-<p>Your workouts: on your device, for as long as the app is installed; nothing reaches us.<br>
+<p>Your workouts: on your device, for as long as the app is installed; without an account, nothing
+reaches us.<br>
+The account and its backup, if you create one: until you delete it, and at most 3 years without a
+backup; an address whose code was never confirmed: 48 hours.<br>
+Tips and offers emails: as long as you do not withdraw your consent, and at most 3 years after your
+last contact with us.<br>
 Usage statistics: 25 months at most; the random identifier changes at least every 13 months.<br>
 Subscription tracking: for as long as we use RevenueCat, erased at your request, and entirely at
 the end of our contract with RevenueCat.<br>
 Ad measurement, if you agreed to it: AppsFlyer keeps it for 24 months at most.</p>
 
 <h2>Role and legal basis</h2>
-<p>Your workouts never reach us: we carry out <strong>no processing</strong> of them within the
-meaning of the GDPR. What you enter remains under your sole control, on your own hardware.</p>
-<p>In the app, we carry out three processing operations on personal data:</p>
+<p>Without an account, your workouts never reach us: we carry out <strong>no processing</strong>
+of them within the meaning of the GDPR. What you enter remains under your sole control, on your own
+hardware.</p>
+<p>In the app, we carry out five processing operations on personal data:</p>
 <ul>
+  <li><strong>the account and the backup</strong>, if you create an account, rely on the
+      performance of the service you ask for (Article 6(1)(b) GDPR);</li>
+  <li><strong>tips and offers emails</strong> rely on <strong>your consent</strong> (Article 6(1)(a)
+      GDPR and Article L34-5 of the French Postal and Electronic Communications Code); refusing
+      them changes nothing in the app;</li>
   <li><strong>usage statistics</strong> rely on our legitimate interest in measuring the app's
       audience to improve it (Article 6(1)(f) GDPR). They do not require your consent because they
       meet the CNIL's conditions for audience measurement (Article 82 of the French Data Protection
@@ -488,18 +702,27 @@ meaning of the GDPR. What you enter remains under your sole control, on your own
 
 <h2>Your rights, and how to exercise them</h2>
 <p>The GDPR grants you rights of access, rectification, erasure, restriction, objection and
-portability. Since we hold no copy of your workouts, <strong>you exercise them directly, without
-writing to us</strong>:</p>
+portability. Without an account, we hold no copy of your workouts: <strong>you exercise them
+directly, without writing to us</strong>:</p>
 <ul>
   <li><strong>Access and portability</strong> — the JSON or CSV export, under Profile → Settings → Data → Backup &amp; export, gives
-      you all of your data in an open format.</li>
+      you all of your Gomuscu data in an open format.</li>
   <li><strong>Rectification</strong> — edit or delete a workout, an exercise or a programme in the
       app.</li>
   <li><strong>Erasure</strong> — uninstall Gomuscu: iOS deletes the app's sandbox, and the file with
       it. The app offers no "erase everything" button; uninstalling is how you erase your workouts.
       Export first if you want to keep a record. If you agreed to ad measurement, the identifier
       created by AppsFlyer stays in the iPhone's keychain after uninstalling. The random identifiers
-      of PostHog and RevenueCat, however, disappear with the app.</li>
+      of PostHog and RevenueCat, however, disappear with the app. If you have an account,
+      uninstalling does not delete it: delete it first (see "Account" below). Otherwise, your
+      sign-in session also stays in the keychain; it is useless without the app, and is erased the
+      next time you sign in.</li>
+  <li><strong>Account</strong> — the JSON export contains everything your backup contains. What you
+      correct in the app reaches your next backup. Profile → Account → Delete my account erases your
+      account, your backup and your address. To obtain the rest of what we keep (your address, your
+      dates, your answer about emails) or to correct your address, write to us.</li>
+  <li><strong>Tips and offers emails</strong> — withdraw your consent with the unsubscribe link in
+      each email, or with the "Receive our emails" switch under Profile → Account.</li>
   <li><strong>Usage statistics</strong> — turn off the switch under Profile → Settings → Data →
       Usage statistics: nothing more is sent, and that is how you object. Statistics already sent
       are tied only to the random identifier, which the app does not show you: we cannot find them
