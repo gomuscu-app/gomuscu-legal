@@ -102,15 +102,16 @@ téléphone, et dans ta sauvegarde si tu crées un compte.</p>
   <li>pas de mot de passe : le compte est facultatif, et il se crée avec Apple, avec Google ou avec
       un code reçu par e-mail ;</li>
   <li>sans compte, tes séances ne sont envoyées nulle part ;</li>
-  <li>aucune donnée de séance transmise à un outil de mesure ou de publicité : ni exercices, ni
-      programmes, ni charges, ni répétitions, ni notes, ni prénom. Une seule exception : tes
-      réponses aux questions du premier lancement, et le type de semaine qu'elles donnent,
-      rejoignent nos statistiques d'usage, sous forme de valeurs fixes (voir plus bas) ;</li>
+  <li>aucun contenu de séance ni de programme transmis à un outil de mesure ou de publicité : ni
+      exercices, ni charges, ni répétitions, ni notes, ni prénom. Nos statistiques d'usage ne
+      reçoivent que des comptes et des valeurs fixes, détaillés plus bas, dont, depuis la version
+      1.0.5, tes réponses aux questions du premier lancement ;</li>
   <li>pas de publicité dans l'app, pas d'identifiant publicitaire (IDFA), aucun suivi entre
       applications ;</li>
-  <li>pas de localisation précise (GPS) : seule la mesure des publicités, si tu l'acceptes, déduit
-      de l'adresse IP un pays et une ville approximatifs. Si tu te connectes avec Google, Google
-      déclare aussi recueillir une localisation approximative ;</li>
+  <li>pas de localisation précise (GPS) : seule une localisation approximative est déduite de
+      l'adresse IP, le pays par le suivi des abonnements (RevenueCat) et, si tu acceptes la mesure
+      des publicités, le pays et la ville (AppsFlyer). Si tu te connectes avec Google, Google déclare
+      aussi recueillir une localisation approximative ;</li>
   <li>pas d'accès aux contacts, aux photos, au micro ni à l'app Santé.</li>
 </ul>
 <p>Les bibliothèques de cinq services tiers sont intégrées : PostHog pour les statistiques d'usage,
@@ -268,21 +269,24 @@ ton téléphone.</p>
   <li><strong>Pourquoi :</strong> faire fonctionner le compte et la sauvegarde que tu as demandés
       (exécution du service, article 6.1.b du RGPD). Ton statut d'abonné ne sert qu'à choisir les
       e-mails de conseils et d'offres, si tu as accepté de les recevoir.</li>
-  <li><strong>Où :</strong> chez Supabase, notre hébergeur, sur des serveurs situés à Paris.
-      Supabase, Inc. est une société américaine : le transfert vers elle est encadré par les clauses
-      contractuelles types de la Commission européenne, intégrées à
-      <a href="https://supabase.com/legal/dpa">l'accord de traitement de Supabase</a>.</li>
-  <li><strong>Sur ton iPhone :</strong> l'application garde aussi ton adresse et l'état de ta
-      sauvegarde dans un petit fichier à part, et ta session de connexion dans le trousseau
-      d'iOS.</li>
+  <li><strong>Sur ton iPhone :</strong> l'application garde aussi, dans un petit fichier à part,
+      ton adresse, tes identifiants de compte, ta façon de te connecter et l'état de ta sauvegarde ;
+      et ta session de connexion, dans le trousseau d'iOS.</li>
   <li><strong>Combien de temps :</strong> jusqu'à la suppression de ton compte. Un compte sans
-      sauvegarde depuis 3 ans est supprimé ; nous faisons ce tri une fois par an. Une adresse saisie
+      sauvegarde depuis 3 ans est supprimé lors de notre tri annuel. Une adresse saisie
       dont le code n'a jamais été validé est effacée automatiquement après 48 heures.</li>
-  <li><strong>Supprimer :</strong> Profil → Compte → Supprimer mon compte. Ton compte, ta sauvegarde
-      et ton adresse sont effacés, chez Supabase comme chez Brevo ; tes séances restent sur ton
-      iPhone. Si tu t'étais connecté avec Apple, nous demandons aussi à Apple de retirer l'accès que
-      tu nous avais donné ; avec Google, l'application le retire elle-même.</li>
+  <li><strong>Supprimer :</strong> Profil → Compte → Supprimer mon compte. Le compte, ses
+      sauvegardes et ton adresse sont effacés, et ton adresse est retirée de la liste de Brevo. Des
+      journaux techniques de connexion et d'envoi, chez Supabase et Brevo, peuvent en garder une
+      trace. Tes séances restent sur ton iPhone. Si tu t'étais connecté avec Apple, nous demandons
+      aussi à Apple de retirer l'accès que tu nous avais donné ; si tu es connecté avec Google sur
+      cet iPhone, l'application demande aussi à Google de retirer cet accès.</li>
 </ul>
+<p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; Supabase (Supabase,
+Inc., États-Unis), notre hébergeur, agit pour notre compte, comme sous-traitant. Les données sont
+hébergées à Paris. Supabase, Inc. étant une société américaine, le transfert vers elle est encadré
+par les clauses contractuelles types de la Commission européenne, intégrées à
+<a href="https://supabase.com/legal/dpa">l'accord de traitement de Supabase</a>.</p>
 
 <h2>E-mails de conseils et d'offres — seulement si tu dis oui</h2>
 <p>Après la création du compte, on te demande si tu veux recevoir de temps en temps des conseils
@@ -293,15 +297,21 @@ compte : le code de connexion.</p>
       des postes et des communications électroniques).</li>
   <li><strong>Outil d'envoi :</strong> Brevo, une société française, à qui on transmet ton adresse,
       la date de création de ton compte, ta façon de te connecter et si tu es abonné à Gomuscu Pro.
-      Seules les personnes qui ont dit oui y figurent. Brevo ne reçoit ni ton prénom, ni tes
-      réponses du premier lancement, ni tes séances.</li>
+      Seules les personnes qui ont dit oui y figurent. Pour garantir qu'une adresse sans accord n'y
+      figure pas, notre serveur demande à Brevo de l'effacer quand tu réponds non, quand ton statut
+      d'abonné change et quand tu supprimes ton compte : Brevo reçoit alors ton adresse, sans
+      l'ajouter à sa liste. Brevo ne reçoit ni ton prénom, ni tes réponses du premier lancement, ni
+      tes séances.</li>
   <li><strong>Arrêter :</strong> le lien de désinscription de chaque e-mail, ou l'interrupteur
       « Recevoir nos e-mails » dans Profil → Compte. Ton adresse est alors retirée de nos contacts
       chez Brevo.</li>
-  <li><strong>Combien de temps :</strong> tant que tu ne retires pas ton accord, et au plus 3 ans
-      après ton dernier contact avec nous. Supprimer ton compte retire aussi ton adresse de
-      Brevo.</li>
+  <li><strong>Combien de temps :</strong> tant que tu ne retires pas ton accord. Ton adresse quitte
+      la liste de Brevo quand tu le retires ou que tu supprimes ton compte, et au plus tard lors de
+      notre tri annuel des comptes sans sauvegarde depuis 3 ans.</li>
 </ul>
+<p><strong>Qui fait quoi.</strong> Nous sommes responsables de ce traitement ; Brevo (société
+française) agit pour notre compte, comme sous-traitant, pour ces e-mails comme pour les codes de
+connexion ; les données sont hébergées dans l'Union européenne.</p>
 
 <h2>Exports, sauvegardes et imports</h2>
 <p>Gomuscu te permet d'exporter tes séances en CSV (<code>gomuscu-seances.csv</code>) et de sauvegarder
@@ -319,12 +329,14 @@ iCloud ou sur un ordinateur, tes séances sont incluses dans cette sauvegarde,
 Tu peux exclure Gomuscu des sauvegardes iCloud dans Réglages iOS → ton nom → iCloud → Sauvegarde.</p>
 
 <h2>Combien de temps</h2>
-<p>Tes séances : sur ton appareil, tant que l'application est installée ; sans compte, rien ne nous
-parvient.<br>
-Le compte et sa sauvegarde, si tu en crées un : jusqu'à ce que tu le supprimes, et au plus 3 ans
-sans sauvegarde ; une adresse dont le code n'a jamais été validé : 48 heures.<br>
-Les e-mails de conseils et d'offres : tant que tu ne retires pas ton accord, et au plus 3 ans après
-ton dernier contact avec nous.<br>
+<p>Tes séances : sur ton appareil, tant que l'application est installée ; sans compte, elles ne nous
+parviennent pas.<br>
+Le compte et sa sauvegarde, si tu en crées un : jusqu'à ce que tu le supprimes ; un compte sans
+sauvegarde depuis 3 ans est supprimé lors de notre tri annuel ; une adresse dont le code n'a jamais
+été validé : 48 heures.<br>
+Les e-mails de conseils et d'offres : tant que tu ne retires pas ton accord. Ton adresse quitte la
+liste de Brevo quand tu le retires ou que tu supprimes ton compte, et au plus tard lors de notre tri
+annuel des comptes sans sauvegarde depuis 3 ans.<br>
 Les statistiques d'usage : 25 mois au plus ; l'identifiant aléatoire change au plus tard tous les
 13 mois.<br>
 Le suivi des abonnements : tant que nous utilisons RevenueCat, avec effacement sur ta demande, et de
@@ -333,8 +345,8 @@ La mesure des publicités, si tu l'as acceptée : AppsFlyer la conserve 24 mois 
 
 <h2>Rôle et base légale</h2>
 <p>Sans compte, tes séances ne nous parviennent pas : nous n'y effectuons <strong>aucun
-traitement</strong> au sens du RGPD. Ce que tu saisis reste sous ton seul contrôle, sur ton
-matériel.</p>
+traitement</strong> au sens du RGPD. Sans compte, tes séances restent sous ton seul contrôle, sur
+ton matériel.</p>
 <p>Dans l'application, nous faisons cinq traitements de données personnelles :</p>
 <ul>
   <li><strong>le compte et la sauvegarde</strong>, si tu crées un compte, reposent sur l'exécution
@@ -370,14 +382,16 @@ exerces directement, sans nous écrire</strong> :</p>
       trace. Si tu as accepté la mesure des publicités, l'identifiant créé par AppsFlyer reste dans le
       trousseau de l'iPhone après la désinstallation. Les identifiants aléatoires de PostHog et de
       RevenueCat, eux, disparaissent avec l'application. Si tu as un compte, la désinstallation ne
-      le supprime pas : supprime-le d'abord (voir « Compte » ci-dessous). Sinon, ta session de
-      connexion reste aussi dans le trousseau ; elle ne sert plus sans l'application, et s'efface
+      le supprime pas : supprime-le d'abord (voir « Compte » ci-dessous). Si tu désinstalles sans le
+      supprimer, ta session de connexion reste aussi dans le trousseau ; elle ne sert plus sans l'application, et s'efface
       à ta prochaine connexion.</li>
-  <li><strong>Compte</strong> — l'export JSON contient tout ce que contient ta sauvegarde. Ce que tu
-      corriges dans l'application rejoint ta sauvegarde suivante. Profil → Compte → Supprimer mon
-      compte efface ton compte, ta sauvegarde et ton adresse. Pour obtenir le reste de ce que nous
-      gardons (ton adresse, tes dates, ta réponse aux e-mails) ou pour corriger ton adresse,
-      écris-nous.</li>
+  <li><strong>Compte</strong> — l'export JSON contient les mêmes données que la sauvegarde que cet
+      iPhone envoie ; pour la copie que nous gardons (la dernière et la précédente), écris-nous. Ce
+      que tu corriges dans l'application rejoint ta sauvegarde suivante. Profil → Compte → Supprimer
+      mon compte efface le compte, ses sauvegardes et ton adresse, sous la réserve des journaux
+      techniques décrite plus haut. Pour obtenir le reste de ce que nous gardons (ton adresse, tes
+      identifiants, tes dates, ton statut d'abonné, ta réponse aux e-mails, et le nom et la photo
+      joints par Google) ou pour corriger ton adresse, écris-nous.</li>
   <li><strong>E-mails de conseils et d'offres</strong> — retire ton accord avec le lien de
       désinscription de chaque e-mail, ou avec l'interrupteur « Recevoir nos e-mails » dans
       Profil → Compte.</li>
@@ -462,14 +476,15 @@ your backup if you create an account.</p>
   <li>no password: the account is optional, and you create it with Apple, with Google or with a
       code received by email;</li>
   <li>without an account, your workouts are sent nowhere;</li>
-  <li>no workout data sent to any measurement or advertising tool: no exercises, programmes, loads,
-      repetitions, notes or first name. One single exception: your answers to the first-launch
-      questions, and the type of week they lead to, go to our usage statistics as fixed values (see
-      below);</li>
+  <li>no workout or programme content sent to any measurement or advertising tool: no exercises,
+      loads, repetitions, notes or first name. Our usage statistics only receive counts and fixed
+      values, detailed below, including, since version 1.0.5, your answers to the first-launch
+      questions;</li>
   <li>no advertising in the app, no advertising identifier (IDFA), no cross-app tracking;</li>
-  <li>no precise location (GPS): only ad measurement, if you agree to it, derives an approximate
-      country and city from the IP address. If you sign in with Google, Google also states that it
-      collects an approximate location;</li>
+  <li>no precise location (GPS): only an approximate location is derived from the IP address, the
+      country by subscription tracking (RevenueCat) and, if you agree to ad measurement, the country
+      and city (AppsFlyer). If you sign in with Google, Google also states that it collects an
+      approximate location;</li>
   <li>no access to contacts, photos, microphone or the Health app.</li>
 </ul>
 <p>The libraries of five third-party services are included: PostHog for usage statistics,
@@ -617,20 +632,24 @@ later from Profile. Without an account, nothing changes: your workouts stay on y
   <li><strong>Why:</strong> to run the account and the backup you asked for (performance of the
       service, Article 6(1)(b) GDPR). Your subscriber status is only used to choose the tips and
       offers emails, if you agreed to receive them.</li>
-  <li><strong>Where:</strong> at Supabase, our host, on servers located in Paris. Supabase, Inc. is
-      an American company: the transfer to it is governed by the European Commission's Standard
-      Contractual Clauses, built into
-      <a href="https://supabase.com/legal/dpa">Supabase's data processing agreement</a>.</li>
-  <li><strong>On your iPhone:</strong> the app also keeps your email address and the state of your
-      backup in a small separate file, and your sign-in session in the iOS keychain.</li>
+  <li><strong>On your iPhone:</strong> the app also keeps, in a small separate file, your email
+      address, your account identifiers, how you sign in and the state of your backup; and your
+      sign-in session, in the iOS keychain.</li>
   <li><strong>How long:</strong> until you delete your account. An account with no backup for 3
-      years is deleted; we do this clean-up once a year. An address entered whose code was never
+      years is deleted during our yearly clean-up. An address entered whose code was never
       confirmed is erased automatically after 48 hours.</li>
-  <li><strong>Deleting:</strong> Profile → Account → Delete my account. Your account, your backup
-      and your address are erased, at Supabase and at Brevo alike; your workouts stay on your
+  <li><strong>Deleting:</strong> Profile → Account → Delete my account. The account, its backups
+      and your address are erased, and your address is removed from Brevo's list. Technical sign-in
+      and sending logs, at Supabase and Brevo, may keep a trace of it. Your workouts stay on your
       iPhone. If you had signed in with Apple, we also ask Apple to withdraw the access you had
-      given us; with Google, the app withdraws it itself.</li>
+      given us; if you are signed in with Google on this iPhone, the app also asks Google to
+      withdraw that access.</li>
 </ul>
+<p><strong>Who does what.</strong> We are the controller of this processing; Supabase (Supabase,
+Inc., United States), our host, acts on our behalf as a processor. The data is hosted in Paris. As
+Supabase, Inc. is an American company, the transfer to it is governed by the European Commission's
+Standard Contractual Clauses, built into
+<a href="https://supabase.com/legal/dpa">Supabase's data processing agreement</a>.</p>
 
 <h2>Tips and offers emails — only if you say yes</h2>
 <p>After you create the account, we ask whether you want to receive training tips and our offers
@@ -641,15 +660,21 @@ the sign-in code.</p>
       Postal and Electronic Communications Code).</li>
   <li><strong>Sending tool:</strong> Brevo, a French company, to which we pass your address, the
       date your account was created, how you sign in and whether you subscribe to Gomuscu Pro. Only
-      people who said yes are on it. Brevo receives neither your first name, nor your first-launch
-      answers, nor your workouts.</li>
+      people who said yes are on it. To make sure an address without consent is not on it, our
+      server asks Brevo to erase it when you answer no, when your subscriber status changes and
+      when you delete your account: Brevo then receives your address, without adding it to its
+      list. Brevo receives neither your first name, nor your first-launch answers, nor your
+      workouts.</li>
   <li><strong>Stopping:</strong> the unsubscribe link in each email, or the "Receive our emails"
       switch under Profile → Account. Your address is then removed from our contacts at
       Brevo.</li>
-  <li><strong>How long:</strong> as long as you do not withdraw your consent, and at most 3 years
-      after your last contact with us. Deleting your account also removes your address from
-      Brevo.</li>
+  <li><strong>How long:</strong> as long as you do not withdraw your consent. Your address leaves
+      Brevo's list when you withdraw it or delete your account, and at the latest during our yearly
+      clean-up of accounts with no backup for 3 years.</li>
 </ul>
+<p><strong>Who does what.</strong> We are the controller of this processing; Brevo (a French
+company) acts on our behalf as a processor, for these emails as for sign-in codes; the data is
+hosted in the European Union.</p>
 
 <h2>Exports, backups and imports</h2>
 <p>Gomuscu lets you export your workouts as CSV (<code>gomuscu-seances.csv</code>) and back up all your
@@ -667,12 +692,14 @@ and subject to Apple's rules. We have no access to it. You can exclude Gomuscu f
 in iOS Settings → your name → iCloud → Backup.</p>
 
 <h2>How long</h2>
-<p>Your workouts: on your device, for as long as the app is installed; without an account, nothing
-reaches us.<br>
-The account and its backup, if you create one: until you delete it, and at most 3 years without a
-backup; an address whose code was never confirmed: 48 hours.<br>
-Tips and offers emails: as long as you do not withdraw your consent, and at most 3 years after your
-last contact with us.<br>
+<p>Your workouts: on your device, for as long as the app is installed; without an account, they
+never reach us.<br>
+The account and its backup, if you create one: until you delete it; an account with no backup for
+3 years is deleted during our yearly clean-up; an address whose code was never confirmed: 48
+hours.<br>
+Tips and offers emails: as long as you do not withdraw your consent. Your address leaves Brevo's
+list when you withdraw it or delete your account, and at the latest during our yearly clean-up of
+accounts with no backup for 3 years.<br>
 Usage statistics: 25 months at most; the random identifier changes at least every 13 months.<br>
 Subscription tracking: for as long as we use RevenueCat, erased at your request, and entirely at
 the end of our contract with RevenueCat.<br>
@@ -680,8 +707,8 @@ Ad measurement, if you agreed to it: AppsFlyer keeps it for 24 months at most.</
 
 <h2>Role and legal basis</h2>
 <p>Without an account, your workouts never reach us: we carry out <strong>no processing</strong>
-of them within the meaning of the GDPR. What you enter remains under your sole control, on your own
-hardware.</p>
+of them within the meaning of the GDPR. Without an account, your workouts remain under your sole
+control, on your own hardware.</p>
 <p>In the app, we carry out five processing operations on personal data:</p>
 <ul>
   <li><strong>the account and the backup</strong>, if you create an account, rely on the
@@ -714,13 +741,16 @@ directly, without writing to us</strong>:</p>
       Export first if you want to keep a record. If you agreed to ad measurement, the identifier
       created by AppsFlyer stays in the iPhone's keychain after uninstalling. The random identifiers
       of PostHog and RevenueCat, however, disappear with the app. If you have an account,
-      uninstalling does not delete it: delete it first (see "Account" below). Otherwise, your
-      sign-in session also stays in the keychain; it is useless without the app, and is erased the
+      uninstalling does not delete it: delete it first (see "Account" below). If you uninstall
+      without deleting it, your sign-in session also stays in the keychain; it is useless without the app, and is erased the
       next time you sign in.</li>
-  <li><strong>Account</strong> — the JSON export contains everything your backup contains. What you
-      correct in the app reaches your next backup. Profile → Account → Delete my account erases your
-      account, your backup and your address. To obtain the rest of what we keep (your address, your
-      dates, your answer about emails) or to correct your address, write to us.</li>
+  <li><strong>Account</strong> — the JSON export contains the same data as the backup this iPhone
+      sends; for the copy we keep (the latest one and the previous one), write to us. What you
+      correct in the app reaches your next backup. Profile → Account → Delete my account erases the
+      account, its backups and your address, subject to the technical logs described above. To
+      obtain the rest of what we keep (your address, your identifiers, your dates, your subscriber
+      status, your answer about emails, and the name and picture added by Google) or to correct your
+      address, write to us.</li>
   <li><strong>Tips and offers emails</strong> — withdraw your consent with the unsubscribe link in
       each email, or with the "Receive our emails" switch under Profile → Account.</li>
   <li><strong>Usage statistics</strong> — turn off the switch under Profile → Settings → Data →

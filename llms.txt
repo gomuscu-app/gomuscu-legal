@@ -1,6 +1,6 @@
 # Gomuscu
 
-> Gomuscu est un carnet de musculation pour iPhone, en français. Pendant la séance, il affiche les séries de la dernière fois (répétitions et charge) en face de celles du jour, avec un chrono de repos intégré. Compte facultatif : sans compte, les données restent sur l’iPhone.
+> Gomuscu est un carnet de musculation pour iPhone, en français. Pendant la séance, il affiche les séries de la dernière fois (répétitions et charge) en face de celles du jour, avec un chrono de repos intégré. Compte facultatif : sans compte, les séances restent sur l’iPhone.
 
 - Plateforme : iPhone, iOS 18 ou plus récent. Pas de version Android.
 - Langue : français.
