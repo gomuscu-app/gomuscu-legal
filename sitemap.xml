@@ -8,7 +8,7 @@
   <!-- blog:début — bloc tenu par gen-blog.mjs (dépôt de l’app, docs/marketing/vitrine/blog/) : ne pas l’éditer à la main. -->
   <url>
     <loc>https://gomuscuapp.com/blog/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://gomuscuapp.com/blog/surcharge-progressive/</loc>
@@ -41,6 +41,10 @@
   <url>
     <loc>https://gomuscuapp.com/blog/meilleurs-exercices-dos/</loc>
     <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://gomuscuapp.com/blog/meilleurs-exercices-epaules/</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://gomuscuapp.com/blog/meilleurs-exercices-fessiers/</loc>
