@@ -49,7 +49,7 @@
 <main>
 
 <h1>Politique de confidentialité</h1>
-<p class="date">Gomuscu · dernière mise à jour : 14 octobre 2026</p>
+<p class="date">Gomuscu · dernière mise à jour : 24 octobre 2026</p>
 <p class="lang"><a href="#english">Read this page in English</a></p>
 <p class="portee">Cette politique concerne l'application. Le site gomuscuapp.com a ses propres
 <a href="/mentions-legales/">mentions légales</a>, cookies compris.</p>
@@ -83,11 +83,16 @@ Contact : <a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a></p>
   <li>un prénom ou un pseudo, si tu choisis d'en donner un : au premier lancement, ou dans
       Profil ;</li>
   <li>depuis la version 1.0.5, tes réponses aux questions du premier lancement : objectif, niveau,
-      jours d'entraînement, durée des séances et zones prioritaires. Elles servent à construire ta
-      semaine de programmes. Tes deux autres réponses ne sont pas enregistrées : ce qui t'a freiné
-      sert seulement à choisir l'écran suivant et ne quitte pas ton iPhone, et comment tu as connu
-      Gomuscu ne va à nos statistiques d'usage que si tu acceptes la mesure des publicités (voir plus
-      bas) ;</li>
+      jours d'entraînement, durée des séances et zones prioritaires ; depuis la version 1.0.6, où tu
+      t'entraînes (en salle ou à la maison) et ce que tu veux faire progresser en premier, qui
+      remplace les zones prioritaires. Elles servent à construire ta semaine de programmes. Depuis la
+      version 1.0.6, si tu suis déjà ton propre programme, la séance que tu montres au premier
+      lancement est enregistrée comme un de tes programmes. Tes autres réponses ne sont pas
+      enregistrées : ce qui t'a freiné et, depuis la version 1.0.6, ce qui coince en ce moment servent
+      seulement à choisir les écrans suivants et ne quittent pas ton iPhone ; depuis la version 1.0.6,
+      où tu notes tes séances et, si tu suis déjà un programme, combien de fois tu t'entraînes par
+      semaine vont seulement à nos statistiques d'usage ; comment tu as connu Gomuscu n'y va que si
+      tu acceptes la mesure des publicités (voir plus bas) ;</li>
   <li>tes exercices et tes programmes : noms, groupes musculaires, durées de repos, et les jours où
       tu prévois chaque programme ;</li>
   <li>tes séances : date, durée, exercices, charges, répétitions, séries dégressives, et les notes
@@ -124,10 +129,21 @@ que si tu l'acceptes, et, depuis la version 1.0.5, Supabase et Google pour le co
 Sans compte, l'application ne contacte ni Supabase ni Google.</p>
 
 <h2>Notifications</h2>
-<p>Si tu actives l'alerte de fin de repos, iOS te demande l'autorisation d'afficher des
-notifications. Elles sont <strong>entièrement locales</strong> : ton appareil les programme et les
-affiche lui-même. Rien n'est envoyé ni reçu. Tu peux les révoquer à tout moment dans les Réglages
-iOS.</p>
+<p>Gomuscu peut afficher trois sortes de notifications, chacune seulement si tu l'acceptes quand
+iOS te le demande :</p>
+<ul>
+  <li>l'alerte de fin de repos, si tu l'actives ;</li>
+  <li>depuis la version 1.0.6, le rappel de séance : les jours où un de tes programmes est prévu, à
+      l'heure que tu choisis, avec le jour, le nom de la séance, son nombre d'exercices et sa durée
+      estimée. Tu le règles ou le coupes dans Profil → Réglages ;</li>
+  <li>depuis la version 1.0.6, si tu commences un essai gratuit et que tu acceptes d'être prévenu,
+      un rappel deux jours avant la fin de l'essai, avec la date et le prix du premier
+      prélèvement.</li>
+</ul>
+<p>Elles sont <strong>entièrement locales</strong> : ton appareil les programme et les affiche
+lui-même, sans rien envoyer ni recevoir. L'heure de ton rappel de séance reste sur cet iPhone : elle
+n'est ni envoyée à nos statistiques, ni sauvegardée avec ton compte. Tu peux révoquer les
+notifications à tout moment dans les Réglages iOS.</p>
 
 <h2>Statistiques d'usage — anonymes, et tu peux les couper</h2>
 <p>Depuis la version 1.0.4, pour savoir quels écrans servent et ce qui peut être amélioré, Gomuscu
@@ -139,8 +155,10 @@ elles fonctionnent sans te demander ton accord. Tu peux les couper à tout momen
 Réglages → Données → Statistiques d'usage : dès que tu l'éteins, plus rien ne part.</p>
 <p>PostHog reçoit :</p>
 <ul>
-  <li>les écrans que tu ouvres : Accueil, Séance, Programmes, Progression, Profil, Réglages,
-      Compte, la présentation du premier lancement et l'écran d'abonnement ;</li>
+  <li>les écrans que tu ouvres : Accueil, Séance, Progression, Profil, Réglages, Compte, la
+      présentation du premier lancement, l'écran d'abonnement et, depuis la version 1.0.6, la
+      question posée quand tu quittes l'écran d'abonnement (jusqu'à la version 1.0.5, aussi
+      Programmes) ;</li>
   <li>l'installation, les mises à jour, l'ouverture et la mise en arrière-plan de
       l'application ;</li>
   <li>quelques étapes : présentation terminée, programme créé (depuis un modèle ou non), séance
@@ -148,15 +166,35 @@ Réglages → Données → Statistiques d'usage : dès que tu l'éteins, plus ri
       affiché (et depuis quel endroit de l'application), essai commencé ou abonnement souscrit
       (mensuel ou annuel), achats restaurés. Depuis la version 1.0.5, « séance terminée » et
       « écran d'abonnement affiché » disent aussi si tu es abonné et, sinon, si tu utilisais déjà
-      l'application avant la version 1.0.5 ;</li>
-  <li>depuis la version 1.0.5, la présentation du premier lancement : chaque écran affiché, chaque
-      écran passé, puis tes réponses, sous forme de valeurs fixes. Ce sont ton objectif, ton niveau,
-      tes jours d'entraînement et leur nombre, la durée de tes séances et tes zones prioritaires ;
-      s'y ajoutent deux oui ou non : si tu as donné un prénom, jamais le prénom
-      lui-même, et si tu as tout passé. Puis la semaine proposée : son découpage, machines ou poids
-      libres, son nombre de programmes, et si elle a été enregistrée. Comment tu as connu Gomuscu
-      n'en fait pas partie : cette réponse ne part qu'avec ton accord à la mesure des publicités
-      (voir plus bas). Ce qui t'a freiné non plus : cette réponse ne quitte pas ton iPhone ;</li>
+      l'application avant la version 1.0.5. Depuis la version 1.0.6 : achat tenté depuis l'écran
+      d'abonnement (mensuel ou annuel, et depuis quel endroit), son résultat (réussi, annulé, en
+      attente, non vérifié ou en erreur) et formule mensuelle affichée ;</li>
+  <li>depuis la version 1.0.5, la présentation du premier lancement : chaque écran affiché (et,
+      jusqu'à la version 1.0.5, chaque écran passé), puis tes réponses, sous forme de valeurs fixes.
+      Ce sont ton objectif, ton niveau, tes jours d'entraînement et leur nombre, la durée de tes
+      séances et tes zones prioritaires. Depuis la version 1.0.6 : si tu suis déjà un programme ou
+      non, où tu notes tes séances, où tu t'entraînes, et ce que tu veux faire progresser en premier
+      à la place des zones ; si tu suis déjà ton programme, partent seulement ton objectif, la durée
+      de tes séances, combien de fois tu t'entraînes par semaine et le nombre d'exercices de la
+      séance que tu montres, jamais son nom ni ses exercices. S'y ajoutent deux oui ou non : si tu as
+      donné un prénom, jamais le prénom lui-même, et si tu as tout passé. Puis la semaine proposée :
+      son découpage, machines, poids libres ou haltères, son nombre de programmes, et si elle a été
+      enregistrée. Comment tu as connu Gomuscu n'en fait pas partie : cette réponse ne part qu'avec
+      ton accord à la mesure des publicités (voir plus bas). Ce qui t'a freiné et ce qui coince en
+      ce moment non plus : ces réponses ne quittent pas ton iPhone ;</li>
+  <li>depuis la version 1.0.6, les rappels décrits plus haut (voir Notifications) : rappel de fin
+      d'essai proposé, accepté ou non, et notification autorisée ou non ; rappel de séance accepté ou
+      non, notification autorisée ou non (et depuis quel écran), rappel touché pour ouvrir
+      l'application, rappel allumé ou éteint dans les Réglages. Jamais l'heure du rappel, ni tes
+      jours, ni le nom de la séance ; seul le moment où arrive « rappel touché » laisse deviner, à peu
+      près, quand le rappel s'affiche ;</li>
+  <li>depuis la version 1.0.6, et seulement si tu touches une réponse : ce qui te retient de
+      t'abonner. Quand tu quittes l'écran d'abonnement sans t'abonner, une question facultative te le
+      demande, une seule fois. Ta réponse part sous forme de valeur fixe (le prix, voir l'app à la
+      salle d'abord, pas d'abonnement, autre chose), avec l'endroit d'où venait l'écran et si tu
+      utilisais l'application avant la version 1.0.5. « Passer » n'envoie rien, et la question n'est
+      jamais posée si tu as coupé les statistiques d'usage. C'est la seule réponse que ces
+      statistiques reçoivent avec ton accord plutôt que sans le demander ;</li>
   <li>depuis la version 1.0.5, le compte facultatif : compte proposé (et à quel moment), remis à
       plus tard ou connecté (avec Apple, Google ou un e-mail, compte nouveau ou non), ta réponse aux
       e-mails de conseils et d'offres (oui ou non), sauvegarde récupérée, compte supprimé ;</li>
@@ -277,8 +315,9 @@ ton téléphone.</p>
       date, d'où elle vient et la version du texte qui t'a été montré ; et la copie de tes données
       Gomuscu, la dernière et la précédente : séances, programmes et leurs jours, exercices, notes,
       prénom, tes réponses enregistrées du premier lancement (objectif, niveau, jours, durée,
-      zones) et réglages. Tes choix sur la mesure des
-      publicités et sur les statistiques d'usage, eux, ne sont pas sauvegardés.</li>
+      zones, et depuis la version 1.0.6 lieu et priorité) et réglages. Tes choix sur la mesure des
+      publicités et sur les statistiques d'usage, et l'heure de ton rappel de séance, eux, ne sont
+      pas sauvegardés.</li>
   <li><strong>Avec Apple ou Google :</strong> ils confirment ton identité, selon leurs propres
       politiques. À Apple, nous ne demandons que ton adresse. Google, lui, joint toujours à la
       connexion ton nom et le lien de ta photo de profil : ils sont gardés avec ton compte, mais nous
@@ -379,7 +418,9 @@ ton matériel.</p>
       l'audience de l'application pour l'améliorer (article 6.1.f du RGPD). Elles n'exigent pas ton
       consentement parce qu'elles respectent les conditions de la CNIL pour la mesure d'audience
       (article 82 de la loi Informatique et Libertés) ; tu peux t'y opposer à tout moment avec
-      l'interrupteur des Réglages ;</li>
+      l'interrupteur des Réglages. Depuis la version 1.0.6, ta réponse à la question posée quand tu
+      quittes l'écran d'abonnement repose, elle, sur ton consentement (article 6.1.a du RGPD) : elle
+      ne part que si tu touches une réponse ;</li>
   <li><strong>le suivi des abonnements</strong> repose sur notre intérêt légitime à suivre nos
       abonnements et à répondre à nos abonnés (article 6.1.f du RGPD) ;</li>
   <li><strong>la mesure des publicités</strong>, avec ta réponse à « Comment tu as connu
@@ -452,7 +493,7 @@ modification substantielle sera signalée dans les nouveautés de la version con
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="date">Gomuscu · last updated: 14 October 2026</p>
+<p class="date">Gomuscu · last updated: 24 October 2026</p>
 <p class="portee">This policy covers the app. The gomuscuapp.com website has its own
 <a href="/mentions-legales/">legal notice</a> (in French), cookies included.</p>
 
@@ -483,10 +524,15 @@ Contact: <a href="mailto:contact@gomuscuapp.com">contact@gomuscuapp.com</a></p>
 <ul>
   <li>a first name or a nickname, if you choose to give one: at first launch, or in Profile;</li>
   <li>since version 1.0.5, your answers to the first-launch questions: goal, level, training days,
-      workout length and priority areas. They are used to build your week of programmes. Your two
-      other answers are not stored: what has held you back only picks the next screen and never
-      leaves your iPhone, and how you heard about Gomuscu only goes to our usage statistics if you
-      agree to ad measurement (see below);</li>
+      workout length and priority areas; since version 1.0.6, where you train (at the gym or at
+      home) and what you want to improve first, which replaces the priority areas. They are used to
+      build your week of programmes. Since version 1.0.6, if you already follow your own programme,
+      the workout you show at first launch is saved as one of your programmes. Your other answers
+      are not stored: what has held you back and, since version 1.0.6, what is getting in your way
+      right now only pick the next screens and never leave your iPhone; since version 1.0.6, where
+      you log your workouts and, if you already follow a programme, how many times a week you train
+      only go to our usage statistics; how you heard about Gomuscu only goes there if you agree to
+      ad measurement (see below);</li>
   <li>your exercises and programmes: names, muscle groups, rest durations, and the days you plan
       each programme for;</li>
   <li>your workouts: date, duration, exercises, loads, repetitions, drop sets, and any free-form
@@ -521,9 +567,20 @@ and, since version 1.0.5, Supabase and Google for the optional account. Without 
 contacts neither Supabase nor Google.</p>
 
 <h2>Notifications</h2>
-<p>If you enable the rest-timer alert, iOS asks for permission to display notifications. They are
-<strong>entirely local</strong>: your device schedules and displays them itself. Nothing is sent or
-received. You can revoke them at any time in iOS Settings.</p>
+<p>Gomuscu can show three kinds of notifications, each one only if you allow it when iOS asks
+you:</p>
+<ul>
+  <li>the rest-timer alert, if you turn it on;</li>
+  <li>since version 1.0.6, the workout reminder: on the days one of your programmes is planned, at
+      the time you choose, with the day, the workout's name, its number of exercises and its
+      estimated length. You set it or turn it off under Profile → Settings;</li>
+  <li>since version 1.0.6, if you start a free trial and agree to be reminded, a reminder two days
+      before the trial ends, with the date and price of the first payment.</li>
+</ul>
+<p>They are <strong>entirely local</strong>: your device schedules and displays them itself,
+without sending or receiving anything. The time of your workout reminder stays on this iPhone: it
+is neither sent to our statistics nor backed up with your account. You can revoke notifications at
+any time in iOS Settings.</p>
 
 <h2>Usage statistics — anonymous, and you can turn them off</h2>
 <p>Since version 1.0.4, to learn which screens are useful and what can be improved, Gomuscu sends
@@ -534,23 +591,43 @@ they work without asking for your consent. You can turn them off at any time und
 Settings → Data → Usage statistics: as soon as you do, nothing more is sent.</p>
 <p>PostHog receives:</p>
 <ul>
-  <li>the screens you open: Home, Workout, Programmes, Progress, Profile, Settings, Account, the
-      first-launch introduction and the subscription screen;</li>
+  <li>the screens you open: Home, Workout, Progress, Profile, Settings, Account, the first-launch
+      introduction, the subscription screen and, since version 1.0.6, the question asked when you
+      leave the subscription screen (up to version 1.0.5, Programmes too);</li>
   <li>the install, updates, and the app being opened and sent to the background;</li>
   <li>a few steps: introduction finished, programme created (from a template or not), workout
       finished (the first one or not, the number of exercises, free workout or not), subscription
       screen shown (and from which part of the app), trial started or subscription purchased
       (monthly or yearly), purchases restored. Since version 1.0.5, "workout finished" and
       "subscription screen shown" also say whether you are a subscriber and, if not, whether you
-      were already using the app before version 1.0.5;</li>
-  <li>since version 1.0.5, the first-launch introduction: each screen shown, each screen skipped,
-      then your answers, as fixed values. These are your goal, your level, your training days and
-      how many there are, the length of your workouts and your priority areas; plus two yes-or-no
-      values: whether you gave a first name, never the name itself, and
-      whether you skipped everything. Then the week offered: its split, machines or free weights,
-      its number of programmes, and whether it was saved. How you heard about Gomuscu is not part of
-      this: that answer is only sent with your consent to ad measurement (see below). Neither is
-      what has held you back: that answer never leaves your iPhone;</li>
+      were already using the app before version 1.0.5. Since version 1.0.6: purchase attempted from
+      the subscription screen (monthly or yearly, and from which part of the app), its result
+      (succeeded, cancelled, pending, unverified or failed) and monthly plan shown;</li>
+  <li>since version 1.0.5, the first-launch introduction: each screen shown (and, up to version
+      1.0.5, each screen skipped), then your answers, as fixed values. These are your goal, your
+      level, your training days and how many there are, the length of your workouts and your
+      priority areas. Since version 1.0.6: whether you already follow a programme, where you log
+      your workouts, where you train, and what you want to improve first instead of the areas; if
+      you already follow your own programme, only your goal, the length of your workouts, how many
+      times a week you train and the number of exercises in the workout you show are sent, never its
+      name or its exercises. Plus two yes-or-no values: whether you gave a first name, never the name
+      itself, and whether you skipped everything. Then the week offered: its split, machines, free
+      weights or dumbbells, its number of programmes, and whether it was saved. How you heard about
+      Gomuscu is not part of this: that answer is only sent with your consent to ad measurement (see
+      below). Neither are what has held you back and what is getting in your way right now: those
+      answers never leave your iPhone;</li>
+  <li>since version 1.0.6, the reminders described above (see Notifications): trial reminder
+      offered, accepted or not, and notification allowed or not; workout reminder accepted or not,
+      notification allowed or not (and from which screen), reminder tapped to open the app, reminder
+      turned on or off in Settings. Never the reminder's time, your days or the workout's name; only
+      the moment "reminder tapped" arrives gives a rough idea of when the reminder shows;</li>
+  <li>since version 1.0.6, and only if you tap an answer: what is holding you back from
+      subscribing. When you leave the subscription screen without subscribing, an optional question
+      asks you, once. Your answer is sent as a fixed value (price, want to see the app at the gym
+      first, no subscriptions, something else), with where the screen was opened from and whether
+      you were using the app before version 1.0.5. "Skip" sends nothing, and the question is never
+      asked if you have turned usage statistics off. It is the only answer these statistics receive
+      with your consent rather than without asking for it;</li>
   <li>since version 1.0.5, the optional account: account offered (and at which moment), put off or
       signed in to (with Apple, Google or an email, new account or not), your answer about tips and
       offers emails (yes or no), backup restored, account deleted;</li>
@@ -661,7 +738,8 @@ later from Profile. Without an account, nothing changes: your workouts stay on y
       changed; your answer about emails, with its date, where it came from and the version of the
       text you were shown; and the copy of your Gomuscu data, the latest one and the previous one:
       workouts, programmes and their days, exercises, notes, first name, your stored first-launch answers (goal, level,
-      days, length, areas) and settings. Your choices on ad measurement and usage statistics are not backed
+      days, length, areas, and since version 1.0.6 place and priority) and settings. Your choices on
+      ad measurement and usage statistics, and the time of your workout reminder, are not backed
       up.</li>
   <li><strong>With Apple or Google:</strong> they confirm your identity, under their own policies.
       From Apple, we only ask for your email address. Google always adds your name and a link to
@@ -760,7 +838,9 @@ control, on your own hardware.</p>
   <li><strong>usage statistics</strong> rely on our legitimate interest in measuring the app's
       audience to improve it (Article 6(1)(f) GDPR). They do not require your consent because they
       meet the CNIL's conditions for audience measurement (Article 82 of the French Data Protection
-      Act); you can object at any time with the switch in Settings;</li>
+      Act); you can object at any time with the switch in Settings. Since version 1.0.6, your answer
+      to the question asked when you leave the subscription screen relies on your consent (Article
+      6(1)(a) GDPR): it is only sent if you tap an answer;</li>
   <li><strong>subscription tracking</strong> relies on our legitimate interest in following our
       subscriptions and answering our subscribers (Article 6(1)(f) GDPR);</li>
   <li><strong>ad measurement</strong>, with your answer to "How did you hear about Gomuscu?" that
