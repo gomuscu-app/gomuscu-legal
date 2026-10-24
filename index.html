@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gomuscu — Application carnet de musculation pour iPhone</title>
-<meta name="description" content="Gomuscu affiche tes séries de la dernière fois pendant que tu saisis celles d’aujourd’hui. Chrono de repos intégré, sans compte. Gratuit sur iPhone.">
+<meta name="description" content="Gomuscu affiche tes séries de la dernière fois pendant que tu saisis celles d’aujourd’hui. Chrono de repos intégré, sans compte. Sur iPhone, avec 7 jours d’essai gratuit.">
 <link rel="canonical" href="https://gomuscuapp.com/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <!-- Google Search Console : prouve la propriété de https://gomuscuapp.com/. Ne pas retirer —
@@ -85,7 +85,7 @@
         "Séries de la dernière fois affichées pendant la saisie",
         "Chrono de repos intégré",
         "Catalogue de 75 exercices, 14 groupes musculaires",
-        "Programmes Push, Pull et Legs inclus",
+        "Semaine d’entraînement prête au premier lancement",
         "Récap de fin de séance comparé à la dernière fois",
         "Sans compte, données enregistrées sur l’iPhone"
       ]
@@ -97,7 +97,7 @@
         {
           "@type": "Question",
           "name": "Gomuscu est-elle gratuite ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le carnet, le chrono de repos et le rappel de ta dernière fois sont gratuits, sans limite de durée. Gomuscu Pro, à 3,99 € par mois ou 29,99 € par an avec 7 jours d’essai gratuit sur l’annuel, ajoute ta progression sur tous tes exercices et les programmes illimités." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Le téléchargement est gratuit, et l’annuel commence par 7 jours d’essai gratuit. Tes séances (le carnet, le rappel de ta dernière fois, le chrono de repos) sont dans Gomuscu Pro, à 3,99 € par mois ou 29,99 € par an. Sans abonnement, ton historique, la progression de ton exercice le plus pratiqué, tes programmes et l’export de tes données restent accessibles. Tu utilisais Gomuscu avant la version 1.0.5 ? Tes séances restent illimitées, sans abonnement." }
         },
         {
           "@type": "Question",
@@ -835,7 +835,7 @@ h1, h2, h3 { margin: 0; }
       <p class="hero__lede">Tes séries de la dernière fois s’affichent en face de celles que tu saisis. Tu sais quoi battre, série après série.</p>
       <div class="hero__cta">
         <a class="badge" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201"><img src="assets/app-store-badge.svg" width="164" height="52" alt="Télécharger Gomuscu dans l’App Store"></a>
-        <p class="hero__note">Gratuit, sans compte.<br>iPhone, iOS 18 ou plus récent.</p>
+        <p class="hero__note">Téléchargement gratuit, sans compte.<br>iPhone, iOS 18 ou plus récent.</p>
       </div>
     </div>
 
@@ -955,7 +955,7 @@ h1, h2, h3 { margin: 0; }
     <div class="bento">
       <article class="cell cell--chrono rim">
         <div>
-          <span class="tag">Gratuit, toujours</span>
+          <span class="tag tag--pro">Pro</span>
           <h3>Chrono de repos intégré</h3>
           <p>Appuie sur Go quand tu as fini ta série. Ajuste de 15 secondes avec − et +. À la fin, un son et une vibration ; téléphone verrouillé, une notification prend le relais.</p>
         </div>
@@ -1001,7 +1001,7 @@ h1, h2, h3 { margin: 0; }
       <article class="cell cell--progs rim">
         <div>
           <h3>Ta séance en un tap</h3>
-          <p>Push, Pull et Legs sont prêts dès l’installation. Crée les tiens, ou lance une séance libre quand tu improvises.</p>
+          <p>Ta semaine est prête dès le premier lancement, sur tes jours et à ton niveau. Crée tes propres programmes, ou lance une séance libre quand tu improvises.</p>
         </div>
         <ul class="cell__ui plist" aria-hidden="true">
           <li style="--c:var(--lime)"><b>Push</b><span>Développé couché haltères, Développé incliné haltères +4 autres</span><i></i></li>
@@ -1070,20 +1070,18 @@ h1, h2, h3 { margin: 0; }
 <section id="tarifs" class="section pricing" aria-labelledby="t-tarifs">
   <div class="wrap">
     <header class="section__head">
-      <h2 id="t-tarifs" class="h2">Gratuit, avec Pro en option</h2>
-      <p>Le carnet complet ne coûte rien. Pro ajoute tes courbes sur tous tes exercices et les programmes illimités, au mois ou à l’année.</p>
+      <h2 id="t-tarifs" class="h2">7 jours pour essayer, puis Pro</h2>
+      <p>Tes séances, ta dernière fois et tes courbes sont dans Pro, au mois ou à l’année. Sans abonnement, tes données restent à toi.</p>
     </header>
     <div class="plans">
       <article class="plan rim">
-        <h3>Gratuit</h3>
+        <h3>Sans abonnement</h3>
         <p class="plan__price"><strong>0&nbsp;€</strong><span>sans limite de durée</span></p>
         <ul>
-          <li>Séances illimitées</li>
-          <li>Ta dernière fois, série par série</li>
-          <li>Chrono de repos</li>
-          <li>Récap de fin de séance</li>
-          <li>Calendrier, profil et badges</li>
-          <li>Export JSON de tes données</li>
+          <li>Ton historique en entier</li>
+          <li>La progression de ton exercice le plus pratiqué</li>
+          <li>Tes programmes, quatre au total</li>
+          <li>Exports JSON et CSV de tes données</li>
         </ul>
       </article>
       <article class="plan plan--pro rim">
@@ -1091,9 +1089,9 @@ h1, h2, h3 { margin: 0; }
         <p class="plan__price"><strong>3,99&nbsp;€</strong><span>par mois</span></p>
         <p class="plan__alt">Sans engagement.</p>
         <ul>
+          <li>Tes séances : ta dernière fois série par série, chrono de repos, récap</li>
           <li>Ta progression sur tous tes exercices : courbe, record, volume</li>
           <li>Programmes illimités</li>
-          <li>Tout ce qui est gratuit</li>
         </ul>
       </article>
       <article class="plan plan--pro plan--annuel rim">
@@ -1101,9 +1099,9 @@ h1, h2, h3 { margin: 0; }
         <p class="plan__price"><strong>29,99&nbsp;€</strong><span>par an</span></p>
         <p class="plan__alt">Soit 2,50&nbsp;€ par mois. Essai gratuit de 7&nbsp;jours, puis 29,99&nbsp;€ par an.</p>
         <ul>
+          <li>Tes séances : ta dernière fois série par série, chrono de repos, récap</li>
           <li>Ta progression sur tous tes exercices : courbe, record, volume</li>
           <li>Programmes illimités</li>
-          <li>Tout ce qui est gratuit</li>
         </ul>
       </article>
     </div>
@@ -1123,7 +1121,7 @@ h1, h2, h3 { margin: 0; }
     <div class="faq__list">
       <details>
         <summary><h3>Gomuscu est-elle gratuite ?</h3></summary>
-        <p>Oui. Le carnet, le chrono de repos et le rappel de ta dernière fois sont gratuits, sans limite de durée. Gomuscu Pro, à 3,99&nbsp;€ par mois ou 29,99&nbsp;€ par an avec 7 jours d’essai gratuit sur l’annuel, ajoute ta progression sur tous tes exercices et les programmes illimités.</p>
+        <p>Le téléchargement est gratuit, et l’annuel commence par 7&nbsp;jours d’essai gratuit. Tes séances (le carnet, le rappel de ta dernière fois, le chrono de repos) sont dans Gomuscu Pro, à 3,99&nbsp;€ par mois ou 29,99&nbsp;€ par an. Sans abonnement, ton historique, la progression de ton exercice le plus pratiqué, tes programmes et l’export de tes données restent accessibles. Tu utilisais Gomuscu avant la version 1.0.5&nbsp;? Tes séances restent illimitées, sans abonnement.</p>
       </details>
       <details>
         <summary><h3>Faut-il créer un compte ?</h3></summary>
@@ -1164,7 +1162,7 @@ h1, h2, h3 { margin: 0; }
       <h2 id="t-fin" class="h2">Tu sais quoi battre.</h2>
       <p>Ta première séance lance le suivi.</p>
       <a class="btn btn--lime btn--lg" href="https://apps.apple.com/fr/app/gomuscu-carnet-de-musculation/id6789966201">Télécharger Gomuscu</a>
-      <p class="final__note">Gratuit, sans compte.</p>
+      <p class="final__note">Téléchargement gratuit, sans compte.</p>
     </div>
   </div>
 </section>
